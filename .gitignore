@@ -1,0 +1,13 @@
+# Server-owned at runtime — never deployed, never committed beyond seeds
+/storage/auth/*
+/storage/versions/*
+/storage/ratelimit/*
+/storage/logs/*
+!/storage/**/.gitkeep
+
+# Local-only
+/backups/
+/node_modules/
+*.local.php
+.DS_Store
+Thumbs.db

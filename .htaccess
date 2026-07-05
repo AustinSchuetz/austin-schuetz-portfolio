@@ -1,0 +1,34 @@
+Options -Indexes
+
+RewriteEngine On
+
+# AutoSSL domain-control validation must never be rewritten or blocked
+RewriteRule ^\.well-known/ - [L]
+
+# Protected application directories (each also ships its own deny .htaccess)
+RewriteRule ^(app|content|storage|templates|scripts|tests|design)(/|$) - [F]
+
+# Dotfiles and sensitive file types
+RewriteRule (^|/)\.(git|env|htaccess) - [F]
+RewriteRule \.(json|md|yml|lock)$ - [F]
+
+# Force-HTTPS + www -> apex: enabled at launch AFTER AutoSSL issues the cert
+# RewriteCond %{HTTPS} !=on [OR]
+# RewriteCond %{HTTP_HOST} ^www\. [NC]
+# RewriteRule ^ https://austinschuetz.com%{REQUEST_URI} [R=301,L]
+
+# Front controller
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.php [L]
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType text/css "access plus 1 year"
+    ExpiresByType application/javascript "access plus 1 year"
+    ExpiresByType font/woff2 "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+</IfModule>
