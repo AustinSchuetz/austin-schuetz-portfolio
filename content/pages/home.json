@@ -1,0 +1,50 @@
+{
+    "title": "Austin Schuetz",
+    "seo_title": "Austin Schuetz — Full-Stack Product Engineer, Denver CO",
+    "seo_description": "Trading systems, gym platforms, consumer AI apps — and the hand-rolled drag-and-drop CMS this portfolio runs on.",
+    "og_image": "",
+    "status": "published",
+    "updated_at": "2026-07-05T00:00:00Z",
+    "blocks": [
+        {
+            "id": "b_a1b2c1",
+            "type": "hero",
+            "variant": "home",
+            "eyebrow": "DENVER, CO — 39.74° N, 104.99° W",
+            "heading": "Front-end web developer turned full-stack product builder.",
+            "lede_md": "I ship trading systems, gym platforms, and consumer apps — including the hand-rolled drag-and-drop CMS this site runs on.",
+            "cta_primary_label": "See the work",
+            "cta_primary_url": "/work",
+            "cta_secondary_label": "About me",
+            "cta_secondary_url": "/about",
+            "bg_motif": "topo",
+            "ridge_bottom": "a"
+        },
+        {
+            "id": "b_a1b2c2",
+            "type": "project_feature",
+            "project_slug": "ausi-trader",
+            "media_src": "",
+            "media_frame": "browser",
+            "media_treatment": "color",
+            "items": [
+                {"value": "148K", "label": "LOC"},
+                {"value": "LIVE", "label": "IB execution"},
+                {"value": "WFO+MCPT", "label": "validated"}
+            ],
+            "tags": ["Python", "asyncio", "Interactive Brokers"],
+            "reverse": false
+        },
+        {
+            "id": "b_a1b2c3",
+            "type": "cta_band",
+            "heading": "Let's build something.",
+            "body_md": "",
+            "button_label": "Get in touch",
+            "button_url": "/contact",
+            "email_display": "contact@austinschuetz.com",
+            "style": "panel-dark",
+            "motif": "topo-corner"
+        }
+    ]
+}

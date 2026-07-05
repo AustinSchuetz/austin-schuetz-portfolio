@@ -1,0 +1,29 @@
+/* Placeholder — the real design system (tokens + components) lands in Phase 3 */
+:root {
+    color-scheme: light;
+}
+.visually-hidden,
+.skip-link {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+}
+.skip-link:focus-visible {
+    position: fixed;
+    inset: 0.5rem auto auto 0.5rem;
+    width: auto;
+    height: auto;
+    clip-path: none;
+    background: #fff;
+    padding: 0.5rem 1rem;
+    z-index: 100;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+.img-duotone {
+    filter: url(#duotone-evergreen);
+}

@@ -7,22 +7,68 @@ class Router
     public function dispatch(): void
     {
         $path = parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/';
-        $trimmed = rtrim($path, '/');
-        if ($trimmed !== '' && $trimmed !== $path) {
+
+        if ($path !== '/' && str_ends_with($path, '/')) {
             http_response_code(301);
-            header('Location: ' . $trimmed);
+            header('Location: ' . rtrim($path, '/'));
             return;
         }
 
-        // Phase 0 stub — replaced by the full content-driven router in Phase 1.
+        if ($path === '/sitemap.xml') {
+            Seo::sitemap();
+            return;
+        }
+
+        if ($path === '/contact' && ($_SERVER['REQUEST_METHOD'] ?? 'GET') === 'POST') {
+            if (class_exists('ContactHandler')) {
+                (new ContactHandler())->handle();
+                return;
+            }
+            http_response_code(404);
+            return;
+        }
+
         if ($path === '/') {
-            header('Content-Type: text/html; charset=utf-8');
-            echo '<!doctype html><meta charset="utf-8"><title>austinschuetz.com</title><h1>Skeleton up — CMS core lands next.</h1>';
+            $this->renderDoc('page', 'home', '/');
             return;
         }
 
+        if (preg_match('#^/work/([a-z0-9-]{1,64})$#', $path, $m)) {
+            $this->renderDoc('project', $m[1], $path);
+            return;
+        }
+
+        if (preg_match('#^/([a-z0-9-]{1,64})$#', $path, $m)) {
+            $this->renderDoc('page', $m[1], $path);
+            return;
+        }
+
+        $this->notFound();
+    }
+
+    private function renderDoc(string $kind, string $slug, string $path): void
+    {
+        $doc = ContentStore::doc($kind, $slug);
+        if ($doc === null || ($doc['status'] ?? 'draft') !== 'published') {
+            $this->notFound();
+            return;
+        }
+        header('Content-Type: text/html; charset=utf-8');
+        echo View::render($kind === 'project' ? 'project' : 'page', [
+            'doc' => $doc,
+            'site' => ContentStore::site(),
+            'path' => $path,
+        ]);
+    }
+
+    private function notFound(): void
+    {
         http_response_code(404);
         header('Content-Type: text/html; charset=utf-8');
-        echo '<!doctype html><meta charset="utf-8"><title>404</title><h1>Off the trail.</h1>';
+        echo View::render('404', [
+            'doc' => ['title' => 'Not found', 'status' => 'published'],
+            'site' => ContentStore::site(),
+            'path' => '/404',
+        ]);
     }
 }

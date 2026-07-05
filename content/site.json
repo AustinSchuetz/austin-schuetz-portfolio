@@ -1,0 +1,20 @@
+{
+    "site_name": "Austin Schuetz",
+    "base_url": "https://austinschuetz.com",
+    "seo_title_suffix": " · Austin Schuetz — Denver, CO",
+    "seo_default_description": "Austin Schuetz is a Denver-based full-stack product engineer: trading systems, gym platforms, and the hand-rolled CMS this site runs on.",
+    "og_default_image": "",
+    "footer_md": "Front-end web developer turned full-stack product builder.",
+    "contact_email": "contact@austinschuetz.com",
+    "nav": [
+        {"label": "Work", "url": "/work"},
+        {"label": "Archive", "url": "/archive"},
+        {"label": "About", "url": "/about"},
+        {"label": "Contact", "url": "/contact"}
+    ],
+    "socials": [
+        {"label": "GitHub", "url": "https://github.com/AustinSchuetz"},
+        {"label": "Email", "url": "mailto:contact@austinschuetz.com"},
+        {"label": "LinkedIn", "url": "#"}
+    ]
+}

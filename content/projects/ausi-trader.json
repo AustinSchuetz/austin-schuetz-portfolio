@@ -1,0 +1,59 @@
+{
+    "title": "Ausi-Trader",
+    "seo_title": "Ausi-Trader — autonomous futures trading system",
+    "seo_description": "An autonomous multi-agent micro-futures trading system with live Interactive Brokers execution and a walk-forward + Monte Carlo validation gauntlet.",
+    "og_image": "",
+    "status": "published",
+    "updated_at": "2026-07-05T00:00:00Z",
+    "summary": "Engineering rigor with real money on the line: an autonomous multi-agent trading system for micro futures — not a backtest notebook, a live platform routing real orders.",
+    "tags": ["Python", "asyncio", "Interactive Brokers", "quant"],
+    "role": "Designer, engineer, operator",
+    "year": "2025–2026",
+    "featured": true,
+    "sort_order": 1,
+    "thumb": "",
+    "hero_image": "",
+    "link_url": "https://github.com/AustinSchuetz/ausi-trader",
+    "blocks": [
+        {
+            "id": "b_t1a2b1",
+            "type": "hero",
+            "variant": "case",
+            "eyebrow": "CASE STUDY — TRADING SYSTEM · 2025–2026",
+            "heading": "Ausi-Trader",
+            "lede_md": "An autonomous multi-agent trading system for micro futures. Nothing trades until it survives the gauntlet: backtest, walk-forward analysis, Monte Carlo permutation testing, then paper trading — only then does a strategy touch capital.",
+            "cta_primary_label": "",
+            "cta_primary_url": "",
+            "cta_secondary_label": "",
+            "cta_secondary_url": "",
+            "bg_motif": "none",
+            "ridge_bottom": "none"
+        },
+        {
+            "id": "b_t1a2b2",
+            "type": "stat_row",
+            "style": "inline",
+            "items": [
+                {"value": "148K", "label": "lines of Python", "footnote": ""},
+                {"value": "LIVE", "label": "Interactive Brokers execution", "footnote": ""},
+                {"value": "WFO + MCPT", "label": "validation gauntlet", "footnote": ""}
+            ]
+        },
+        {
+            "id": "b_t1a2b3",
+            "type": "project_meta",
+            "role": "Designer, engineer, operator",
+            "timeline": "2025 — ongoing",
+            "stack": ["Python 3.12", "asyncio", "ib-async", "Databento", "vectorbt", "SQLite", "aiohttp"],
+            "items": [
+                {"label": "GitHub", "url": "https://github.com/AustinSchuetz/ausi-trader", "kind": "repo"}
+            ]
+        },
+        {
+            "id": "b_t1a2b4",
+            "type": "prose",
+            "body_md": "## The problem\nMost retail trading systems die one of two deaths: they are backtest fantasies that never survive live fills, or they are live cowboys with no statistical evidence behind them.\n\nAusi-Trader exists to hold both bars at once — **strategies discovered by automated research, promoted only through out-of-sample validation, and executed live with institutional-style risk controls.**",
+            "width": "prose"
+        }
+    ]
+}
