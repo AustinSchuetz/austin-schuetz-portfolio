@@ -2,17 +2,23 @@
     "title": "Ausi-Trader",
     "seo_title": "Ausi-Trader — Autonomous Trading System on the Claude API | Austin Schuetz",
     "seo_description": "An autonomous multi-agent futures trading system with live Interactive Brokers execution and Claude-API-powered strategy research. Real money, real rigor.",
-    "og_image": "",
+    "og_image": "/media/uploads/og/ausi-trader.png",
     "status": "published",
     "updated_at": "2026-07-05T00:00:00Z",
     "summary": "Engineering rigor with real money on the line: an autonomous multi-agent trading system for micro futures. Claude powers the research judgments; a validation gauntlet keeps them honest; Interactive Brokers routes the live orders.",
-    "tags": ["Python", "asyncio", "Interactive Brokers", "Claude API", "quant"],
+    "tags": [
+        "Python",
+        "asyncio",
+        "Interactive Brokers",
+        "Claude API",
+        "quant"
+    ],
     "role": "Designer, engineer, operator",
     "year": "2025–2026",
     "featured": true,
     "sort_order": 1,
-    "thumb": "",
-    "hero_image": "",
+    "thumb": "/media/uploads/projects/ausi-trader/thumb.webp",
+    "hero_image": "/media/uploads/projects/ausi-trader/dashboard.webp",
     "link_url": "https://github.com/AustinSchuetz/ausi-trader",
     "blocks": [
         {
@@ -34,9 +40,21 @@
             "type": "stat_row",
             "style": "inline",
             "items": [
-                {"value": "148K", "label": "lines of Python", "footnote": "~240 source files"},
-                {"value": "LIVE", "label": "Interactive Brokers execution", "footnote": "real orders, real fills"},
-                {"value": "Claude", "label": "Sonnet + Opus in the loop", "footnote": "research automation"}
+                {
+                    "value": "148K",
+                    "label": "lines of Python",
+                    "footnote": "~240 source files"
+                },
+                {
+                    "value": "LIVE",
+                    "label": "Interactive Brokers execution",
+                    "footnote": "real orders, real fills"
+                },
+                {
+                    "value": "Claude",
+                    "label": "Sonnet + Opus in the loop",
+                    "footnote": "research automation"
+                }
             ]
         },
         {
@@ -44,9 +62,43 @@
             "type": "project_meta",
             "role": "Designer, engineer, operator",
             "timeline": "2025 — ongoing",
-            "stack": ["Python 3.12", "asyncio", "ib-async", "Databento", "Claude API", "SQLite", "aiohttp"],
+            "stack": [
+                "Python 3.12",
+                "asyncio",
+                "ib-async",
+                "Databento",
+                "Claude API",
+                "SQLite",
+                "aiohttp"
+            ],
             "items": [
-                {"label": "GitHub", "url": "https://github.com/AustinSchuetz/ausi-trader", "kind": "repo"}
+                {
+                    "label": "GitHub",
+                    "url": "https://github.com/AustinSchuetz/ausi-trader",
+                    "kind": "repo"
+                }
+            ]
+        },
+        {
+            "id": "b_at_gal",
+            "type": "media",
+            "layout": "two-up",
+            "lightbox": true,
+            "items": [
+                {
+                    "src": "/media/uploads/projects/ausi-trader/dashboard.webp",
+                    "alt": "Ausi-Trader live risk dashboard showing today's P&L, open positions, resting entry orders, and per-strategy decision state",
+                    "caption": "The live scoreboard — real-time risk, positions, and strategy gates",
+                    "treatment": "color",
+                    "frame": "browser"
+                },
+                {
+                    "src": "/media/uploads/projects/ausi-trader/equity-curve.webp",
+                    "alt": "Equity curve chart for the EMA-Hurst strategy",
+                    "caption": "One strategy's equity curve, tracked from the live ledger",
+                    "treatment": "color",
+                    "frame": "none"
+                }
             ]
         },
         {

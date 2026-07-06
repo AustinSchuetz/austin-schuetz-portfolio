@@ -1,0 +1,16 @@
+# Fallback deploy via WinSCP scripting (if cPanel Git Version Control is
+# unavailable). Usage:
+#   winscp.com /ini=nul /script=scripts\deploy.winscp.txt
+# TODO: fill in HOST/USER (password will be prompted; or use /parameter).
+# Never syncs server-owned dirs: content/, media/uploads/, storage/.
+
+open ftpes://USER@HOST/ -explicit
+option batch abort
+option confirm off
+
+lcd C:\Users\ausi4.AUSILAPTOP\austin-schuetz-portfolio
+cd /public_html
+
+synchronize remote -mirror -criteria=size -filemask="| content/; media/uploads/; storage/; scripts/; tests/; design/; backups/; .git/; .claude/; dev-router.php; .cpanel.yml; LAUNCH.md" . .
+
+exit

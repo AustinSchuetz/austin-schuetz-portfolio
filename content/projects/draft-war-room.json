@@ -2,17 +2,22 @@
     "title": "Dynasty Draft War Room",
     "seo_title": "Dynasty Draft War Room — a live Sleeper draft board built in a Claude session",
     "seo_description": "A single-file React draft board for Sleeper dynasty leagues: live pick polling, a 327-player weighted board, and zero build steps. Shipped before draft night.",
-    "og_image": "",
+    "og_image": "/media/uploads/og/draft-war-room.png",
     "status": "published",
     "updated_at": "2026-07-06T00:00:00Z",
     "summary": "The smallest thing on this site and the fastest shipped: a live Sleeper draft board in one self-contained HTML file, built in a Claude session before draft night.",
-    "tags": ["React", "Sleeper API", "Netlify", "AI-assisted"],
+    "tags": [
+        "React",
+        "Sleeper API",
+        "Netlify",
+        "AI-assisted"
+    ],
     "role": "Builder",
     "year": "2026",
     "featured": false,
     "sort_order": 7,
-    "thumb": "",
-    "hero_image": "",
+    "thumb": "/media/uploads/projects/draft-war-room/thumb.webp",
+    "hero_image": "/media/uploads/projects/draft-war-room/draft-board.webp",
     "link_url": "https://github.com/AustinSchuetz/draft-war-room",
     "blocks": [
         {
@@ -34,9 +39,21 @@
             "type": "stat_row",
             "style": "inline",
             "items": [
-                {"value": "1 FILE", "label": "self-contained deploy", "footnote": "~220KB index.html"},
-                {"value": "8s", "label": "live pick polling", "footnote": "Sleeper public API"},
-                {"value": "327", "label": "players on the board", "footnote": "creator-weighted consensus"}
+                {
+                    "value": "1 FILE",
+                    "label": "self-contained deploy",
+                    "footnote": "~220KB index.html"
+                },
+                {
+                    "value": "8s",
+                    "label": "live pick polling",
+                    "footnote": "Sleeper public API"
+                },
+                {
+                    "value": "327",
+                    "label": "players on the board",
+                    "footnote": "creator-weighted consensus"
+                }
             ]
         },
         {
@@ -44,9 +61,34 @@
             "type": "project_meta",
             "role": "Builder",
             "timeline": "June 2026 — one draft season",
-            "stack": ["React 18", "esbuild", "Sleeper API", "Netlify Functions", "Netlify Blobs"],
+            "stack": [
+                "React 18",
+                "esbuild",
+                "Sleeper API",
+                "Netlify Functions",
+                "Netlify Blobs"
+            ],
             "items": [
-                {"label": "GitHub", "url": "https://github.com/AustinSchuetz/draft-war-room", "kind": "repo"}
+                {
+                    "label": "GitHub",
+                    "url": "https://github.com/AustinSchuetz/draft-war-room",
+                    "kind": "repo"
+                }
+            ]
+        },
+        {
+            "id": "b_dw_gal",
+            "type": "media",
+            "layout": "single",
+            "lightbox": true,
+            "items": [
+                {
+                    "src": "/media/uploads/projects/draft-war-room/draft-board.webp",
+                    "alt": "Dynasty Draft War Room live draft board showing tiered player rankings, roster tracker, and on-the-clock status",
+                    "caption": "The board mid-draft — live picks, tiers, and roster tracking in one screen",
+                    "treatment": "color",
+                    "frame": "browser"
+                }
             ]
         },
         {

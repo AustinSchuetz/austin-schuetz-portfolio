@@ -2,11 +2,16 @@
     "title": "Tally",
     "seo_title": "Tally — Self-Hosted Invoicing for Freelancers | Austin Schuetz",
     "seo_description": "Self-hosted invoicing for solo freelancers: hosted pay pages, Stripe cards and ACH, PDF invoices, and encrypted backups. The boring plumbing that works.",
-    "og_image": "",
+    "og_image": "/media/uploads/og/tally.png",
     "status": "published",
     "updated_at": "2026-07-05T00:00:00Z",
     "summary": "The boring SaaS plumbing clients actually pay for. A self-hosted invoicing app I built to replace Hiveage — hosted pay pages, Stripe card and ACH, deliverable email, and backups that don't lose your invoice numbers.",
-    "tags": ["Next.js", "Stripe", "Postmark", "SaaS"],
+    "tags": [
+        "Next.js",
+        "Stripe",
+        "Postmark",
+        "SaaS"
+    ],
     "role": "Solo developer",
     "year": "2026",
     "featured": false,
@@ -34,9 +39,21 @@
             "type": "stat_row",
             "style": "boxed",
             "items": [
-                {"value": "Card + ACH", "label": "Stripe payments", "footnote": "hosted pay pages"},
-                {"value": "SPF/DKIM/DMARC", "label": "email that lands", "footnote": "Postmark"},
-                {"value": "Nightly", "label": "encrypted backups", "footnote": "Cloudflare R2"}
+                {
+                    "value": "Card + ACH",
+                    "label": "Stripe payments",
+                    "footnote": "hosted pay pages"
+                },
+                {
+                    "value": "SPF/DKIM/DMARC",
+                    "label": "email that lands",
+                    "footnote": "Postmark"
+                },
+                {
+                    "value": "Nightly",
+                    "label": "encrypted backups",
+                    "footnote": "Cloudflare R2"
+                }
             ]
         },
         {
@@ -44,7 +61,13 @@
             "type": "project_meta",
             "role": "Solo developer",
             "timeline": "2026",
-            "stack": ["Next.js 16", "Stripe", "Postmark", "@react-pdf", "Cloudflare R2"],
+            "stack": [
+                "Next.js 16",
+                "Stripe",
+                "Postmark",
+                "@react-pdf",
+                "Cloudflare R2"
+            ],
             "items": []
         },
         {

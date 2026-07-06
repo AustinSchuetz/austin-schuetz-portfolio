@@ -2,17 +2,23 @@
     "title": "Bush League Baseball",
     "seo_title": "Bush League Baseball — Unity 6 Roguelite in Development | Austin Schuetz",
     "seo_description": "A Unity 6 baseball roguelite: 13 modular C# projects, TDD-driven domain logic, a token-driven design system, and AI-generated character art.",
-    "og_image": "",
+    "og_image": "/media/uploads/og/bush-league-baseball.png",
     "status": "published",
     "updated_at": "2026-07-05T00:00:00Z",
     "summary": "Design-system thinking, ported to game dev. A Unity 6 baseball roguelite in development — built with a token-driven brand bible governing the UI, thirteen modular C# projects, TDD-mandated logic, and a fine-tuned model for character art.",
-    "tags": ["Unity 6", "C#", "TDD", "Design systems", "Game dev"],
+    "tags": [
+        "Unity 6",
+        "C#",
+        "TDD",
+        "Design systems",
+        "Game dev"
+    ],
     "role": "Solo developer",
     "year": "2026",
     "featured": false,
     "sort_order": 5,
-    "thumb": "",
-    "hero_image": "",
+    "thumb": "/media/uploads/projects/bush-league-baseball/thumb.webp",
+    "hero_image": "/media/uploads/projects/bush-league-baseball/character-green.webp",
     "link_url": "https://github.com/AustinSchuetz/bush-league-baseball",
     "blocks": [
         {
@@ -34,9 +40,21 @@
             "type": "stat_row",
             "style": "boxed",
             "items": [
-                {"value": "13", "label": "modular C# projects", "footnote": "clean boundaries"},
-                {"value": "TDD", "label": "on domain logic", "footnote": "mandated, not optional"},
-                {"value": "Brand bible", "label": "token-driven UI", "footnote": "one design system"}
+                {
+                    "value": "13",
+                    "label": "modular C# projects",
+                    "footnote": "clean boundaries"
+                },
+                {
+                    "value": "TDD",
+                    "label": "on domain logic",
+                    "footnote": "mandated, not optional"
+                },
+                {
+                    "value": "Brand bible",
+                    "label": "token-driven UI",
+                    "footnote": "one design system"
+                }
             ]
         },
         {
@@ -44,9 +62,41 @@
             "type": "project_meta",
             "role": "Solo developer",
             "timeline": "2026 — in development",
-            "stack": ["Unity 6", "URP", "C#", "Scenario.gg", "Shader tint-masking"],
+            "stack": [
+                "Unity 6",
+                "URP",
+                "C#",
+                "Scenario.gg",
+                "Shader tint-masking"
+            ],
             "items": [
-                {"label": "GitHub", "url": "https://github.com/AustinSchuetz/bush-league-baseball", "kind": "repo"}
+                {
+                    "label": "GitHub",
+                    "url": "https://github.com/AustinSchuetz/bush-league-baseball",
+                    "kind": "repo"
+                }
+            ]
+        },
+        {
+            "id": "b_bl_gal",
+            "type": "media",
+            "layout": "two-up",
+            "lightbox": true,
+            "items": [
+                {
+                    "src": "/media/uploads/projects/bush-league-baseball/character-green.webp",
+                    "alt": "AI-generated baseball character model in a green team uniform, T-pose reference",
+                    "caption": "One character, one team palette — from the Scenario.gg art pipeline",
+                    "treatment": "color",
+                    "frame": "none"
+                },
+                {
+                    "src": "/media/uploads/projects/bush-league-baseball/character-red.webp",
+                    "alt": "AI-generated baseball character model in a red pinstripe uniform, T-pose reference",
+                    "caption": "Same pipeline, different team — tint-masking multiplies the roster",
+                    "treatment": "color",
+                    "frame": "none"
+                }
             ]
         },
         {

@@ -2,7 +2,7 @@
     "title": "Austin Schuetz",
     "seo_title": "Freelance Front-End Web Developer in Denver, Colorado | Austin Schuetz",
     "seo_description": "Freelance front-end web developer in Denver, CO and AI integration partner for startups. WordPress, full-stack builds, and Claude API work.",
-    "og_image": "",
+    "og_image": "/media/uploads/og/home.png",
     "status": "published",
     "blocks": [
         {
@@ -29,7 +29,11 @@
                 {
                     "title": "Front-end & WordPress builds",
                     "body_md": "Custom themes, fast marketing sites, and the kind of hand-tuned front-end work that started my career. Clean HTML, no bloat, and pages that load before your coffee does.",
-                    "tags": ["WordPress", "Front-end", "SEO"],
+                    "tags": [
+                        "WordPress",
+                        "Front-end",
+                        "SEO"
+                    ],
                     "image": "",
                     "link": "",
                     "badge": ""
@@ -37,7 +41,11 @@
                 {
                     "title": "Full-stack product engineering",
                     "body_md": "Idea to production. React, Next.js, React Native, Postgres, payments, auth — the whole stack. I ship real products with real users, not prototypes that die in a demo.",
-                    "tags": ["Next.js", "React Native", "Postgres"],
+                    "tags": [
+                        "Next.js",
+                        "React Native",
+                        "Postgres"
+                    ],
                     "image": "",
                     "link": "",
                     "badge": ""
@@ -45,7 +53,11 @@
                 {
                     "title": "AI & Claude integration partnership",
                     "body_md": "A technical co-founder-shaped partner for startups adding AI. I've built multi-agent systems and vision pipelines on the **Claude API** — Sonnet and Opus in production, not slideware.",
-                    "tags": ["Claude API", "AI agents", "Startups"],
+                    "tags": [
+                        "Claude API",
+                        "AI agents",
+                        "Startups"
+                    ],
                     "image": "",
                     "link": "",
                     "badge": ""
@@ -57,30 +69,56 @@
             "type": "project_feature",
             "section_eyebrow": "SELECTED WORK — 2015–26",
             "project_slug": "ausi-trader",
-            "media_src": "",
+            "media_src": "/media/uploads/projects/ausi-trader/dashboard.webp",
             "media_frame": "browser",
             "media_treatment": "color",
             "items": [
-                {"value": "148K", "label": "lines of Python"},
-                {"value": "LIVE", "label": "IB execution"},
-                {"value": "CLAUDE API", "label": "research automation"}
+                {
+                    "value": "148K",
+                    "label": "lines of Python"
+                },
+                {
+                    "value": "LIVE",
+                    "label": "IB execution"
+                },
+                {
+                    "value": "CLAUDE API",
+                    "label": "research automation"
+                }
             ],
-            "tags": ["Python", "asyncio", "Claude API"],
+            "tags": [
+                "Python",
+                "asyncio",
+                "Claude API"
+            ],
             "reverse": false
         },
         {
             "id": "b_home04",
             "type": "project_feature",
             "project_slug": "koda-ironview",
-            "media_src": "",
+            "media_src": "/media/uploads/projects/koda-ironview/mobile-home.webp",
             "media_frame": "phone",
             "media_treatment": "color",
             "items": [
-                {"value": "3", "label": "Square SDK surfaces"},
-                {"value": "iOS · ANDROID · PWA", "label": "one codebase"},
-                {"value": "2015 → NOW", "label": "client to platform"}
+                {
+                    "value": "3",
+                    "label": "Square SDK surfaces"
+                },
+                {
+                    "value": "iOS · ANDROID · PWA",
+                    "label": "one codebase"
+                },
+                {
+                    "value": "2015 → NOW",
+                    "label": "client to platform"
+                }
             ],
-            "tags": ["React Native", "Expo", "Supabase"],
+            "tags": [
+                "React Native",
+                "Expo",
+                "Supabase"
+            ],
             "reverse": true
         },
         {
@@ -98,7 +136,11 @@
                 {
                     "title": "We Have Food at Home",
                     "body_md": "Point your phone at the fridge, get a week of dinners. An installable PWA that scans your groceries with AI vision and fills a King Soopers cart for you.",
-                    "tags": ["AI vision", "Next.js", "PWA"],
+                    "tags": [
+                        "AI vision",
+                        "Next.js",
+                        "PWA"
+                    ],
                     "image": "",
                     "link": "/work/we-have-food-at-home",
                     "badge": "Consumer AI"
@@ -106,7 +148,11 @@
                 {
                     "title": "Tally",
                     "body_md": "Self-hosted invoicing for solo freelancers. Stripe cards and ACH, hosted pay pages, PDF invoices, encrypted backups. The boring plumbing clients actually pay for.",
-                    "tags": ["Stripe", "Next.js", "SaaS"],
+                    "tags": [
+                        "Stripe",
+                        "Next.js",
+                        "SaaS"
+                    ],
                     "image": "",
                     "link": "/work/tally",
                     "badge": "SaaS"
@@ -114,7 +160,11 @@
                 {
                     "title": "Bush League Baseball",
                     "body_md": "A Unity 6 baseball roguelite. Thirteen modular C# projects, a token-driven brand bible governing the UI, and AI-generated character art. Design-system thinking, ported to game dev.",
-                    "tags": ["Unity 6", "C#", "Game dev"],
+                    "tags": [
+                        "Unity 6",
+                        "C#",
+                        "Game dev"
+                    ],
                     "image": "",
                     "link": "/work/bush-league-baseball",
                     "badge": "In development"
@@ -122,7 +172,11 @@
                 {
                     "title": "Dynasty Draft War Room",
                     "body_md": "A live draft board for Sleeper dynasty leagues — polls picks every eight seconds, keeps a best-player-available board 327 players deep, and ships as one self-contained 220KB HTML file. Built in a Claude session before draft night.",
-                    "tags": ["React", "Sleeper API", "Single-file"],
+                    "tags": [
+                        "React",
+                        "Sleeper API",
+                        "Single-file"
+                    ],
                     "image": "",
                     "link": "/work/draft-war-room",
                     "badge": "Weekend build"
@@ -137,7 +191,11 @@
                 {
                     "title": "This site is the demo",
                     "body_md": "No WordPress, no framework, no database. A flat-file PHP CMS with a drag-and-drop block editor, hand-built with **Claude Code** — a working demo of how I build with AI, and proof the AI-assisted workflow ships production software.",
-                    "tags": ["PHP", "Claude Code", "CMS"],
+                    "tags": [
+                        "PHP",
+                        "Claude Code",
+                        "CMS"
+                    ],
                     "image": "",
                     "link": "/work/this-site",
                     "badge": "The portfolio is the product"

@@ -2,17 +2,22 @@
     "title": "This Site",
     "seo_title": "This Site — A Flat-File PHP CMS Built with Claude Code | Austin Schuetz",
     "seo_description": "The portfolio is the product: a hand-built flat-file PHP CMS with a drag-and-drop block editor, zero frameworks, built in partnership with Claude Code.",
-    "og_image": "",
+    "og_image": "/media/uploads/og/this-site.png",
     "status": "published",
     "updated_at": "2026-07-05T00:00:00Z",
     "summary": "The portfolio is the product. This site runs on a flat-file PHP CMS I hand-built — a drag-and-drop block editor, sixteen block types from one schema, no database, no frameworks — in partnership with Claude Code. A working demo of my AI-assisted workflow.",
-    "tags": ["PHP", "Vanilla JS", "Claude Code", "CMS"],
+    "tags": [
+        "PHP",
+        "Vanilla JS",
+        "Claude Code",
+        "CMS"
+    ],
     "role": "Designer, engineer",
     "year": "2026",
     "featured": false,
     "sort_order": 3,
-    "thumb": "",
-    "hero_image": "",
+    "thumb": "/media/uploads/projects/this-site/thumb.webp",
+    "hero_image": "/media/uploads/projects/this-site/editor.webp",
     "link_url": "",
     "blocks": [
         {
@@ -34,9 +39,21 @@
             "type": "stat_row",
             "style": "boxed",
             "items": [
-                {"value": "16", "label": "block types, one schema", "footnote": "single source of truth"},
-                {"value": "~0KB", "label": "framework JS on public pages", "footnote": "server-rendered"},
-                {"value": "0", "label": "databases", "footnote": "flat JSON files"}
+                {
+                    "value": "16",
+                    "label": "block types, one schema",
+                    "footnote": "single source of truth"
+                },
+                {
+                    "value": "~0KB",
+                    "label": "framework JS on public pages",
+                    "footnote": "server-rendered"
+                },
+                {
+                    "value": "0",
+                    "label": "databases",
+                    "footnote": "flat JSON files"
+                }
             ]
         },
         {
@@ -44,8 +61,29 @@
             "type": "project_meta",
             "role": "Designer, engineer",
             "timeline": "2026",
-            "stack": ["PHP 8", "Vanilla JS", "SortableJS", "Markdown subset", "Claude Code"],
+            "stack": [
+                "PHP 8",
+                "Vanilla JS",
+                "SortableJS",
+                "Markdown subset",
+                "Claude Code"
+            ],
             "items": []
+        },
+        {
+            "id": "b_ts_gal",
+            "type": "media",
+            "layout": "single",
+            "lightbox": true,
+            "items": [
+                {
+                    "src": "/media/uploads/projects/this-site/editor.webp",
+                    "alt": "The CMS admin block editor, showing the block list and the Hero block's field form",
+                    "caption": "The block editor — one schema drives the form, the render, and the sanitizer",
+                    "treatment": "color",
+                    "frame": "browser"
+                }
+            ]
         },
         {
             "id": "b_ts04",

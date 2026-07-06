@@ -2,17 +2,23 @@
     "title": "Koda IronView",
     "seo_title": "Koda IronView — Cross-Platform Gym App (React Native) | Austin Schuetz",
     "seo_description": "A cross-platform gym platform for Koda CrossFit: iOS, Android, and PWA on one React Native codebase, with Square payments across three surfaces.",
-    "og_image": "",
+    "og_image": "/media/uploads/og/koda-ironview.png",
     "status": "published",
     "updated_at": "2026-07-05T00:00:00Z",
     "summary": "From gym client to gym platform. Koda was a freelance web client of mine back in 2015; a decade later their whole operation — payments, competitions, memberships, guest passes — runs on software I built end to end.",
-    "tags": ["React Native", "Expo", "Supabase", "Square", "Turborepo"],
+    "tags": [
+        "React Native",
+        "Expo",
+        "Supabase",
+        "Square",
+        "Turborepo"
+    ],
     "role": "Solo product engineer",
     "year": "2025–2026",
     "featured": true,
     "sort_order": 2,
-    "thumb": "",
-    "hero_image": "",
+    "thumb": "/media/uploads/projects/koda-ironview/thumb.webp",
+    "hero_image": "/media/uploads/projects/koda-ironview/dashboard.webp",
     "link_url": "https://koda-ironview.pages.dev",
     "blocks": [
         {
@@ -34,9 +40,21 @@
             "type": "stat_row",
             "style": "boxed",
             "items": [
-                {"value": "3", "label": "Square payment surfaces", "footnote": "Web, In-App, Mobile POS"},
-                {"value": "iOS · Android · PWA", "label": "one codebase", "footnote": "React Native + Expo"},
-                {"value": "8 pkgs · 36 routes", "label": "Turborepo monorepo", "footnote": ""}
+                {
+                    "value": "3",
+                    "label": "Square payment surfaces",
+                    "footnote": "Web, In-App, Mobile POS"
+                },
+                {
+                    "value": "iOS · Android · PWA",
+                    "label": "one codebase",
+                    "footnote": "React Native + Expo"
+                },
+                {
+                    "value": "8 pkgs · 36 routes",
+                    "label": "Turborepo monorepo",
+                    "footnote": ""
+                }
             ]
         },
         {
@@ -44,9 +62,43 @@
             "type": "project_meta",
             "role": "Solo product engineer",
             "timeline": "2025 — ongoing",
-            "stack": ["React Native 0.85", "Expo 56", "NativeWind", "Turborepo", "Supabase", "Deno Edge Functions", "Square SDKs"],
+            "stack": [
+                "React Native 0.85",
+                "Expo 56",
+                "NativeWind",
+                "Turborepo",
+                "Supabase",
+                "Deno Edge Functions",
+                "Square SDKs"
+            ],
             "items": [
-                {"label": "Live PWA", "url": "https://koda-ironview.pages.dev", "kind": "live"}
+                {
+                    "label": "Live PWA",
+                    "url": "https://koda-ironview.pages.dev",
+                    "kind": "live"
+                }
+            ]
+        },
+        {
+            "id": "b_ki_gal",
+            "type": "media",
+            "layout": "two-up",
+            "lightbox": true,
+            "items": [
+                {
+                    "src": "/media/uploads/projects/koda-ironview/dashboard.webp",
+                    "alt": "Koda IronView sign-in screen on desktop web",
+                    "caption": "The PWA on desktop web",
+                    "treatment": "color",
+                    "frame": "browser"
+                },
+                {
+                    "src": "/media/uploads/projects/koda-ironview/mobile-home.webp",
+                    "alt": "Koda IronView sign-in screen on a mobile viewport",
+                    "caption": "The same codebase, installed on a phone",
+                    "treatment": "color",
+                    "frame": "phone"
+                }
             ]
         },
         {

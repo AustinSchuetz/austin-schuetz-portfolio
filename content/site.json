@@ -3,19 +3,37 @@
     "base_url": "https://austinschuetz.com",
     "seo_title_suffix": " · Austin Schuetz — Denver, CO",
     "seo_default_description": "Freelance front-end web developer in Denver, Colorado and an AI integration partner for startups building on the Claude API. WordPress, full-stack, and shipped products.",
-    "og_default_image": "",
+    "og_default_image": "/media/uploads/og/og-default.png",
     "footer_md": "Freelance front-end developer and AI technical partner, based in Denver, Colorado. Available for WordPress builds, full-stack product work, and Claude API integration.",
     "contact_email": "contact@austinschuetz.com",
     "nav_cta_label": "Start a project",
     "nav_cta_url": "/contact",
     "nav": [
-        {"label": "Work", "url": "/work"},
-        {"label": "Archive", "url": "/archive"},
-        {"label": "About", "url": "/about"}
+        {
+            "label": "Work",
+            "url": "/work"
+        },
+        {
+            "label": "Archive",
+            "url": "/archive"
+        },
+        {
+            "label": "About",
+            "url": "/about"
+        }
     ],
     "socials": [
-        {"label": "GitHub", "url": "https://github.com/AustinSchuetz"},
-        {"label": "Email", "url": "mailto:contact@austinschuetz.com"},
-        {"label": "LinkedIn", "url": "#"}
+        {
+            "label": "GitHub",
+            "url": "https://github.com/AustinSchuetz"
+        },
+        {
+            "label": "Email",
+            "url": "mailto:contact@austinschuetz.com"
+        },
+        {
+            "label": "LinkedIn",
+            "url": "#"
+        }
     ]
 }

@@ -2,17 +2,22 @@
     "title": "We Have Food at Home",
     "seo_title": "We Have Food at Home — AI Fridge-Scanning Meal Planner | Austin Schuetz",
     "seo_description": "A PWA that scans your fridge with AI vision, plans a week of high-protein meals, and fills a King Soopers cart. Consumer AI with a punchline.",
-    "og_image": "",
+    "og_image": "/media/uploads/og/we-have-food-at-home.png",
     "status": "published",
     "updated_at": "2026-07-05T00:00:00Z",
     "summary": "Consumer AI with a punchline: point your camera at the fridge, get dinner. AI vision turns a photo of your groceries into an inventory, plans a week of high-protein meals, and pushes the shopping list into a King Soopers cart.",
-    "tags": ["AI vision", "Next.js", "React 19", "PWA"],
+    "tags": [
+        "AI vision",
+        "Next.js",
+        "React 19",
+        "PWA"
+    ],
     "role": "Solo developer",
     "year": "2026",
     "featured": false,
     "sort_order": 3,
-    "thumb": "",
-    "hero_image": "",
+    "thumb": "/media/uploads/projects/we-have-food-at-home/thumb.webp",
+    "hero_image": "/media/uploads/projects/we-have-food-at-home/desktop-home.webp",
     "link_url": "",
     "blocks": [
         {
@@ -34,9 +39,21 @@
             "type": "stat_row",
             "style": "boxed",
             "items": [
-                {"value": "1 photo", "label": "to a full inventory", "footnote": "AI vision scan"},
-                {"value": "7 days", "label": "of meals, leftovers chained", "footnote": "high-protein plan"},
-                {"value": "1 tap", "label": "to a filled cart", "footnote": "Kroger public API"}
+                {
+                    "value": "1 photo",
+                    "label": "to a full inventory",
+                    "footnote": "AI vision scan"
+                },
+                {
+                    "value": "7 days",
+                    "label": "of meals, leftovers chained",
+                    "footnote": "high-protein plan"
+                },
+                {
+                    "value": "1 tap",
+                    "label": "to a filled cart",
+                    "footnote": "Kroger public API"
+                }
             ]
         },
         {
@@ -44,8 +61,38 @@
             "type": "project_meta",
             "role": "Solo developer",
             "timeline": "2026",
-            "stack": ["Next.js 16", "React 19", "TypeScript", "Tailwind 4", "Drizzle", "Neon", "AI vision"],
+            "stack": [
+                "Next.js 16",
+                "React 19",
+                "TypeScript",
+                "Tailwind 4",
+                "Drizzle",
+                "Neon",
+                "AI vision"
+            ],
             "items": []
+        },
+        {
+            "id": "b_wf_gal",
+            "type": "media",
+            "layout": "two-up",
+            "lightbox": true,
+            "items": [
+                {
+                    "src": "/media/uploads/projects/we-have-food-at-home/desktop-home.webp",
+                    "alt": "We Have Food at Home landing screen with passcode entry, on desktop",
+                    "caption": "The install-first landing screen",
+                    "treatment": "color",
+                    "frame": "browser"
+                },
+                {
+                    "src": "/media/uploads/projects/we-have-food-at-home/mobile-home.webp",
+                    "alt": "We Have Food at Home landing screen on a mobile viewport",
+                    "caption": "Built mobile-first — this is the PWA on a phone",
+                    "treatment": "color",
+                    "frame": "phone"
+                }
+            ]
         },
         {
             "id": "b_wf04",
