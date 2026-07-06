@@ -32,7 +32,7 @@
         {
             "id": "b_at02",
             "type": "stat_row",
-            "style": "boxed",
+            "style": "inline",
             "items": [
                 {"value": "148K", "label": "lines of Python", "footnote": "~240 source files"},
                 {"value": "LIVE", "label": "Interactive Brokers execution", "footnote": "real orders, real fills"},

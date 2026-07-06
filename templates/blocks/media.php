@@ -4,9 +4,8 @@
         <div class="media-block__grid">
             <?php foreach ($b['items'] ?? [] as $item): ?>
                 <?php if (($item['src'] ?? '') === '') { continue; } ?>
-                <figure class="frame frame--<?= e($item['frame'] ?? 'none') ?>">
-                    <img src="<?= e($item['src']) ?>" alt="<?= e($item['alt'] ?? '') ?>"
-                         class="<?= ($item['treatment'] ?? 'color') === 'duotone' ? 'img-duotone' : '' ?>" loading="lazy" decoding="async">
+                <figure class="frame frame--<?= e($item['frame'] ?? 'none') ?><?= ($item['treatment'] ?? 'color') === 'duotone' ? ' duotone' : '' ?>">
+                    <img src="<?= e($item['src']) ?>" alt="<?= e($item['alt'] ?? '') ?>" loading="lazy" decoding="async">
                     <?php if (($item['caption'] ?? '') !== ''): ?>
                         <figcaption><?= e($item['caption']) ?></figcaption>
                     <?php endif; ?>

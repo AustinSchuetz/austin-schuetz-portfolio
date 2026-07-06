@@ -11,7 +11,6 @@
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
-<?= View::partial('motifs') ?>
 <?= View::partial('header', ['site' => $site, 'path' => $path]) ?>
 <main id="main">
 <?= $content ?>

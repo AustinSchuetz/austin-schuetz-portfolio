@@ -1,21 +1,13 @@
-<footer class="site-footer">
-    <div class="container site-footer__cols">
-        <div class="site-footer__col">
-            <p class="wordmark"><?= e($site['site_name'] ?? 'Austin Schuetz') ?></p>
-            <div class="site-footer__text"><?= Markdown::render($site['footer_md'] ?? '') ?></div>
-        </div>
-        <nav class="site-footer__col" aria-label="Footer">
-            <?php foreach ($site['nav'] ?? [] as $item): ?>
-                <a href="<?= e($item['url'] ?? '#') ?>"><?= e($item['label'] ?? '') ?></a>
-            <?php endforeach; ?>
-            <a href="/style-guide">Style Guide</a>
-            <a href="/work/this-site">This site is a project &rarr;</a>
-        </nav>
-        <div class="site-footer__col">
+<footer class="site-footer panel-dark">
+    <div class="container site-footer__meta mono">
+        <span>&copy; <?= date('Y') ?> <?= e(strtoupper($site['site_name'] ?? 'Austin Schuetz')) ?></span>
+        <span class="site-footer__coords">39.74&deg; N, 104.99&deg; W &mdash; DENVER, COLORADO</span>
+        <span class="site-footer__links">
             <?php foreach ($site['socials'] ?? [] as $s): ?>
-                <a href="<?= e($s['url'] ?? '#') ?>" rel="me noopener"><?= e($s['label'] ?? '') ?></a>
+                <a href="<?= e($s['url'] ?? '#') ?>" rel="me noopener"><?= e(strtoupper($s['label'] ?? '')) ?></a>
             <?php endforeach; ?>
-        </div>
+            <a href="/style-guide">STYLE GUIDE</a>
+            <a href="/work/this-site">THIS SITE</a>
+        </span>
     </div>
-    <p class="site-footer__colophon mono container">39.7392&deg; N, 104.9903&deg; W &mdash; Built in Denver on a hand-rolled CMS</p>
 </footer>

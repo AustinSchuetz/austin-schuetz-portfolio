@@ -31,12 +31,14 @@ final class BlockSchema
                 'cta_secondary_url' => ['type' => 'url', 'label' => 'Secondary CTA URL'],
                 'bg_motif' => ['type' => 'select', 'label' => 'Background motif', 'options' => ['none', 'topo']],
                 'ridge_bottom' => ['type' => 'select', 'label' => 'Ridgeline below', 'options' => ['none', 'a', 'b', 'c']],
+                'availability' => ['type' => 'text', 'label' => 'Availability line (mono, amber dot)'],
             ]],
             'prose' => ['label' => 'Prose', 'fields' => [
                 'body_md' => ['type' => 'markdown', 'label' => 'Body'],
                 'width' => ['type' => 'select', 'label' => 'Width', 'options' => ['prose', 'wide']],
             ]],
             'project_feature' => ['label' => 'Project feature', 'fields' => [
+                'section_eyebrow' => ['type' => 'text', 'label' => 'Section eyebrow (first row only)'],
                 'project_slug' => ['type' => 'slug', 'label' => 'Project (slug)'],
                 'media_src' => ['type' => 'image', 'label' => 'Feature image'],
                 'media_frame' => ['type' => 'select', 'label' => 'Frame', 'options' => ['browser', 'phone', 'none']],
@@ -55,6 +57,7 @@ final class BlockSchema
                 'columns' => ['type' => 'select', 'label' => 'Columns', 'options' => ['2', '3']],
             ]],
             'card_grid' => ['label' => 'Card grid', 'fields' => [
+                'variant' => ['type' => 'select', 'label' => 'Variant', 'options' => ['cards', 'numbered']],
                 'columns' => ['type' => 'select', 'label' => 'Columns', 'options' => ['2', '3', '4']],
                 'items' => ['type' => 'repeater', 'label' => 'Cards', 'fields' => [
                     'title' => ['type' => 'text', 'label' => 'Title'],
@@ -85,6 +88,7 @@ final class BlockSchema
                 ]],
             ]],
             'archive_grid' => ['label' => 'Client archive grid', 'fields' => [
+                'heading' => ['type' => 'text', 'label' => 'Eyebrow heading (teaser)'],
                 'group_by_era' => ['type' => 'check', 'label' => 'Group by era'],
                 'era_filter' => ['type' => 'select', 'label' => 'Era filter', 'options' => ['all', 'freelance', 'studio', 'agency']],
                 'limit' => ['type' => 'number', 'label' => 'Limit (0 = all)'],
@@ -102,7 +106,7 @@ final class BlockSchema
             'divider' => ['label' => 'Divider', 'fields' => [
                 'style' => ['type' => 'select', 'label' => 'Style', 'options' => ['ridge-a', 'ridge-b', 'ridge-c', 'rule', 'space']],
                 'flip' => ['type' => 'check', 'label' => 'Flip'],
-                'tint' => ['type' => 'select', 'label' => 'Tint', 'options' => ['green', 'stone', 'paper']],
+                'tint' => ['type' => 'select', 'label' => 'Tint', 'options' => ['green', 'stone', 'paper', 'dark']],
             ]],
             'cta_band' => ['label' => 'CTA band', 'fields' => [
                 'heading' => ['type' => 'text', 'label' => 'Heading'],
@@ -192,6 +196,8 @@ final class BlockSchema
                 'og_default_image' => ['type' => 'image', 'label' => 'Default OG image'],
                 'footer_md' => ['type' => 'markdown', 'label' => 'Footer text'],
                 'contact_email' => ['type' => 'text', 'label' => 'Contact email (form recipient)'],
+                'nav_cta_label' => ['type' => 'text', 'label' => 'Nav CTA label'],
+                'nav_cta_url' => ['type' => 'url', 'label' => 'Nav CTA URL'],
                 'nav' => ['type' => 'repeater', 'label' => 'Navigation', 'fields' => [
                     'label' => ['type' => 'text', 'label' => 'Label'],
                     'url' => ['type' => 'url', 'label' => 'URL'],

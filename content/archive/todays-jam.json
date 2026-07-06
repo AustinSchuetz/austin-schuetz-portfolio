@@ -1,0 +1,12 @@
+{
+    "name": "Today's Jam",
+    "thumb": "/media/uploads/archive/todays-jam.webp",
+    "url": "http://todaysjam.com",
+    "wayback_url": "https://web.archive.org/web/20190711194811/http://todaysjam.com/",
+    "years": "2015–2019",
+    "services": ["Design", "WordPress build"],
+    "era": "freelance",
+    "blurb_md": "An indie music blog built to explore WordPress category sorting and SoundCloud embeds.",
+    "sort_order": 5,
+    "status": "published"
+}

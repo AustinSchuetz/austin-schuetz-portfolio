@@ -9,19 +9,21 @@
             "id": "b_home01",
             "type": "hero",
             "variant": "home",
-            "eyebrow": "DENVER, CO — 39.74° N, 104.99° W",
-            "heading": "Freelance front-end developer and AI technical partner.",
+            "eyebrow": "DENVER, CO — 39.74° N",
+            "heading": "Freelance front-end developer — and *technical partner* for startups shipping AI.",
             "lede_md": "I build fast, well-crafted websites for clients in Denver and beyond — and I partner with startups that want serious AI built in, not bolted on. That means real Claude API work: agents, automations, and products that ship. This site is one of them.",
-            "cta_primary_label": "See the work",
-            "cta_primary_url": "/work",
-            "cta_secondary_label": "Start a project",
-            "cta_secondary_url": "/contact",
+            "cta_primary_label": "Start a project",
+            "cta_primary_url": "/contact",
+            "cta_secondary_label": "See selected work ↓",
+            "cta_secondary_url": "#work",
             "bg_motif": "topo",
-            "ridge_bottom": "a"
+            "ridge_bottom": "a",
+            "availability": "Currently booking new projects"
         },
         {
             "id": "b_home02",
             "type": "card_grid",
+            "variant": "numbered",
             "columns": "3",
             "items": [
                 {
@@ -53,6 +55,7 @@
         {
             "id": "b_home03",
             "type": "project_feature",
+            "section_eyebrow": "SELECTED WORK — 2015–26",
             "project_slug": "ausi-trader",
             "media_src": "",
             "media_frame": "browser",
@@ -144,6 +147,7 @@
         {
             "id": "b_home08",
             "type": "archive_grid",
+            "heading": "CLIENT ARCHIVE — 2015–2026",
             "group_by_era": false,
             "era_filter": "all",
             "limit": 6,
@@ -158,7 +162,7 @@
         {
             "id": "b_home10",
             "type": "cta_band",
-            "heading": "Have a build in mind?",
+            "heading": "Have a build in mind — or an AI feature that needs to ship for real?",
             "body_md": "Whether it's a marketing site that needs to load fast, a product that needs shipping, or an AI integration you want done right — let's talk.",
             "button_label": "Start a project",
             "button_url": "/contact",

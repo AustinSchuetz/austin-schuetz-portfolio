@@ -5,13 +5,17 @@ $title = $project['title'] ?? '';
 $summary = $project['summary'] ?? '';
 $href = $project !== null ? '/work/' . $project['slug'] : '';
 ?>
-<section class="project-feature<?= !empty($b['reverse']) ? ' project-feature--reverse' : '' ?>">
+<section class="project-feature<?= !empty($b['reverse']) ? ' project-feature--reverse' : '' ?>"<?= ($b['section_eyebrow'] ?? '') !== '' ? ' id="work"' : '' ?>>
+    <div class="container">
+        <?php if (($b['section_eyebrow'] ?? '') !== ''): ?>
+            <p class="eyebrow mono project-feature__eyebrow"><?= e($b['section_eyebrow']) ?></p>
+        <?php endif; ?>
+    </div>
     <div class="container project-feature__inner">
         <div class="project-feature__media">
             <?php if (($b['media_src'] ?? '') !== ''): ?>
-                <div class="frame frame--<?= e($b['media_frame'] ?? 'none') ?>">
-                    <img src="<?= e($b['media_src']) ?>" alt="<?= e($title !== '' ? $title . ' screenshot' : 'Project screenshot') ?>"
-                         class="<?= ($b['media_treatment'] ?? 'color') === 'duotone' ? 'img-duotone' : '' ?>" loading="lazy" decoding="async">
+                <div class="frame frame--<?= e($b['media_frame'] ?? 'none') ?><?= ($b['media_treatment'] ?? 'color') === 'duotone' ? ' duotone' : '' ?>">
+                    <img src="<?= e($b['media_src']) ?>" alt="<?= e($title !== '' ? $title . ' screenshot' : 'Project screenshot') ?>" loading="lazy" decoding="async">
                 </div>
             <?php endif; ?>
         </div>

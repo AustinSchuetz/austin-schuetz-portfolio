@@ -1,0 +1,12 @@
+{
+    "name": "Rivo, a Sphera company",
+    "thumb": "/media/uploads/archive/rivo.webp",
+    "url": "",
+    "wayback_url": "https://web.archive.org/web/20211206145332/http://rivo.austinschuetz.com/",
+    "years": "~2017",
+    "services": ["Custom WordPress theme"],
+    "era": "studio",
+    "blurb_md": "Rivo was acquired by Sphera during my tenure; I transitioned its old site content onto a fully designed, updated theme.",
+    "sort_order": 2,
+    "status": "published"
+}

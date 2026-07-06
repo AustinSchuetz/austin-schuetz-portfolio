@@ -1,0 +1,12 @@
+{
+    "name": "Sphera",
+    "thumb": "/media/uploads/archive/sphera.webp",
+    "url": "",
+    "wayback_url": "https://web.archive.org/web/20240221170759/http://sphera.austinschuetz.com/",
+    "years": "~2017",
+    "services": ["Custom WordPress theme"],
+    "era": "studio",
+    "blurb_md": "Site at the end of my tenure as sole front-end web developer for marketing at a 500+ employee global company; shown here via my demo subdomain since sphera.com has since been redesigned.",
+    "sort_order": 1,
+    "status": "published"
+}

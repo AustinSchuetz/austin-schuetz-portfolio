@@ -1,0 +1,12 @@
+{
+    "name": "Koda Competitor",
+    "thumb": "/media/uploads/archive/koda-competitor.webp",
+    "url": "",
+    "wayback_url": "https://web.archive.org/web/20220208010505/https://austinschuetz.com/assets/KodaCompetitor.png",
+    "years": "2015–2019",
+    "services": ["Design", "WordPress build"],
+    "era": "freelance",
+    "blurb_md": "A competitor-facing site for the Koda gyms, built to track leaderboard scores and events.",
+    "sort_order": 8,
+    "status": "published"
+}

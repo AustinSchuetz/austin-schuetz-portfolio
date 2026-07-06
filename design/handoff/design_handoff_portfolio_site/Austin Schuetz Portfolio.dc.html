@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet data-dc-atomics>
+<meta name="design_doc_mode" content="canvas">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&amp;family=JetBrains+Mono:wght@400;500;700&amp;family=Public+Sans:wght@400;500;600;700&amp;display=swap">
+<style>body{margin:0;background:#EDEAE3;font-family:'Public Sans',system-ui,sans-serif}.dv-turn{padding:40px 44px 32px;border-bottom:1px solid rgba(0,0,0,.08);scroll-margin-top:16px}.dv-thd{display:flex;align-items:baseline;gap:10px;margin:0 0 20px}.dv-tid{font:600 10px 'JetBrains Mono',monospace;padding:3px 7px;background:#201D19;color:#fff;border-radius:4px;text-decoration:none}.dv-tname{font:600 13px/1.2 'Public Sans',system-ui,sans-serif;color:#201D19}.dv-opts{display:flex;flex-wrap:wrap;gap:36px;align-items:flex-start}.dv-opt{flex:none;display:flex;flex-direction:column;gap:9px;scroll-margin-top:16px}.dv-oid{font:600 10.5px 'JetBrains Mono',monospace;padding:3px 7px;background:rgba(32,29,25,.09);color:#201D19;border-radius:5px;text-decoration:none}.dv-olabel{display:flex;align-items:baseline;gap:8px;font:400 11px/1.3 'Public Sans',system-ui,sans-serif;color:rgba(32,29,25,.55)}.dv-card{max-width:100%;background:#fff;border:1px solid rgba(32,29,25,.1);border-radius:8px;box-shadow:0 2px 4px rgba(32,29,25,.05),0 10px 24px rgba(32,29,25,.08);overflow:hidden}.dv-opt:target .dv-oid{background:#B45309;color:#fff}.dv-next{margin:22px 0 0;font:12px/1.5 'Public Sans',system-ui,sans-serif;color:rgba(32,29,25,.5)}</style>
+</helmet>
+
+<section class="dv-turn" id="t1">
+<div class="dv-thd"><a class="dv-tid" href="#t1">1</a><span class="dv-tname">austinschuetz.com — national-park poster meets engineering notebook</span></div>
+<div class="dv-opts">
+
+<!-- ======================= 1a HOME ======================= -->
+<div class="dv-opt" id="1a">
+<div class="dv-olabel"><a class="dv-oid" href="#1a">1a</a>Home</div>
+<div class="dv-card" data-screen-label="Home" style="width:1440px;position:relative">
+
+  <!-- Header -->
+  <header style="display:flex;align-items:center;justify-content:space-between;padding:24px 64px;background:#FFFFFF;border-bottom:1px solid #E8E4DD;position:relative;z-index:2">
+    <div style="display:flex;align-items:baseline;gap:14px">
+      <span style="font-family:Fraunces,serif;font-variation-settings:'SOFT' 100;font-weight:600;font-size:21px;color:#1B3D2F">Austin Schuetz</span>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.12em;color:#78716A">DENVER, CO</span>
+    </div>
+    <nav style="display:flex;align-items:center;gap:32px">
+      <span style="font-size:14px;font-weight:500;color:#443F38;cursor:pointer">Work</span>
+      <span style="font-size:14px;font-weight:500;color:#443F38;cursor:pointer">Services</span>
+      <span style="font-size:14px;font-weight:500;color:#443F38;cursor:pointer">About</span>
+      <span style="font-size:14px;font-weight:600;color:#B45309;cursor:pointer" style-hover="color:#92400E">Start a project →</span>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section style="position:relative;background:#FAF9F7;overflow:hidden">
+    <sc-if value="{{ topo }}" hint-placeholder-val="{{ true }}">
+      <div style="position:absolute;inset:0;background-image:url('assets/topo.svg');background-size:cover;background-position:center;pointer-events:none"></div>
+    </sc-if>
+    <div style="position:relative;padding:108px 64px 116px;max-width:980px">
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="display:inline-block;width:9px;height:16px;background:#B45309;border-radius:2px"></span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#78716A">DENVER, CO — 39.74° N</span>
+      </div>
+      <h1 style="margin:28px 0 0;font-family:Fraunces,serif;font-variation-settings:'SOFT' 100;font-weight:480;font-size:74px;line-height:1.05;letter-spacing:-0.01em;color:#1B3D2F;text-wrap:balance">Freelance front-end developer — and <em style="font-style:italic;font-weight:520">technical partner</em> for startups shipping AI.</h1>
+      <p style="margin:30px 0 0;font-size:19px;line-height:1.65;color:#443F38;max-width:620px">I'm Austin. For twelve years I've built fast, well-crafted websites and web apps for clients who care how things are made. These days I also embed with startup teams to design, build, and harden Claude-powered features — from prototype to production.</p>
+      <div style="display:flex;align-items:center;gap:28px;margin-top:42px">
+        <span style="display:inline-block;background:#B45309;color:#FFFFFF;font-weight:600;font-size:15px;padding:14px 26px;border-radius:6px;cursor:pointer;transition:background 240ms cubic-bezier(0.22,1,0.36,1)" style-hover="background:#92400E">Start a project</span>
+        <span style="font-size:15px;font-weight:600;color:#B45309;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px;cursor:pointer" style-hover="color:#92400E">See selected work ↓</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:10px;margin-top:48px">
+        <span style="display:inline-block;width:8px;height:8px;border-radius:50%;background:#B45309"></span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#78716A">CURRENTLY BOOKING NEW PROJECTS</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ridgeline divider 1 -->
+  <sc-if value="{{ ridges }}" hint-placeholder-val="{{ true }}">
+    <div style="background:#FAF9F7;line-height:0">
+      <svg viewBox="0 0 1440 100" preserveAspectRatio="none" style="display:block;width:100%;height:84px" aria-hidden="true">
+        <path fill="#E0EEE6" d="M0,58 L80,34 L150,50 L260,18 L340,46 L430,30 L560,54 L640,26 L760,48 L860,20 L950,44 L1060,30 L1150,52 L1260,24 L1350,44 L1440,32 L1440,100 L0,100 Z"></path>
+        <path fill="#C1DDCE" d="M0,72 L110,44 L210,62 L330,36 L470,64 L590,42 L700,60 L820,38 L940,62 L1050,44 L1170,64 L1290,40 L1380,58 L1440,48 L1440,100 L0,100 Z"></path>
+        <path fill="#8FBEA8" d="M0,86 L130,60 L250,78 L390,54 L540,80 L680,58 L800,76 L950,56 L1080,78 L1210,60 L1330,76 L1440,62 L1440,100 L0,100 Z"></path>
+        <path fill="#FFFFFF" d="M0,96 L160,76 L320,90 L500,72 L700,92 L900,74 L1100,90 L1280,76 L1440,88 L1440,100 L0,100 Z"></path>
+      </svg>
+    </div>
+  </sc-if>
+
+  <!-- What I do -->
+  <section style="background:#FFFFFF;padding:88px 64px 96px">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#78716A">WHAT I DO</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;margin-top:44px">
+      <div style="padding-right:40px">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#B45309">01</div>
+        <h3 style="margin:16px 0 0;font-family:Fraunces,serif;font-variation-settings:'SOFT' 100;font-weight:560;font-size:24px;line-height:1.25;color:#1B3D2F">Front-end &amp; WordPress builds</h3>
+        <p style="margin:14px 0 0;font-size:15px;line-height:1.65;color:#443F38">Marketing sites, editorial builds, and WordPress themes that load fast, edit cleanly, and hold up years after launch.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:22px">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#443F38;background:#FAF9F7;border:1px solid #E8E4DD;border-radius:4px;padding:5px 9px">REACT</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#443F38;background:#FAF9F7;border:1px solid #E8E4DD;border-radius:4px;padding:5px 9px">TYPESCRIPT</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#443F38;background:#FAF9F7;border:1px solid #E8E4DD;border-radius:4px;padding:5px 9px">WORDPRESS</span>
+        </div>
+      </div>
+      <div style="padding:0 40px;border-left:1px solid #E8E4DD">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#B45309">02</div>
+        <h3 style="margin:16px 0 0;font-family:Fraunces,serif;font-variation-settings:'SOFT' 100;font-weight:560;font-size:24px;line-height:1.25;color:#1B3D2F">Full-stack product engineering</h3>
+        <p style="margin:14px 0 0;font-size:15px;line-height:1.65;color:#443F38">Dashboards, booking systems, internal tools — designed and shipped end to end by one accountable engineer.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:22px">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#443F38;background:#FAF9F7;border:1px solid #E8E4DD;border-radius:4px;padding:5px 9px">NODE</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#443F38;background:#FAF9F7;border:1px solid #E8E4DD;border-radius:4px;padding:5px 9px">POSTGRES</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#443F38;background:#FAF9F7;border:1px solid #E8E4DD;border-radius:4px;padding:5px 9px">FASTAPI</span>
+        </div>
+      </div>
+      <div style="padding-left:40px;border-left:1px solid #E8E4DD">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12px;color:#B45309">03</div>
+        <h3 style="margin:16px 0 0;font-family:Fraunces,serif;font-variation-settings:'SOFT' 100;font-weight:560;font-size:24px;line-height:1.25;color:#1B3D2F">AI &amp; Claude integration partnership</h3>
+        <p style="margin:14px 0 0;font-size:15px;line-height:1.65;color:#443F38">I help startup teams take Claude from demo to dependable: prompt architecture, evals, guardrails, and the product work in between.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:22px">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#443F38;background:#FAF9F7;border:1px solid #E8E4DD;border-radius:4px;padding:5px 9px">CLAUDE API</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#443F38;background:#FAF9F7;border:1px solid #E8E4DD;border-radius:4px;padding:5px 9px">RAG</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#443F38;background:#FAF9F7;border:1px solid #E8E4DD;border-radius:4px;padding:5px 9px">EVALS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Selected work -->
+  <section style="background:#F4F1EB;padding:92px 64px;border-top:1px solid #E8E4DD">
+    <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#78716A">SELECTED WORK — 2024–26</div>
+    <div style="display:grid;grid-template-columns:auto 1fr;gap:64px;align-items:center;margin-top:52px">
+      <x-import component-from-global-scope="ChromeWindow" from="./browser-window.jsx ./image-slot.js" dc-props="{{ chromeHome }}" hint-size="648px,430px">
+        <image-slot id="slot-meridian-home" shape="rect" fit="cover" placeholder="Drop the trading-dashboard screenshot" style="width:100%;height:100%;display:block"></image-slot>
+      </x-import>
+      <div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#443F38;background:#FFFFFF;border:1px solid #E8E4DD;border-radius:4px;padding:5px 9px">148K LOC</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#443F38;background:#FFFFFF;border:1px solid #E8E4DD;border-radius:4px;padding:5px 9px">LIVE IB EXECUTION</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#443F38;background:#FFFFFF;border:1px solid #E8E4DD;border-radius:4px;padding:5px 9px">PYTHON + REACT</span>
+        </div>
+        <h3 style="margin:20px 0 0;font-family:Fraunces,serif;font-variation-settings:'SOFT' 100;font-weight:560;font-size:31px;line-height:1.2;color:#1B3D2F">Meridian — automated trading platform</h3>
+        <p style="margin:14px 0 0;font-size:15.5px;line-height:1.65;color:#443F38;max-width:470px">A single-operator trading system: strategy research, backtesting, and live execution against Interactive Brokers — monitored from one dashboard, trusted every market day.</p>
+        <div style="margin-top:24px"><a href="#1b" style="font-size:15px;font-weight:600;color:#B45309;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px">Read the case study →</a></div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr auto;gap:64px;align-items:center;margin-top:96px">
+      <div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#443F38;background:#FFFFFF;border:1px solid #E8E4DD;border-radius:4px;padding:5px 9px">REACT NATIVE</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#443F38;background:#FFFFFF;border:1px solid #E8E4DD;border-radius:4px;padding:5px 9px">OFFLINE-FIRST</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.08em;color:#443F38;background:#FFFFFF;border:1px solid #E8E4DD;border-radius:4px;padding:5px 9px">6-WEEK MVP</span>
+        </div>
+        <h3 style="margin:20px 0 0;font-family:Fraunces,serif;font-variation-settings:'SOFT' 100;font-weight:560;font-size:31px;line-height:1.2;color:#1B3D2F">Ascent — training log for a Denver gym</h3>
+        <p style="margin:14px 0 0;font-size:15.5px;line-height:1.65;color:#443F38;max-width:470px">A coach-programmed workout app for a climbing-strength gym: members log sessions offline in the rack room, coaches see progress in one view.</p>
+        <div style="margin-top:24px"><span style="font-size:15px;font-weight:600;color:#B45309;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px;cursor:pointer" style-hover="color:#92400E">Read the case study →</span></div>
+      </div>
+      <div style="width:302px;height:656px;flex:none">
+        <x-import component-from-global-scope="IOSDevice" from="./ios-frame.jsx ./image-slot.js" hint-size="302px,656px" style="transform:scale(0.75);transform-origin:top left">
+          <image-slot id="slot-ascent-home" shape="rect" fit="cover" placeholder="Drop the gym-app screen" style="width:100%;height:100%;display:block"></image-slot>
+        </x-import>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ridgeline divider 2 -->
+  <sc-if value="{{ ridges }}" hint-placeholder-val="{{ true }}">
+    <div style="background:#F4F1EB;line-height:0">
+      <svg viewBox="0 0 1440 100" preserveAspectRatio="none" style="display:block;width:100%;height:84px" aria-hidden="true">
+        <path fill="#E0EEE6" d="M0,50 L120,26 L230,44 L360,16 L470,42 L600,24 L720,48 L840,22 L980,44 L1100,18 L1220,42 L1340,28 L1440,40 L1440,100 L0,100 Z"></path>
+        <path fill="#C1DDCE" d="M0,66 L140,40 L280,58 L420,34 L560,60 L690,38 L830,58 L970,36 L1110,58 L1250,40 L1370,56 L1440,46 L1440,100 L0,100 Z"></path>
+        <path fill="#8FBEA8" d="M0,82 L160,58 L320,76 L480,52 L640,78 L790,56 L940,74 L1090,54 L1240,76 L1380,58 L1440,68 L1440,100 L0,100 Z"></path>
+        <path fill="#FFFFFF" d="M0,94 L180,78 L360,90 L560,72 L760,92 L960,74 L1160,90 L1320,76 L1440,86 L1440,100 L0,100 Z"></path>
+      </svg>
+    </div>
+  </sc-if>
+
+  <!-- Client archive -->
+  <section style="background:#FFFFFF;padding:84px 64px 92px">
+    <div style="display:flex;align-items:baseline;justify-content:space-between">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#78716A">CLIENT ARCHIVE — 2014–2026</div>
+      <span style="font-size:14px;font-weight:600;color:#B45309;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px;cursor:pointer" style-hover="color:#92400E">Full archive →</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(6,1fr);gap:24px;margin-top:36px">
+      <figure style="margin:0">
+        <div style="position:relative;isolation:isolate;background:#F4F1EB;height:138px;border:1px solid #E8E4DD;border-radius:4px;overflow:hidden">
+          <image-slot id="slot-arch-1" shape="rect" fit="cover" placeholder="Site thumb" style="width:100%;height:100%;display:block;mix-blend-mode:multiply;filter:grayscale(1) contrast(0.95) brightness(1.05)"></image-slot>
+          <div style="position:absolute;inset:0;background:#1B3D2F;mix-blend-mode:color;pointer-events:none"></div>
+        </div>
+        <figcaption style="margin-top:10px;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.08em;line-height:1.5;color:#78716A">01 — BOULDER OUTFITTERS<br>WORDPRESS</figcaption>
+      </figure>
+      <figure style="margin:0">
+        <div style="position:relative;isolation:isolate;background:#F4F1EB;height:138px;border:1px solid #E8E4DD;border-radius:4px;overflow:hidden">
+          <image-slot id="slot-arch-2" shape="rect" fit="cover" placeholder="Site thumb" style="width:100%;height:100%;display:block;mix-blend-mode:multiply;filter:grayscale(1) contrast(0.95) brightness(1.05)"></image-slot>
+          <div style="position:absolute;inset:0;background:#1B3D2F;mix-blend-mode:color;pointer-events:none"></div>
+        </div>
+        <figcaption style="margin-top:10px;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.08em;line-height:1.5;color:#78716A">02 — RANGE CAPITAL<br>MARKETING SITE</figcaption>
+      </figure>
+      <figure style="margin:0">
+        <div style="position:relative;isolation:isolate;background:#F4F1EB;height:138px;border:1px solid #E8E4DD;border-radius:4px;overflow:hidden">
+          <image-slot id="slot-arch-3" shape="rect" fit="cover" placeholder="Site thumb" style="width:100%;height:100%;display:block;mix-blend-mode:multiply;filter:grayscale(1) contrast(0.95) brightness(1.05)"></image-slot>
+          <div style="position:absolute;inset:0;background:#1B3D2F;mix-blend-mode:color;pointer-events:none"></div>
+        </div>
+        <figcaption style="margin-top:10px;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.08em;line-height:1.5;color:#78716A">03 — PEAK PHYSIO<br>BOOKING SYSTEM</figcaption>
+      </figure>
+      <figure style="margin:0">
+        <div style="position:relative;isolation:isolate;background:#F4F1EB;height:138px;border:1px solid #E8E4DD;border-radius:4px;overflow:hidden">
+          <image-slot id="slot-arch-4" shape="rect" fit="cover" placeholder="Site thumb" style="width:100%;height:100%;display:block;mix-blend-mode:multiply;filter:grayscale(1) contrast(0.95) brightness(1.05)"></image-slot>
+          <div style="position:absolute;inset:0;background:#1B3D2F;mix-blend-mode:color;pointer-events:none"></div>
+        </div>
+        <figcaption style="margin-top:10px;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.08em;line-height:1.5;color:#78716A">04 — SLOANE &amp; CO<br>E-COMMERCE</figcaption>
+      </figure>
+      <figure style="margin:0">
+        <div style="position:relative;isolation:isolate;background:#F4F1EB;height:138px;border:1px solid #E8E4DD;border-radius:4px;overflow:hidden">
+          <image-slot id="slot-arch-5" shape="rect" fit="cover" placeholder="Site thumb" style="width:100%;height:100%;display:block;mix-blend-mode:multiply;filter:grayscale(1) contrast(0.95) brightness(1.05)"></image-slot>
+          <div style="position:absolute;inset:0;background:#1B3D2F;mix-blend-mode:color;pointer-events:none"></div>
+        </div>
+        <figcaption style="margin-top:10px;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.08em;line-height:1.5;color:#78716A">05 — CIVIC LAB<br>DESIGN SYSTEM</figcaption>
+      </figure>
+      <figure style="margin:0">
+        <div style="position:relative;isolation:isolate;background:#F4F1EB;height:138px;border:1px solid #E8E4DD;border-radius:4px;overflow:hidden">
+          <image-slot id="slot-arch-6" shape="rect" fit="cover" placeholder="Site thumb" style="width:100%;height:100%;display:block;mix-blend-mode:multiply;filter:grayscale(1) contrast(0.95) brightness(1.05)"></image-slot>
+          <div style="position:absolute;inset:0;background:#1B3D2F;mix-blend-mode:color;pointer-events:none"></div>
+        </div>
+        <figcaption style="margin-top:10px;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.08em;line-height:1.5;color:#78716A">06 — TRAILHEAD ROASTERS<br>SHOPIFY</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section style="background:#FAF9F7;border-top:1px solid #E8E4DD;padding:84px 64px">
+    <div style="display:flex;gap:56px;align-items:center">
+      <div style="position:relative;isolation:isolate;background:#F4F1EB;width:250px;height:315px;flex:none;border:1px solid #E8E4DD;border-radius:6px;overflow:hidden">
+        <image-slot id="slot-portrait" shape="rect" fit="cover" placeholder="Drop portrait photo" style="width:100%;height:100%;display:block;mix-blend-mode:multiply;filter:grayscale(1) contrast(0.95) brightness(1.05)"></image-slot>
+        <div style="position:absolute;inset:0;background:#1B3D2F;mix-blend-mode:color;pointer-events:none"></div>
+      </div>
+      <div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#78716A">BEHIND THE WORK</div>
+        <h3 style="margin:18px 0 0;font-family:Fraunces,serif;font-variation-settings:'SOFT' 100;font-weight:560;font-size:30px;line-height:1.2;color:#1B3D2F">Engineering notebook on the desk, trail map on the wall.</h3>
+        <p style="margin:16px 0 0;font-size:15.5px;line-height:1.7;color:#443F38;max-width:580px">I work from a home studio in Denver's Berkeley neighborhood. I like small teams, long client relationships, and code that reads like it was written on purpose. If I take your project, I'm the one who builds it.</p>
+        <div style="margin-top:26px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.1em;color:#78716A">AUSTIN SCHUETZ — DENVER, CO · WORKING WITH TEAMS IN EVERY TIMEZONE</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ridgeline divider 3 (into contact) -->
+  <sc-if value="{{ ridges }}" hint-placeholder-val="{{ true }}">
+    <div style="background:#FAF9F7;line-height:0">
+      <svg viewBox="0 0 1440 100" preserveAspectRatio="none" style="display:block;width:100%;height:92px" aria-hidden="true">
+        <path fill="#8FBEA8" d="M0,58 L80,34 L150,50 L260,18 L340,46 L430,30 L560,54 L640,26 L760,48 L860,20 L950,44 L1060,30 L1150,52 L1260,24 L1350,44 L1440,32 L1440,100 L0,100 Z"></path>
+        <path fill="#3B8266" d="M0,72 L110,44 L210,62 L330,36 L470,64 L590,42 L700,60 L820,38 L940,62 L1050,44 L1170,64 L1290,40 L1380,58 L1440,48 L1440,100 L0,100 Z"></path>
+        <path fill="#24523F" d="M0,86 L130,60 L250,78 L390,54 L540,80 L680,58 L800,76 L950,56 L1080,78 L1210,60 L1330,76 L1440,62 L1440,100 L0,100 Z"></path>
+        <path fill="#1B3D2F" d="M0,96 L160,76 L320,90 L500,72 L700,92 L900,74 L1100,90 L1280,76 L1440,88 L1440,100 L0,100 Z"></path>
+      </svg>
+    </div>
+  </sc-if>
+
+  <!-- Contact band -->
+  <section style="position:relative;background:#1B3D2F;overflow:hidden">
+    <sc-if value="{{ topo }}" hint-placeholder-val="{{ true }}">
+      <div style="position:absolute;inset:0;background-image:url('assets/topo-light.svg');background-size:cover;background-position:center;pointer-events:none"></div>
+    </sc-if>
+    <div style="position:relative;padding:92px 64px 0;max-width:860px">
+      <div style="display:flex;align-items:center;gap:12px">
+        <span style="display:inline-block;width:9px;height:16px;background:#B45309;border-radius:2px"></span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#8FBEA8">CONTACT — DENVER, CO</span>
+      </div>
+      <h2 style="margin:26px 0 0;font-family:Fraunces,serif;font-variation-settings:'SOFT' 100;font-weight:480;font-size:48px;line-height:1.12;color:#FAF9F7;text-wrap:balance">Have a build in mind — or an AI feature that needs to ship for real?</h2>
+      <p style="margin:22px 0 0;font-size:16.5px;line-height:1.65;color:#C1DDCE;max-width:560px">Tell me what you're making. I reply to every serious inquiry within one business day.</p>
+      <div style="display:flex;align-items:center;gap:28px;margin-top:38px">
+        <span style="display:inline-block;background:#B45309;color:#FFFFFF;font-family:'JetBrains Mono',monospace;font-weight:500;font-size:14.5px;padding:14px 26px;border-radius:6px;cursor:pointer;transition:background 240ms cubic-bezier(0.22,1,0.36,1)" style-hover="background:#92400E">hello@austinschuetz.com</span>
+        <span style="font-size:15px;font-weight:500;color:#FAF9F7;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px;cursor:pointer">Book a 20-minute intro call</span>
+      </div>
+    </div>
+    <div style="position:relative;display:flex;align-items:center;justify-content:space-between;margin-top:76px;padding:24px 64px;border-top:1px solid rgba(250,249,247,0.16)">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.1em;color:#8FBEA8">© 2026 AUSTIN SCHUETZ</span>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.1em;color:#8FBEA8">39.74° N, 104.99° W — DENVER, COLORADO</span>
+      <div style="display:flex;gap:24px">
+        <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.1em;color:#FAF9F7;cursor:pointer">GITHUB</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.1em;color:#FAF9F7;cursor:pointer">LINKEDIN</span>
+        <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.1em;color:#FAF9F7;cursor:pointer">EMAIL</span>
+      </div>
+    </div>
+  </section>
+
+  <sc-if value="{{ grain }}" hint-placeholder-val="{{ true }}">
+    <div style="position:absolute;inset:0;background-image:url('assets/grain.svg');background-size:240px 240px;pointer-events:none;z-index:30"></div>
+  </sc-if>
+</div>
+</div>
+
+<!-- ======================= 1b CASE STUDY ======================= -->
+<div class="dv-opt" id="1b">
+<div class="dv-olabel"><a class="dv-oid" href="#1b">1b</a>Case study — Meridian</div>
+<div class="dv-card" data-screen-label="Case study" style="width:1440px;position:relative">
+
+  <header style="display:flex;align-items:center;justify-content:space-between;padding:24px 64px;background:#FFFFFF;border-bottom:1px solid #E8E4DD;position:relative;z-index:2">
+    <div style="display:flex;align-items:baseline;gap:14px">
+      <span style="font-family:Fraunces,serif;font-variation-settings:'SOFT' 100;font-weight:600;font-size:21px;color:#1B3D2F">Austin Schuetz</span>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.12em;color:#78716A">DENVER, CO</span>
+    </div>
+    <nav style="display:flex;align-items:center;gap:32px">
+      <span style="font-size:14px;font-weight:500;color:#443F38;cursor:pointer">Work</span>
+      <span style="font-size:14px;font-weight:500;color:#443F38;cursor:pointer">Services</span>
+      <span style="font-size:14px;font-weight:500;color:#443F38;cursor:pointer">About</span>
+      <span style="font-size:14px;font-weight:600;color:#B45309;cursor:pointer" style-hover="color:#92400E">Start a project →</span>
+    </nav>
+  </header>
+
+  <section style="background:#FFFFFF;padding:88px 64px 0">
+    <div style="display:flex;align-items:center;gap:10px;font-family:'JetBrains Mono',monospace;font-size:11.5px;letter-spacing:0.14em">
+      <a href="#1a" style="color:#B45309;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px">← ALL WORK</a>
+      <span style="color:#78716A">/ CASE STUDY 01 — 2024–26</span>
+    </div>
+    <h1 style="margin:30px 0 0;font-family:Fraunces,serif;font-variation-settings:'SOFT' 100;font-weight:480;font-size:58px;line-height:1.08;letter-spacing:-0.01em;color:#1B3D2F;max-width:940px;text-wrap:balance">Meridian — a live trading system built to be trusted.</h1>
+    <p style="margin:26px 0 0;font-size:18px;line-height:1.65;color:#443F38;max-width:680px">Strategy research, backtesting, and live execution against Interactive Brokers — designed, built, and operated as a two-year engagement with a solo trading principal.</p>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);margin-top:56px;border-top:1px solid #E8E4DD;border-bottom:1px solid #E8E4DD">
+      <div style="padding:28px 32px 28px 0">
+        <div style="font-family:'JetBrains Mono',monospace;font-weight:500;font-size:36px;color:#1B3D2F">148K</div>
+        <div style="margin-top:8px;font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.12em;color:#78716A">LINES OF CODE</div>
+      </div>
+      <div style="padding:28px 32px;border-left:1px solid #E8E4DD">
+        <div style="font-family:'JetBrains Mono',monospace;font-weight:500;font-size:36px;color:#1B3D2F">45 MS</div>
+        <div style="margin-top:8px;font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.12em;color:#78716A">ORDER ROUND-TRIP</div>
+      </div>
+      <div style="padding:28px 32px;border-left:1px solid #E8E4DD">
+        <div style="font-family:'JetBrains Mono',monospace;font-weight:500;font-size:36px;color:#1B3D2F">24/7</div>
+        <div style="margin-top:8px;font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.12em;color:#78716A">LIVE IB EXECUTION</div>
+      </div>
+      <div style="padding:28px 32px;border-left:1px solid #E8E4DD">
+        <div style="font-family:'JetBrains Mono',monospace;font-weight:500;font-size:36px;color:#1B3D2F">18 MO</div>
+        <div style="margin-top:8px;font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.12em;color:#78716A">ENGAGEMENT TO DATE</div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:#F4F1EB;margin-top:72px;padding:72px 64px;border-top:1px solid #E8E4DD;border-bottom:1px solid #E8E4DD">
+    <x-import component-from-global-scope="ChromeWindow" from="./browser-window.jsx ./image-slot.js" dc-props="{{ chromeCase }}" hint-size="1312px,620px">
+      <image-slot id="slot-meridian-case" shape="rect" fit="cover" placeholder="Drop the research-view screenshot" style="width:100%;height:100%;display:block"></image-slot>
+    </x-import>
+  </section>
+
+  <section style="background:#FFFFFF;padding:88px 64px 96px">
+    <div style="display:grid;grid-template-columns:1fr 320px;gap:80px;align-items:start">
+      <div style="max-width:660px">
+        <h2 style="margin:0;font-family:Fraunces,serif;font-variation-settings:'SOFT' 100;font-weight:560;font-size:30px;color:#1B3D2F">The brief</h2>
+        <p style="margin:16px 0 0;font-size:16px;line-height:1.75;color:#443F38">A solo trading principal was running strategy research out of spreadsheets and a broker terminal. He needed one system that could research, backtest, and execute live — without a team to babysit it, and without ever placing an order he couldn't explain.</p>
+        <h2 style="margin:52px 0 0;font-family:Fraunces,serif;font-variation-settings:'SOFT' 100;font-weight:560;font-size:30px;color:#1B3D2F">The approach</h2>
+        <p style="margin:16px 0 0;font-size:16px;line-height:1.75;color:#443F38">Reliability was treated as a design problem, not an ops chore. Backtests run through the exact code path that trades live, so a strategy that survives research behaves identically in production. Every order, fill, and rejection lands in an event-sourced log the dashboard replays on demand.</p>
+        <div style="display:grid;gap:14px;margin-top:28px">
+          <div style="display:flex;align-items:center;gap:12px"><span style="width:8px;height:8px;background:#B45309;border-radius:2px;flex:none"></span><span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;color:#443F38">BACKTESTS SHARE THE LIVE EXECUTION CODE PATH</span></div>
+          <div style="display:flex;align-items:center;gap:12px"><span style="width:8px;height:8px;background:#B45309;border-radius:2px;flex:none"></span><span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;color:#443F38">FAIL-CLOSED RISK CHECKS ON EVERY ORDER</span></div>
+          <div style="display:flex;align-items:center;gap:12px"><span style="width:8px;height:8px;background:#B45309;border-radius:2px;flex:none"></span><span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;color:#443F38">EVENT-SOURCED ORDER LOG, REPLAYABLE FROM THE DASHBOARD</span></div>
+          <div style="display:flex;align-items:center;gap:12px"><span style="width:8px;height:8px;background:#B45309;border-radius:2px;flex:none"></span><span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.1em;color:#443F38">CLAUDE REVIEWS OVERNIGHT RUNS &amp; FLAGS ANOMALIES PRE-OPEN</span></div>
+        </div>
+        <h2 style="margin:52px 0 0;font-family:Fraunces,serif;font-variation-settings:'SOFT' 100;font-weight:560;font-size:30px;color:#1B3D2F">The outcome</h2>
+        <p style="margin:16px 0 0;font-size:16px;line-height:1.75;color:#443F38">Two years in, Meridian trades through Interactive Brokers every market day. The morning routine is a five-minute read of the Claude-written overnight brief instead of an hour of spreadsheet archaeology — and the engagement continues on a retainer basis.</p>
+        <div style="margin-top:28px"><span style="font-size:15px;font-weight:600;color:#B45309;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px;cursor:pointer" style-hover="color:#92400E">Request a code walkthrough →</span></div>
+      </div>
+      <aside style="background:#FAF9F7;border:1px solid #E8E4DD;border-radius:6px;padding:30px 28px">
+        <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.14em;color:#78716A">CLIENT</div>
+        <div style="margin:6px 0 22px;font-size:14.5px;color:#443F38">Private trading principal</div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.14em;color:#78716A">ROLE</div>
+        <div style="margin:6px 0 22px;font-size:14.5px;color:#443F38">Sole engineer — design to deploy</div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.14em;color:#78716A">TIMELINE</div>
+        <div style="margin:6px 0 22px;font-size:14.5px;color:#443F38">2024 → ongoing</div>
+        <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.14em;color:#78716A">STACK</div>
+        <div style="display:flex;flex-wrap:wrap;gap:7px;margin:10px 0 24px">
+          <span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.06em;color:#443F38;background:#FFFFFF;border:1px solid #E8E4DD;border-radius:4px;padding:4px 8px">PYTHON</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.06em;color:#443F38;background:#FFFFFF;border:1px solid #E8E4DD;border-radius:4px;padding:4px 8px">FASTAPI</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.06em;color:#443F38;background:#FFFFFF;border:1px solid #E8E4DD;border-radius:4px;padding:4px 8px">REACT</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.06em;color:#443F38;background:#FFFFFF;border:1px solid #E8E4DD;border-radius:4px;padding:4px 8px">TYPESCRIPT</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.06em;color:#443F38;background:#FFFFFF;border:1px solid #E8E4DD;border-radius:4px;padding:4px 8px">POSTGRES</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.06em;color:#443F38;background:#FFFFFF;border:1px solid #E8E4DD;border-radius:4px;padding:4px 8px">IB API</span>
+          <span style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.06em;color:#443F38;background:#FFFFFF;border:1px solid #E8E4DD;border-radius:4px;padding:4px 8px">CLAUDE API</span>
+        </div>
+        <div style="border-top:1px solid #E8E4DD;padding-top:20px">
+          <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.14em;color:#78716A">NEXT PROJECT</div>
+          <div style="margin-top:8px"><span style="font-size:14px;font-weight:600;color:#B45309;text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px;cursor:pointer" style-hover="color:#92400E">Ascent — gym training app →</span></div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <sc-if value="{{ ridges }}" hint-placeholder-val="{{ true }}">
+    <div style="background:#FFFFFF;line-height:0">
+      <svg viewBox="0 0 1440 100" preserveAspectRatio="none" style="display:block;width:100%;height:92px" aria-hidden="true">
+        <path fill="#8FBEA8" d="M0,58 L80,34 L150,50 L260,18 L340,46 L430,30 L560,54 L640,26 L760,48 L860,20 L950,44 L1060,30 L1150,52 L1260,24 L1350,44 L1440,32 L1440,100 L0,100 Z"></path>
+        <path fill="#3B8266" d="M0,72 L110,44 L210,62 L330,36 L470,64 L590,42 L700,60 L820,38 L940,62 L1050,44 L1170,64 L1290,40 L1380,58 L1440,48 L1440,100 L0,100 Z"></path>
+        <path fill="#24523F" d="M0,86 L130,60 L250,78 L390,54 L540,80 L680,58 L800,76 L950,56 L1080,78 L1210,60 L1330,76 L1440,62 L1440,100 L0,100 Z"></path>
+        <path fill="#1B3D2F" d="M0,96 L160,76 L320,90 L500,72 L700,92 L900,74 L1100,90 L1280,76 L1440,88 L1440,100 L0,100 Z"></path>
+      </svg>
+    </div>
+  </sc-if>
+
+  <section style="position:relative;background:#1B3D2F;overflow:hidden">
+    <sc-if value="{{ topo }}" hint-placeholder-val="{{ true }}">
+      <div style="position:absolute;inset:0;background-image:url('assets/topo-light.svg');background-size:cover;background-position:center;pointer-events:none"></div>
+    </sc-if>
+    <div style="position:relative;display:flex;align-items:center;justify-content:space-between;gap:48px;padding:64px 64px 56px">
+      <h2 style="margin:0;font-family:Fraunces,serif;font-variation-settings:'SOFT' 100;font-weight:480;font-size:38px;line-height:1.15;color:#FAF9F7;max-width:560px;text-wrap:balance">Building something that has to work every day?</h2>
+      <span style="display:inline-block;flex:none;background:#B45309;color:#FFFFFF;font-family:'JetBrains Mono',monospace;font-weight:500;font-size:14.5px;padding:14px 26px;border-radius:6px;cursor:pointer;transition:background 240ms cubic-bezier(0.22,1,0.36,1)" style-hover="background:#92400E">hello@austinschuetz.com</span>
+    </div>
+    <div style="position:relative;display:flex;align-items:center;justify-content:space-between;padding:20px 64px;border-top:1px solid rgba(250,249,247,0.16)">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.1em;color:#8FBEA8">© 2026 AUSTIN SCHUETZ</span>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:10.5px;letter-spacing:0.1em;color:#8FBEA8">39.74° N, 104.99° W — DENVER, COLORADO</span>
+    </div>
+  </section>
+
+  <sc-if value="{{ grain }}" hint-placeholder-val="{{ true }}">
+    <div style="position:absolute;inset:0;background-image:url('assets/grain.svg');background-size:240px 240px;pointer-events:none;z-index:30"></div>
+  </sc-if>
+</div>
+</div>
+
+<!-- ======================= 1c STYLE GUIDE ======================= -->
+<div class="dv-opt" id="1c">
+<div class="dv-olabel"><a class="dv-oid" href="#1c">1c</a>Style guide</div>
+<div class="dv-card" data-screen-label="Style guide" style="width:1080px;position:relative;background:#FFFFFF">
+  <div style="padding:48px 56px 56px">
+    <div style="display:flex;align-items:baseline;justify-content:space-between;border-bottom:1px solid #E8E4DD;padding-bottom:20px">
+      <span style="font-family:'JetBrains Mono',monospace;font-size:12px;letter-spacing:0.16em;color:#443F38">AUSTINSCHUETZ.COM — STYLE GUIDE</span>
+      <span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.12em;color:#78716A">V1.0 — JUL 2026</span>
+    </div>
+
+    <!-- 01 Color -->
+    <div style="margin-top:40px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#B45309">01 — COLOR</div>
+    <div style="margin-top:18px;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.1em;color:#78716A">EVERGREEN</div>
+    <div style="display:grid;grid-template-columns:repeat(8,1fr);gap:12px;margin-top:10px">
+      <div><div style="height:72px;border-radius:4px;background:#F0F7F3;border:1px solid #E8E4DD"></div><div style="margin-top:7px;font-family:'JetBrains Mono',monospace;font-size:9.5px;color:#78716A">50<br>#F0F7F3</div></div>
+      <div><div style="height:72px;border-radius:4px;background:#E0EEE6;border:1px solid #E8E4DD"></div><div style="margin-top:7px;font-family:'JetBrains Mono',monospace;font-size:9.5px;color:#78716A">100<br>#E0EEE6</div></div>
+      <div><div style="height:72px;border-radius:4px;background:#C1DDCE"></div><div style="margin-top:7px;font-family:'JetBrains Mono',monospace;font-size:9.5px;color:#78716A">200<br>#C1DDCE</div></div>
+      <div><div style="height:72px;border-radius:4px;background:#8FBEA8"></div><div style="margin-top:7px;font-family:'JetBrains Mono',monospace;font-size:9.5px;color:#78716A">300<br>#8FBEA8</div></div>
+      <div><div style="height:72px;border-radius:4px;background:#3B8266"></div><div style="margin-top:7px;font-family:'JetBrains Mono',monospace;font-size:9.5px;color:#78716A">500<br>#3B8266</div></div>
+      <div><div style="height:72px;border-radius:4px;background:#24523F"></div><div style="margin-top:7px;font-family:'JetBrains Mono',monospace;font-size:9.5px;color:#78716A">700<br>#24523F</div></div>
+      <div><div style="height:72px;border-radius:4px;background:#1B3D2F;outline:2px solid #B45309;outline-offset:2px"></div><div style="margin-top:7px;font-family:'JetBrains Mono',monospace;font-size:9.5px;color:#443F38">800 · PRIMARY<br>#1B3D2F</div></div>
+      <div><div style="height:72px;border-radius:4px;background:#0C1F17"></div><div style="margin-top:7px;font-family:'JetBrains Mono',monospace;font-size:9.5px;color:#78716A">950<br>#0C1F17</div></div>
+    </div>
+    <div style="margin-top:24px;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.1em;color:#78716A">STONE / PAPER</div>
+    <div style="display:grid;grid-template-columns:repeat(8,1fr);gap:12px;margin-top:10px">
+      <div><div style="height:72px;border-radius:4px;background:#FFFFFF;border:1px solid #E8E4DD"></div><div style="margin-top:7px;font-family:'JetBrains Mono',monospace;font-size:9.5px;color:#78716A">WHITE<br>#FFFFFF</div></div>
+      <div><div style="height:72px;border-radius:4px;background:#FAF9F7;border:1px solid #E8E4DD"></div><div style="margin-top:7px;font-family:'JetBrains Mono',monospace;font-size:9.5px;color:#78716A">50 · PAPER<br>#FAF9F7</div></div>
+      <div><div style="height:72px;border-radius:4px;background:#F4F1EB;border:1px solid #E8E4DD"></div><div style="margin-top:7px;font-family:'JetBrains Mono',monospace;font-size:9.5px;color:#78716A">100 · PAPER<br>#F4F1EB</div></div>
+      <div><div style="height:72px;border-radius:4px;background:#E8E4DD"></div><div style="margin-top:7px;font-family:'JetBrains Mono',monospace;font-size:9.5px;color:#78716A">200 · HAIRLINE<br>#E8E4DD</div></div>
+      <div><div style="height:72px;border-radius:4px;background:#A8A196"></div><div style="margin-top:7px;font-family:'JetBrains Mono',monospace;font-size:9.5px;color:#78716A">400<br>#A8A196</div></div>
+      <div><div style="height:72px;border-radius:4px;background:#78716A"></div><div style="margin-top:7px;font-family:'JetBrains Mono',monospace;font-size:9.5px;color:#78716A">500 · SECONDARY<br>#78716A</div></div>
+      <div><div style="height:72px;border-radius:4px;background:#443F38"></div><div style="margin-top:7px;font-family:'JetBrains Mono',monospace;font-size:9.5px;color:#78716A">700 · BODY<br>#443F38</div></div>
+      <div><div style="height:72px;border-radius:4px;background:#201D19"></div><div style="margin-top:7px;font-family:'JetBrains Mono',monospace;font-size:9.5px;color:#78716A">900<br>#201D19</div></div>
+    </div>
+    <div style="margin-top:24px;font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.1em;color:#78716A">TRAIL BLAZE — LINKS &amp; CTAS ONLY</div>
+    <div style="display:grid;grid-template-columns:2fr 1fr 1fr 4fr;gap:12px;margin-top:10px;align-items:stretch">
+      <div><div style="height:72px;border-radius:4px;background:#B45309;outline:2px solid #B45309;outline-offset:2px"></div><div style="margin-top:7px;font-family:'JetBrains Mono',monospace;font-size:9.5px;color:#443F38">600 · BLAZE<br>#B45309</div></div>
+      <div><div style="height:72px;border-radius:4px;background:#D97706"></div><div style="margin-top:7px;font-family:'JetBrains Mono',monospace;font-size:9.5px;color:#78716A">500<br>#D97706</div></div>
+      <div><div style="height:72px;border-radius:4px;background:#92400E"></div><div style="margin-top:7px;font-family:'JetBrains Mono',monospace;font-size:9.5px;color:#78716A">700 · HOVER<br>#92400E</div></div>
+      <div style="display:flex;align-items:center;padding:0 20px;background:#FAF9F7;border:1px solid #E8E4DD;border-radius:4px"><span style="font-size:13px;line-height:1.6;color:#443F38">Amber is wayfinding, like a trail blaze: links, CTAs, and the occasional index numeral. Never backgrounds, never decoration.</span></div>
+    </div>
+
+    <!-- 02 Type -->
+    <div style="margin-top:48px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#B45309">02 — TYPE</div>
+    <div style="display:grid;grid-template-columns:1fr 300px;gap:40px;align-items:center;margin-top:22px;border-bottom:1px solid #E8E4DD;padding-bottom:26px">
+      <div style="font-family:Fraunces,serif;font-variation-settings:'SOFT' 100;font-weight:480;font-size:52px;line-height:1.08;color:#1B3D2F">Mountains, measured.</div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.08em;line-height:1.8;color:#78716A">FRAUNCES — DISPLAY &amp; H1–H2<br>SOFT 100 · WGHT 480–560<br>CLAMP(2.6REM → 4.5REM)</div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 300px;gap:40px;align-items:center;margin-top:26px;border-bottom:1px solid #E8E4DD;padding-bottom:26px">
+      <div style="font-size:16px;line-height:1.7;color:#443F38;max-width:520px">Public Sans carries body copy and UI. It stays quiet, sets dense, and never competes with the serif above it — the field notes to Fraunces' summit line.</div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.08em;line-height:1.8;color:#78716A">PUBLIC SANS — BODY &amp; UI<br>400 / 500 / 600<br>BODY 16–18PX · LH 1.65</div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 300px;gap:40px;align-items:center;margin-top:26px">
+      <div style="font-family:'JetBrains Mono',monospace;font-size:14px;letter-spacing:0.14em;color:#443F38">DENVER, CO — 39.74° N · 148K LOC · Q3 2026</div>
+      <div style="font-family:'JetBrains Mono',monospace;font-size:10px;letter-spacing:0.08em;line-height:1.8;color:#78716A">JETBRAINS MONO — EYEBROWS,<br>STATS &amp; TAGS · UPPERCASE<br>TRACKING 0.08–0.16EM</div>
+    </div>
+
+    <!-- 03 Ridgelines -->
+    <div style="margin-top:48px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#B45309">03 — RIDGELINE DIVIDERS</div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:20px">
+      <div>
+        <div style="background:#FAF9F7;border:1px solid #E8E4DD;border-radius:4px;overflow:hidden;line-height:0">
+          <svg viewBox="0 0 320 80" preserveAspectRatio="none" style="display:block;width:100%;height:80px" aria-hidden="true">
+            <path fill="#E0EEE6" d="M0,46 L28,26 L52,40 L84,16 L116,38 L150,22 L190,44 L226,20 L262,38 L296,26 L320,34 L320,80 L0,80 Z"></path>
+            <path fill="#C1DDCE" d="M0,58 L36,36 L72,52 L112,30 L156,54 L196,34 L238,52 L280,34 L320,48 L320,80 L0,80 Z"></path>
+            <path fill="#8FBEA8" d="M0,68 L44,50 L92,64 L140,46 L192,66 L244,48 L292,62 L320,54 L320,80 L0,80 Z"></path>
+          </svg>
+        </div>
+        <div style="margin-top:9px;font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:0.08em;color:#78716A">RIDGE-A — ALPINE · DEFAULT</div>
+      </div>
+      <div>
+        <div style="background:#FAF9F7;border:1px solid #E8E4DD;border-radius:4px;overflow:hidden;line-height:0">
+          <svg viewBox="0 0 320 80" preserveAspectRatio="none" style="display:block;width:100%;height:80px" aria-hidden="true">
+            <path fill="#E0EEE6" d="M0,42 Q40,20 80,38 Q120,56 160,34 Q200,14 240,36 Q280,54 320,32 L320,80 L0,80 Z"></path>
+            <path fill="#C1DDCE" d="M0,56 Q48,34 96,50 Q144,66 192,46 Q240,28 288,48 Q304,54 320,50 L320,80 L0,80 Z"></path>
+            <path fill="#8FBEA8" d="M0,68 Q56,50 112,62 Q168,74 224,58 Q272,46 320,60 L320,80 L0,80 Z"></path>
+          </svg>
+        </div>
+        <div style="margin-top:9px;font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:0.08em;color:#78716A">RIDGE-B — ROLLING · EDITORIAL</div>
+      </div>
+      <div>
+        <div style="background:#FAF9F7;border:1px solid #E8E4DD;border-radius:4px;overflow:hidden;line-height:0">
+          <svg viewBox="0 0 320 80" preserveAspectRatio="none" style="display:block;width:100%;height:80px" aria-hidden="true">
+            <path fill="#E0EEE6" d="M0,52 L48,42 L96,50 L152,38 L208,50 L260,40 L320,48 L320,80 L0,80 Z"></path>
+            <path fill="#C1DDCE" d="M0,62 L64,52 L128,60 L192,50 L256,60 L320,52 L320,80 L0,80 Z"></path>
+            <path fill="#8FBEA8" d="M0,70 L80,62 L160,68 L240,60 L320,66 L320,80 L0,80 Z"></path>
+          </svg>
+        </div>
+        <div style="margin-top:9px;font-family:'JetBrains Mono',monospace;font-size:9.5px;letter-spacing:0.08em;color:#78716A">RIDGE-C — FOOTHILLS · COMPACT</div>
+      </div>
+    </div>
+
+    <!-- 04 Motif rules -->
+    <div style="margin-top:48px;font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.14em;color:#B45309">04 — MOTIF RULES</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px 40px;margin-top:18px">
+      <div style="display:flex;align-items:center;gap:12px;border-bottom:1px solid #E8E4DD;padding-bottom:12px"><span style="width:8px;height:8px;background:#1B3D2F;border-radius:2px;flex:none"></span><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.08em;color:#443F38">PAPER GRAIN — ALL SURFACES, ≤ 7% ALPHA</span></div>
+      <div style="display:flex;align-items:center;gap:12px;border-bottom:1px solid #E8E4DD;padding-bottom:12px"><span style="width:8px;height:8px;background:#1B3D2F;border-radius:2px;flex:none"></span><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.08em;color:#443F38">TOPO LINES — HERO + FOOTER ONLY, 1PX @ 6–8%</span></div>
+      <div style="display:flex;align-items:center;gap:12px;border-bottom:1px solid #E8E4DD;padding-bottom:12px"><span style="width:8px;height:8px;background:#1B3D2F;border-radius:2px;flex:none"></span><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.08em;color:#443F38">RIDGELINES — MAX 3 PER PAGE, 3 TINTS EACH</span></div>
+      <div style="display:flex;align-items:center;gap:12px;border-bottom:1px solid #E8E4DD;padding-bottom:12px"><span style="width:8px;height:8px;background:#1B3D2F;border-radius:2px;flex:none"></span><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.08em;color:#443F38">DUOTONE — EVERGREEN 800 → PAPER 50 RAMP</span></div>
+      <div style="display:flex;align-items:center;gap:12px"><span style="width:8px;height:8px;background:#1B3D2F;border-radius:2px;flex:none"></span><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.08em;color:#443F38">PHOTOS NEVER SIT OVER TOPO LINES</span></div>
+      <div style="display:flex;align-items:center;gap:12px"><span style="width:8px;height:8px;background:#1B3D2F;border-radius:2px;flex:none"></span><span style="font-family:'JetBrains Mono',monospace;font-size:11px;letter-spacing:0.08em;color:#443F38">MAX TWO MOTIFS PER VIEW</span></div>
+    </div>
+  </div>
+
+  <sc-if value="{{ grain }}" hint-placeholder-val="{{ true }}">
+    <div style="position:absolute;inset:0;background-image:url('assets/grain.svg');background-size:240px 240px;pointer-events:none;z-index:30"></div>
+  </sc-if>
+</div>
+</div>
+
+</div>
+<p class="dv-next">Try next: "drop the real screenshots into the frames" · "riff on the hero headline in <a class="dv-oid" href="#1a">1a</a>" · "tighter, denser version of <a class="dv-oid" href="#1b">1b</a>"</p>
+</section>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;grain&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Motifs&quot;},&quot;topo&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Motifs&quot;},&quot;ridgelines&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Motifs&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      grain: this.props.grain ?? true,
+      topo: this.props.topo ?? true,
+      ridges: this.props.ridgelines ?? true,
+      chromeHome: {
+        width: 648,
+        height: 430,
+        url: 'app.meridian.trade/live',
+        tabs: [{ title: 'Meridian — Live Operations' }],
+      },
+      chromeCase: {
+        width: 1312,
+        height: 620,
+        url: 'app.meridian.trade/research',
+        tabs: [{ title: 'Meridian — Research' }],
+      },
+    };
+  }
+}
+</script>
+</body>
+</html>

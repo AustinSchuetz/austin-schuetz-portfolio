@@ -6,11 +6,12 @@
     "og_default_image": "",
     "footer_md": "Freelance front-end developer and AI technical partner, based in Denver, Colorado. Available for WordPress builds, full-stack product work, and Claude API integration.",
     "contact_email": "contact@austinschuetz.com",
+    "nav_cta_label": "Start a project",
+    "nav_cta_url": "/contact",
     "nav": [
         {"label": "Work", "url": "/work"},
         {"label": "Archive", "url": "/archive"},
-        {"label": "About", "url": "/about"},
-        {"label": "Contact", "url": "/contact"}
+        {"label": "About", "url": "/about"}
     ],
     "socials": [
         {"label": "GitHub", "url": "https://github.com/AustinSchuetz"},

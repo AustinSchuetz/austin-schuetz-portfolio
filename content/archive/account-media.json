@@ -1,0 +1,12 @@
+{
+    "name": "Account Media",
+    "thumb": "/media/uploads/archive/account-media.webp",
+    "url": "https://accountmedia.com",
+    "wayback_url": "https://web.archive.org/web/20240224031751/https://accountmedia.com/",
+    "years": "2020–2022",
+    "services": ["Web design", "Development"],
+    "era": "agency",
+    "blurb_md": "A marketing site for a media buying and creative agency client.",
+    "sort_order": 2,
+    "status": "published"
+}
