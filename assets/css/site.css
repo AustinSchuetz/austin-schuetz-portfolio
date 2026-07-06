@@ -412,8 +412,12 @@ button, .button { cursor: pointer; }
 }
 .card > img { border-radius: 4px; margin-bottom: var(--space-3); }
 .card__title { margin-top: 0; font-size: var(--text-h4); }
+.card { position: relative; }
 .card__title a { color: var(--ink); text-decoration: none; }
 .card__title a:hover { color: var(--green-700); text-decoration: underline; text-decoration-color: var(--amber-300); }
+/* Stretched link: the title's anchor covers the whole card. */
+.card__title a::after { content: ''; position: absolute; inset: 0; }
+.card__body a, .archive-card__status a { position: relative; z-index: 1; }
 .card__summary, .card__body { color: var(--muted); font-size: var(--text-sm); }
 .card:has(a):hover { box-shadow: var(--shadow-md); }
 .card-grid .grid > .card:only-child { max-width: 46rem; }
