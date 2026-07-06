@@ -16,8 +16,8 @@
     "year": "2026",
     "featured": false,
     "sort_order": 4,
-    "thumb": "",
-    "hero_image": "",
+    "thumb": "/media/uploads/projects/tally/thumb.webp",
+    "hero_image": "/media/uploads/projects/tally/invoice-admin.webp",
     "link_url": "",
     "blocks": [
         {
@@ -69,6 +69,28 @@
                 "Cloudflare R2"
             ],
             "items": []
+        },
+        {
+            "id": "b_ta_gal",
+            "type": "media",
+            "layout": "two-up",
+            "lightbox": true,
+            "items": [
+                {
+                    "src": "/media/uploads/projects/tally/invoice-admin.webp",
+                    "alt": "Tally admin invoice view with public-link, PDF and reminder controls plus a record-payment panel",
+                    "caption": "The admin side — hosted pay link, PDF, reminders, and manual payment recording",
+                    "treatment": "color",
+                    "frame": "browser"
+                },
+                {
+                    "src": "/media/uploads/projects/tally/pay-page.webp",
+                    "alt": "Tally hosted pay page offering Stripe card or ACH payment and direct-payment instructions",
+                    "caption": "What clients see — pay by card or ACH via Stripe, or follow the direct-payment memo",
+                    "treatment": "color",
+                    "frame": "browser"
+                }
+            ]
         },
         {
             "id": "b_ta04",
