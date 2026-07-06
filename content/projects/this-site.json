@@ -18,7 +18,7 @@
     "sort_order": 3,
     "thumb": "/media/uploads/projects/this-site/thumb.webp",
     "hero_image": "/media/uploads/projects/this-site/editor.webp",
-    "link_url": "",
+    "link_url": "https://github.com/AustinSchuetz/austin-schuetz-portfolio",
     "blocks": [
         {
             "id": "b_ts01",
@@ -68,7 +68,13 @@
                 "Markdown subset",
                 "Claude Code"
             ],
-            "items": []
+            "items": [
+                {
+                    "label": "Source on GitHub",
+                    "url": "https://github.com/AustinSchuetz/austin-schuetz-portfolio",
+                    "kind": "repo"
+                }
+            ]
         },
         {
             "id": "b_ts_gal",
