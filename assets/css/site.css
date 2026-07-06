@@ -750,6 +750,21 @@ pre code { background: none; border: 0; padding: 0; color: inherit; }
 
 /* ---------- media / galleries ---------- */
 .media-block__grid { display: grid; gap: var(--space-5); }
+/* Single duotone figures (e.g. the About portrait) present at portrait size,
+   not full container width. */
+.media-block--single figure.duotone {
+    max-width: 320px;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+}
+.media-block--single figure.duotone figcaption {
+    position: relative;
+    z-index: 1; /* lift out of the duotone color blend */
+    background: var(--surface-raised);
+    text-align: left;
+    text-transform: uppercase;
+    padding: var(--space-2) 0 0;
+}
 .media-block--two-up .media-block__grid { grid-template-columns: repeat(2, 1fr); }
 .media-block--grid .media-block__grid { grid-template-columns: repeat(3, 1fr); }
 @media (max-width: 720px) {
