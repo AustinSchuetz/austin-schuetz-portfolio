@@ -1,0 +1,68 @@
+{
+    "title": "Dynasty Draft War Room",
+    "seo_title": "Dynasty Draft War Room — a live Sleeper draft board built in a Claude session",
+    "seo_description": "A single-file React draft board for Sleeper dynasty leagues: live pick polling, a 327-player weighted board, and zero build steps. Shipped before draft night.",
+    "og_image": "",
+    "status": "published",
+    "updated_at": "2026-07-06T00:00:00Z",
+    "summary": "The smallest thing on this site and the fastest shipped: a live Sleeper draft board in one self-contained HTML file, built in a Claude session before draft night.",
+    "tags": ["React", "Sleeper API", "Netlify", "AI-assisted"],
+    "role": "Builder",
+    "year": "2026",
+    "featured": false,
+    "sort_order": 7,
+    "thumb": "",
+    "hero_image": "",
+    "link_url": "",
+    "blocks": [
+        {
+            "id": "b_dw01",
+            "type": "hero",
+            "variant": "case",
+            "eyebrow": "CASE STUDY — WEEKEND BUILD · 2026",
+            "heading": "Dynasty Draft War Room",
+            "lede_md": "Dynasty startup drafts move fast, and Sleeper's own UI tells you what happened — not what *you* should do next. This is a personal best-player-available board that watches the draft live and re-ranks the world for my league's exact scoring.",
+            "cta_primary_label": "",
+            "cta_primary_url": "",
+            "cta_secondary_label": "",
+            "cta_secondary_url": "",
+            "bg_motif": "none",
+            "ridge_bottom": "none"
+        },
+        {
+            "id": "b_dw02",
+            "type": "stat_row",
+            "style": "inline",
+            "items": [
+                {"value": "1 FILE", "label": "self-contained deploy", "footnote": "~220KB index.html"},
+                {"value": "8s", "label": "live pick polling", "footnote": "Sleeper public API"},
+                {"value": "327", "label": "players on the board", "footnote": "creator-weighted consensus"}
+            ]
+        },
+        {
+            "id": "b_dw03",
+            "type": "project_meta",
+            "role": "Builder",
+            "timeline": "June 2026 — one draft season",
+            "stack": ["React 18", "esbuild", "Sleeper API", "Netlify Functions", "Netlify Blobs"],
+            "items": []
+        },
+        {
+            "id": "b_dw04",
+            "type": "prose",
+            "body_md": "## The problem\nA dynasty startup draft is a two-hour information problem. Rankings live in five browser tabs, none of them tuned to the league's scoring — superflex, tight-end premium, six-point passing touchdowns — and every pick that comes in invalidates the plan. I wanted one screen: who's gone, who's on the clock, and who the board says I should want next.\n\n## The build\nThe app connects to Sleeper's public API — find the league by username, discover the draft, then poll picks every eight seconds. Drafted players fall off the board in real time, with an on-the-clock countdown and turn tracking.\n\nThe rankings are the interesting part: a consensus synthesized from KeepTradeCut, FantasyPros, Dynasty Nerds, and the Flock network, then **reweighted for the league's actual format** — quarterbacks rise for superflex, tight ends get their premium, and the yardage bonuses are priced in. In-app overrides let me pin my own calls on top of the defaults, and a roster view flags which lineup slots I still need to fill.\n\nThe whole thing ships as a single self-contained `index.html` — React 18 bundled with esbuild, about 220KB, no build step, deployable to any static host. One optional Netlify Function syncs board state across devices through Netlify Blobs, with a local-storage fallback when it's unreachable.\n\n## Why it's on this site\nBecause it's the other end of the spectrum from the trading system. Ausi-Trader is 148,000 lines of validated infrastructure; this is a tool that went from *\"it would be nice if\"* to *used in a live draft* inside a Claude session. Knowing which of those two things a problem deserves — and being able to ship either — is most of the job.",
+            "width": "prose"
+        },
+        {
+            "id": "b_dw05",
+            "type": "cta_band",
+            "heading": "Need something small shipped fast?",
+            "body_md": "Not everything needs a platform. Sometimes it needs one focused tool, built this week.",
+            "button_label": "Start a project",
+            "button_url": "/contact",
+            "email_display": "contact@austinschuetz.com",
+            "style": "paper",
+            "motif": "none"
+        }
+    ]
+}

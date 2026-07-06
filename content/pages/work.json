@@ -1,0 +1,43 @@
+{
+    "title": "Work",
+    "seo_title": "Work — Product Builds & Client Sites | Austin Schuetz, Denver",
+    "seo_description": "Selected work from a Denver full-stack developer: a live trading system, a cross-platform gym app, consumer AI, and self-hosted SaaS.",
+    "og_image": "",
+    "status": "published",
+    "blocks": [
+        {
+            "id": "b_work01",
+            "type": "hero",
+            "variant": "page",
+            "eyebrow": "SELECTED WORK",
+            "heading": "Things I've built and shipped.",
+            "lede_md": "Products with real users, real payments, and real money on the line — plus a decade of client sites in the archive. If it's here, it runs.",
+            "cta_primary_label": "",
+            "cta_primary_url": "",
+            "cta_secondary_label": "",
+            "cta_secondary_url": "",
+            "bg_motif": "topo",
+            "ridge_bottom": "a"
+        },
+        {
+            "id": "b_work02",
+            "type": "project_grid",
+            "heading": "Projects",
+            "source": "all",
+            "project_slugs": [],
+            "columns": "2"
+        },
+        {
+            "id": "b_work03",
+            "type": "cta_band",
+            "heading": "Want something like this built?",
+            "body_md": "I take on freelance front-end work, full-stack product builds, and AI integration partnerships. Tell me what you're making.",
+            "button_label": "Get in touch",
+            "button_url": "/contact",
+            "email_display": "contact@austinschuetz.com",
+            "style": "paper",
+            "motif": "none"
+        }
+    ],
+    "updated_at": "2026-07-05T00:00:00Z"
+}

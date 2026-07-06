@@ -1,63 +1,171 @@
 {
     "title": "Austin Schuetz",
-    "seo_title": "Austin Schuetz — Full-Stack Product Engineer, Denver CO",
-    "seo_description": "Trading systems, gym platforms, consumer AI apps — and the hand-rolled drag-and-drop CMS this portfolio runs on.",
+    "seo_title": "Freelance Front-End Web Developer in Denver, Colorado | Austin Schuetz",
+    "seo_description": "Freelance front-end web developer in Denver, CO and AI integration partner for startups. WordPress, full-stack builds, and Claude API work.",
     "og_image": "",
     "status": "published",
     "blocks": [
         {
-            "id": "b_a1b2c1",
+            "id": "b_home01",
             "type": "hero",
             "variant": "home",
             "eyebrow": "DENVER, CO — 39.74° N, 104.99° W",
-            "heading": "Front-end web developer turned full-stack product builder.",
-            "lede_md": "I ship trading systems, gym platforms, and consumer apps — including the hand-rolled drag-and-drop CMS this site runs on.",
+            "heading": "Freelance front-end developer and AI technical partner.",
+            "lede_md": "I build fast, well-crafted websites for clients in Denver and beyond — and I partner with startups that want serious AI built in, not bolted on. That means real Claude API work: agents, automations, and products that ship. This site is one of them.",
             "cta_primary_label": "See the work",
             "cta_primary_url": "/work",
-            "cta_secondary_label": "About me",
-            "cta_secondary_url": "/about",
+            "cta_secondary_label": "Start a project",
+            "cta_secondary_url": "/contact",
             "bg_motif": "topo",
             "ridge_bottom": "a"
         },
         {
-            "id": "b_a1b2c2",
+            "id": "b_home02",
+            "type": "card_grid",
+            "columns": "3",
+            "items": [
+                {
+                    "title": "Front-end & WordPress builds",
+                    "body_md": "Custom themes, fast marketing sites, and the kind of hand-tuned front-end work that started my career. Clean HTML, no bloat, and pages that load before your coffee does.",
+                    "tags": ["WordPress", "Front-end", "SEO"],
+                    "image": "",
+                    "link": "",
+                    "badge": ""
+                },
+                {
+                    "title": "Full-stack product engineering",
+                    "body_md": "Idea to production. React, Next.js, React Native, Postgres, payments, auth — the whole stack. I ship real products with real users, not prototypes that die in a demo.",
+                    "tags": ["Next.js", "React Native", "Postgres"],
+                    "image": "",
+                    "link": "",
+                    "badge": ""
+                },
+                {
+                    "title": "AI & Claude integration partnership",
+                    "body_md": "A technical co-founder-shaped partner for startups adding AI. I've built multi-agent systems and vision pipelines on the **Claude API** — Sonnet and Opus in production, not slideware.",
+                    "tags": ["Claude API", "AI agents", "Startups"],
+                    "image": "",
+                    "link": "",
+                    "badge": ""
+                }
+            ]
+        },
+        {
+            "id": "b_home03",
             "type": "project_feature",
             "project_slug": "ausi-trader",
             "media_src": "",
             "media_frame": "browser",
             "media_treatment": "color",
             "items": [
-                {
-                    "value": "148K",
-                    "label": "LOC"
-                },
-                {
-                    "value": "LIVE",
-                    "label": "IB execution"
-                },
-                {
-                    "value": "WFO+MCPT",
-                    "label": "validated"
-                }
+                {"value": "148K", "label": "lines of Python"},
+                {"value": "LIVE", "label": "IB execution"},
+                {"value": "CLAUDE API", "label": "research automation"}
             ],
-            "tags": [
-                "Python",
-                "asyncio",
-                "Interactive Brokers"
-            ],
+            "tags": ["Python", "asyncio", "Claude API"],
             "reverse": false
         },
         {
-            "id": "b_a1b2c3",
+            "id": "b_home04",
+            "type": "project_feature",
+            "project_slug": "koda-ironview",
+            "media_src": "",
+            "media_frame": "phone",
+            "media_treatment": "color",
+            "items": [
+                {"value": "3", "label": "Square SDK surfaces"},
+                {"value": "iOS · ANDROID · PWA", "label": "one codebase"},
+                {"value": "2015 → NOW", "label": "client to platform"}
+            ],
+            "tags": ["React Native", "Expo", "Supabase"],
+            "reverse": true
+        },
+        {
+            "id": "b_home05",
+            "type": "divider",
+            "style": "ridge-b",
+            "flip": false,
+            "tint": "green"
+        },
+        {
+            "id": "b_home06",
+            "type": "card_grid",
+            "columns": "2",
+            "items": [
+                {
+                    "title": "We Have Food at Home",
+                    "body_md": "Point your phone at the fridge, get a week of dinners. An installable PWA that scans your groceries with AI vision and fills a King Soopers cart for you.",
+                    "tags": ["AI vision", "Next.js", "PWA"],
+                    "image": "",
+                    "link": "/work/we-have-food-at-home",
+                    "badge": "Consumer AI"
+                },
+                {
+                    "title": "Tally",
+                    "body_md": "Self-hosted invoicing for solo freelancers. Stripe cards and ACH, hosted pay pages, PDF invoices, encrypted backups. The boring plumbing clients actually pay for.",
+                    "tags": ["Stripe", "Next.js", "SaaS"],
+                    "image": "",
+                    "link": "/work/tally",
+                    "badge": "SaaS"
+                },
+                {
+                    "title": "Bush League Baseball",
+                    "body_md": "A Unity 6 baseball roguelite. Thirteen modular C# projects, a token-driven brand bible governing the UI, and AI-generated character art. Design-system thinking, ported to game dev.",
+                    "tags": ["Unity 6", "C#", "Game dev"],
+                    "image": "",
+                    "link": "/work/bush-league-baseball",
+                    "badge": "In development"
+                },
+                {
+                    "title": "Dynasty Draft War Room",
+                    "body_md": "A live draft board for Sleeper dynasty leagues — polls picks every eight seconds, keeps a best-player-available board 327 players deep, and ships as one self-contained 220KB HTML file. Built in a Claude session before draft night.",
+                    "tags": ["React", "Sleeper API", "Single-file"],
+                    "image": "",
+                    "link": "/work/draft-war-room",
+                    "badge": "Weekend build"
+                }
+            ]
+        },
+        {
+            "id": "b_home07",
+            "type": "card_grid",
+            "columns": "3",
+            "items": [
+                {
+                    "title": "This site is the demo",
+                    "body_md": "No WordPress, no framework, no database. A flat-file PHP CMS with a drag-and-drop block editor, hand-built with **Claude Code** — a working demo of how I build with AI, and proof the AI-assisted workflow ships production software.",
+                    "tags": ["PHP", "Claude Code", "CMS"],
+                    "image": "",
+                    "link": "/work/this-site",
+                    "badge": "The portfolio is the product"
+                }
+            ]
+        },
+        {
+            "id": "b_home08",
+            "type": "archive_grid",
+            "group_by_era": false,
+            "era_filter": "all",
+            "limit": 6,
+            "teaser": true
+        },
+        {
+            "id": "b_home09",
+            "type": "prose",
+            "body_md": "Before the products, there was a decade of client work — freelance and agency WordPress sites across Denver and beyond. Some are still live; many have been retired or redesigned, and are preserved through the Wayback Machine. [Browse the full archive →](/archive)",
+            "width": "prose"
+        },
+        {
+            "id": "b_home10",
             "type": "cta_band",
-            "heading": "Let's build something.",
-            "body_md": "",
-            "button_label": "Get in touch",
+            "heading": "Have a build in mind?",
+            "body_md": "Whether it's a marketing site that needs to load fast, a product that needs shipping, or an AI integration you want done right — let's talk.",
+            "button_label": "Start a project",
             "button_url": "/contact",
             "email_display": "contact@austinschuetz.com",
             "style": "panel-dark",
             "motif": "topo-corner"
         }
     ],
-    "updated_at": "2026-07-05T23:59:29Z"
+    "updated_at": "2026-07-05T00:00:00Z"
 }

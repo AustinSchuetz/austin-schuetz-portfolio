@@ -1,0 +1,66 @@
+{
+    "title": "Style Guide",
+    "seo_title": "Style Guide & Design System | Austin Schuetz",
+    "seo_description": "The living design system behind this site: color, type, spacing, shadows, and motifs, all rendered from a single tokens file.",
+    "og_image": "",
+    "status": "published",
+    "blocks": [
+        {
+            "id": "b_sty01",
+            "type": "hero",
+            "variant": "page",
+            "eyebrow": "DESIGN SYSTEM — LIVING DOCUMENT",
+            "heading": "The system, on the record.",
+            "lede_md": "Every color, type ramp, and texture on this site comes from one tokens file. This page renders straight from it — so if the site drifts, this page drifts with it.",
+            "cta_primary_label": "",
+            "cta_primary_url": "",
+            "cta_secondary_label": "",
+            "cta_secondary_url": "",
+            "bg_motif": "topo",
+            "ridge_bottom": "a"
+        },
+        {
+            "id": "b_sty02",
+            "type": "prose",
+            "body_md": "## Why publish this\nA style guide that lives in a Figma file goes stale the day after it ships. This one can't. The CSS, the OG images, and the swatches below all read from the same `tokens.json` — one source of truth, three consumers. Publishing it does two things: it keeps me honest, and it doubles as a QA harness. Every block type in the CMS appears in the gallery below with real sample content, so if a block breaks, I see it here first.\n\nThe aesthetic is \"national-park poster meets engineering notebook\" — warm paper, evergreen ink, and just enough mountain to remember where it was built.",
+            "width": "prose"
+        },
+        {
+            "id": "b_sty03",
+            "type": "style_tokens",
+            "kind": "colors"
+        },
+        {
+            "id": "b_sty04",
+            "type": "style_tokens",
+            "kind": "type"
+        },
+        {
+            "id": "b_sty05",
+            "type": "style_tokens",
+            "kind": "spacing"
+        },
+        {
+            "id": "b_sty06",
+            "type": "style_tokens",
+            "kind": "shadows"
+        },
+        {
+            "id": "b_sty07",
+            "type": "style_tokens",
+            "kind": "motifs"
+        },
+        {
+            "id": "b_sty08",
+            "type": "prose",
+            "body_md": "## The never-combine rules\nFour motifs, used with restraint. The rules that keep it from turning to soup:\n\n- **Topo and ridgelines** share a viewport only in the hero and footer — nowhere else.\n- **Topo contours** never sit under body copy, cards, or photos. Territory, not wallpaper.\n- **Duotone imagery** never lands on top of topo or ridgeline fills.\n- **Never more than two non-grain motifs** in a single view. Paper grain is atmosphere; it doesn't count.\n\nGrain is atmosphere, topo is territory, ridgelines are punctuation, duotone is content.",
+            "width": "prose"
+        },
+        {
+            "id": "b_sty09",
+            "type": "style_tokens",
+            "kind": "blocks-gallery"
+        }
+    ],
+    "updated_at": "2026-07-05T00:00:00Z"
+}

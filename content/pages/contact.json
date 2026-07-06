@@ -1,0 +1,47 @@
+{
+    "title": "Contact",
+    "seo_title": "Contact — Hire a Freelance Front-End Developer in Denver | Austin Schuetz",
+    "seo_description": "Get in touch with Austin Schuetz, a Denver freelance front-end developer and AI integration partner. Front-end, full-stack, and Claude API work.",
+    "og_image": "",
+    "status": "published",
+    "blocks": [
+        {
+            "id": "b_con01",
+            "type": "hero",
+            "variant": "page",
+            "eyebrow": "SAY HELLO",
+            "heading": "Tell me what you're building.",
+            "lede_md": "The more concrete, the better. Even a rough sketch of the idea is enough to get us started.",
+            "cta_primary_label": "",
+            "cta_primary_url": "",
+            "cta_secondary_label": "",
+            "cta_secondary_url": "",
+            "bg_motif": "topo",
+            "ridge_bottom": "a"
+        },
+        {
+            "id": "b_con02",
+            "type": "prose",
+            "body_md": "I'm based in **Denver, Colorado** and work with clients here and remotely. Here's what I'm available for:\n\n- **Freelance front-end & WordPress builds** — new sites, redesigns, and rescuing the ones that broke.\n- **Full-stack product engineering** — from idea to shipped, with users and payments.\n- **AI & Claude integration partnerships** — a technical partner for startups adding real AI, built on the Claude API.\n\nI read everything that comes through this form and usually reply within a couple of business days. If it's urgent, say so in the message.",
+            "width": "prose"
+        },
+        {
+            "id": "b_con03",
+            "type": "form_contact",
+            "heading": "Send a message",
+            "success_message": "Thanks — your message is in. I'll get back to you within a couple of business days."
+        },
+        {
+            "id": "b_con04",
+            "type": "cta_band",
+            "heading": "Prefer email?",
+            "body_md": "Reach me directly and I'll pick it up from there.",
+            "button_label": "Email me",
+            "button_url": "mailto:contact@austinschuetz.com",
+            "email_display": "contact@austinschuetz.com",
+            "style": "paper",
+            "motif": "none"
+        }
+    ],
+    "updated_at": "2026-07-05T00:00:00Z"
+}

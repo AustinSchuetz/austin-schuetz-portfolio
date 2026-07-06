@@ -1,0 +1,11 @@
+{
+    "version": "0.0.1",
+    "configurations": [
+        {
+            "name": "portfolio",
+            "runtimeExecutable": "C:\\php\\php.exe",
+            "runtimeArgs": ["-S", "localhost:8081", "dev-router.php"],
+            "port": 8081
+        }
+    ]
+}

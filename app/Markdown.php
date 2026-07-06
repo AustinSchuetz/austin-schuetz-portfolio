@@ -43,11 +43,17 @@ final class Markdown
             }
             $lines = explode("\n", $chunk);
 
-            if (preg_match('/^(#{1,4})\s+(.+)$/', $chunk, $m) && count($lines) === 1) {
-                $level = min(4, max(2, strlen($m[1]) + 1)); // # maps to h2: pages own their h1
+            // Headings may sit on the first line(s) of a chunk with the
+            // paragraph directly beneath (no blank line) — peel them off.
+            while ($lines !== [] && preg_match('/^(#{1,4})\s+(.+)$/', $lines[0], $m)) {
+                $level = min(4, max(2, strlen($m[1]))); // clamp to h2–h4: pages own their h1
                 $html .= "<h{$level}>" . self::inline($m[2]) . "</h{$level}>\n";
+                array_shift($lines);
+            }
+            if ($lines === []) {
                 continue;
             }
+            $chunk = implode("\n", $lines);
             if (preg_match('/^-{3,}$/', $chunk)) {
                 $html .= "<hr>\n";
                 continue;

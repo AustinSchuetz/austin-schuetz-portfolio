@@ -1,0 +1,68 @@
+{
+    "title": "We Have Food at Home",
+    "seo_title": "We Have Food at Home — AI Fridge-Scanning Meal Planner | Austin Schuetz",
+    "seo_description": "A PWA that scans your fridge with AI vision, plans a week of high-protein meals, and fills a King Soopers cart. Consumer AI with a punchline.",
+    "og_image": "",
+    "status": "published",
+    "updated_at": "2026-07-05T00:00:00Z",
+    "summary": "Consumer AI with a punchline: point your camera at the fridge, get dinner. AI vision turns a photo of your groceries into an inventory, plans a week of high-protein meals, and pushes the shopping list into a King Soopers cart.",
+    "tags": ["AI vision", "Next.js", "React 19", "PWA"],
+    "role": "Solo developer",
+    "year": "2026",
+    "featured": false,
+    "sort_order": 3,
+    "thumb": "",
+    "hero_image": "",
+    "link_url": "",
+    "blocks": [
+        {
+            "id": "b_wf01",
+            "type": "hero",
+            "variant": "case",
+            "eyebrow": "CASE STUDY — CONSUMER AI · 2026",
+            "heading": "We Have Food at Home",
+            "lede_md": "An installable PWA that answers the oldest question in the house — *what's for dinner* — by looking in the fridge for you. Snap a photo, get a week of high-protein meals, and let it fill the grocery cart.",
+            "cta_primary_label": "",
+            "cta_primary_url": "",
+            "cta_secondary_label": "",
+            "cta_secondary_url": "",
+            "bg_motif": "none",
+            "ridge_bottom": "none"
+        },
+        {
+            "id": "b_wf02",
+            "type": "stat_row",
+            "style": "boxed",
+            "items": [
+                {"value": "1 photo", "label": "to a full inventory", "footnote": "AI vision scan"},
+                {"value": "7 days", "label": "of meals, leftovers chained", "footnote": "high-protein plan"},
+                {"value": "1 tap", "label": "to a filled cart", "footnote": "Kroger public API"}
+            ]
+        },
+        {
+            "id": "b_wf03",
+            "type": "project_meta",
+            "role": "Solo developer",
+            "timeline": "2026",
+            "stack": ["Next.js 16", "React 19", "TypeScript", "Tailwind 4", "Drizzle", "Neon", "AI vision"],
+            "items": []
+        },
+        {
+            "id": "b_wf04",
+            "type": "prose",
+            "body_md": "## The problem\nMeal planning fails at the boring step: knowing what you already have. Every planning app assumes you'll type in your pantry. Nobody types in their pantry. So the plans ignore the half-used chicken and the three cans of beans, you buy duplicates, and food rots.\n\nI wanted to delete that step entirely. Point a camera at the fridge; the app figures out the rest.\n\n## The build\n**We Have Food at Home** is an iPhone-installable PWA built on Next.js 16 and React 19. You photograph your fridge and pantry; **AI vision** reads the images into a structured ingredient inventory — no typing. From that inventory it plans a week of **high-protein meals with leftover chaining**, so tonight's roast becomes tomorrow's lunch instead of tomorrow's trash.\n\nThen the useful part: it takes whatever's missing and **pushes the shopping list straight into a King Soopers cart via the Kroger public API**, with an Amazon Fresh fallback if Kroger isn't an option. A weekly cron re-plans as the fridge changes. Data lives in Neon Postgres through Drizzle; Tailwind 4 handles the interface.\n\n## Stack decisions\n**Why a PWA.** This is a kitchen-counter, phone-in-hand app. An installable PWA gives you the home-screen icon and camera access without an app-store gauntlet for what is, honestly, a personal-scale tool that happens to be genuinely useful.\n\n**Why vision instead of a form.** The entire value is skipping data entry. If the AI scan didn't work, the app would be just another planner nobody updates. Getting the vision step reliable was the project.\n\n**Why wire into a real grocery API.** A plan you have to re-shop by hand is a suggestion. Filling an actual Kroger cart is the difference between a demo and a thing you use on Sunday night.\n\n## Outcomes\nThe loop closes: fridge photo in, filled grocery cart out, a week of dinners in between. It's small, it's opinionated, and it's the clearest one-sentence demo I've got for what applied AI can do — point a camera at your fridge, get dinner.",
+            "width": "prose"
+        },
+        {
+            "id": "b_wf05",
+            "type": "cta_band",
+            "heading": "Want AI built into your product?",
+            "body_md": "Vision, agents, or the plumbing that makes them useful — I partner with teams shipping real AI features.",
+            "button_label": "Start a project",
+            "button_url": "/contact",
+            "email_display": "contact@austinschuetz.com",
+            "style": "paper",
+            "motif": "none"
+        }
+    ]
+}

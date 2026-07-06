@@ -1,0 +1,68 @@
+{
+    "title": "Tally",
+    "seo_title": "Tally — Self-Hosted Invoicing for Freelancers | Austin Schuetz",
+    "seo_description": "Self-hosted invoicing for solo freelancers: hosted pay pages, Stripe cards and ACH, PDF invoices, and encrypted backups. The boring plumbing that works.",
+    "og_image": "",
+    "status": "published",
+    "updated_at": "2026-07-05T00:00:00Z",
+    "summary": "The boring SaaS plumbing clients actually pay for. A self-hosted invoicing app I built to replace Hiveage — hosted pay pages, Stripe card and ACH, deliverable email, and backups that don't lose your invoice numbers.",
+    "tags": ["Next.js", "Stripe", "Postmark", "SaaS"],
+    "role": "Solo developer",
+    "year": "2026",
+    "featured": false,
+    "sort_order": 4,
+    "thumb": "",
+    "hero_image": "",
+    "link_url": "",
+    "blocks": [
+        {
+            "id": "b_ta01",
+            "type": "hero",
+            "variant": "case",
+            "eyebrow": "CASE STUDY — SAAS · 2026",
+            "heading": "Tally",
+            "lede_md": "Self-hosted invoicing for solo freelancers. I built it to replace Hiveage when it stopped fitting — hosted pay pages, real payments, deliverable email, and the unglamorous reliability that separates a tool you trust with billing from one you don't.",
+            "cta_primary_label": "",
+            "cta_primary_url": "",
+            "cta_secondary_label": "",
+            "cta_secondary_url": "",
+            "bg_motif": "none",
+            "ridge_bottom": "none"
+        },
+        {
+            "id": "b_ta02",
+            "type": "stat_row",
+            "style": "boxed",
+            "items": [
+                {"value": "Card + ACH", "label": "Stripe payments", "footnote": "hosted pay pages"},
+                {"value": "SPF/DKIM/DMARC", "label": "email that lands", "footnote": "Postmark"},
+                {"value": "Nightly", "label": "encrypted backups", "footnote": "Cloudflare R2"}
+            ]
+        },
+        {
+            "id": "b_ta03",
+            "type": "project_meta",
+            "role": "Solo developer",
+            "timeline": "2026",
+            "stack": ["Next.js 16", "Stripe", "Postmark", "@react-pdf", "Cloudflare R2"],
+            "items": []
+        },
+        {
+            "id": "b_ta04",
+            "type": "prose",
+            "body_md": "## The problem\nI billed clients through Hiveage for years, until it stopped being the right fit. Migrating meant either surrendering to a heavier platform or building the exact tool I wanted. I built it. The catch with invoicing software is that it's *all* edge cases — the demo is easy, the trust is hard. A missed email or a mangled invoice number isn't a bug, it's a client wondering if they got paid.\n\n## The build\n**Tally** is a self-hosted invoicing app on the Next.js 16 stack. Clients pay through **hosted pay pages** backed by **Stripe** — both cards and **ACH**, because freelance invoices aren't always small enough to want card fees on. Transactional email runs through **Postmark** with proper **SPF, DKIM, and DMARC**, so payment reminders and receipts actually reach the inbox instead of spam.\n\nMigration was a first-class feature, not an afterthought: **Hiveage CSV import that preserves existing invoice numbers**, so the ledger stays continuous across the switch. Invoices render to **PDF with `@react-pdf`**, there's time tracking with monthly billing rollups, and **encrypted nightly backups ship to Cloudflare R2** — because self-hosted means the backups are on me.\n\n## Stack decisions\n**Why self-hosted.** It's my billing data. Owning the whole thing — database, backups, email domain — means no third party can deprecate my invoicing out from under me the way Hiveage nearly did.\n\n**Why Stripe with ACH.** Card fees on a five-figure invoice are real money. ACH gives clients a low-fee path, and Stripe's hosted pay pages mean I never touch card data myself.\n\n**Why obsess over email deliverability.** An invoice that lands in spam is an invoice that doesn't get paid. SPF/DKIM/DMARC and a real transactional provider are the difference between \"I never got that\" and \"paid, thanks.\"\n\n## Outcomes\nTally runs my freelance billing today. It's deliberately unsexy — the value is entirely in the parts that don't break: the reminder that arrives, the PDF that's correct, the backup that exists. That's the boring plumbing clients actually pay for, and it's a genre of software I like building.",
+            "width": "prose"
+        },
+        {
+            "id": "b_ta05",
+            "type": "cta_band",
+            "heading": "Need the unglamorous parts built right?",
+            "body_md": "Payments, email, backups, migrations — the plumbing that has to work. I build that.",
+            "button_label": "Start a project",
+            "button_url": "/contact",
+            "email_display": "contact@austinschuetz.com",
+            "style": "paper",
+            "motif": "none"
+        }
+    ]
+}

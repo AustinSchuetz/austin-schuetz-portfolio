@@ -1,0 +1,49 @@
+{
+    "title": "Archive",
+    "seo_title": "Client Site Archive — Denver WordPress Developer | Austin Schuetz",
+    "seo_description": "A decade of freelance and agency web work from a Denver WordPress developer. Live sites and Wayback-preserved builds, grouped by era.",
+    "og_image": "",
+    "status": "published",
+    "blocks": [
+        {
+            "id": "b_arch01",
+            "type": "hero",
+            "variant": "page",
+            "eyebrow": "CLIENT WORK — 2015 TO NOW",
+            "heading": "A decade of sites, kept honest.",
+            "lede_md": "Before the products, I built websites for people. Freelance in Denver, then agency work, then in-house at a studio. This is the record.",
+            "cta_primary_label": "",
+            "cta_primary_url": "",
+            "cta_secondary_label": "",
+            "cta_secondary_url": "",
+            "bg_motif": "topo",
+            "ridge_bottom": "b"
+        },
+        {
+            "id": "b_arch02",
+            "type": "prose",
+            "body_md": "Client work has a shelf life. Businesses rebrand, agencies redesign, domains lapse. Many of the sites below have since been retired or replaced — so where the original is gone, I've linked the **Wayback Machine** snapshot instead of pretending it's still live.\n\nThumbnails from redesigned sites are the archived versions of *my* work, not whatever stands there now. No dead links, no borrowed credit. Just what I built, and when.",
+            "width": "prose"
+        },
+        {
+            "id": "b_arch03",
+            "type": "archive_grid",
+            "group_by_era": true,
+            "era_filter": "all",
+            "limit": 0,
+            "teaser": false
+        },
+        {
+            "id": "b_arch04",
+            "type": "cta_band",
+            "heading": "Need a site built or rescued?",
+            "body_md": "I still take on front-end and WordPress work for Denver clients and remote teams. New build or a rebuild of something that's aged out — either works.",
+            "button_label": "Get in touch",
+            "button_url": "/contact",
+            "email_display": "contact@austinschuetz.com",
+            "style": "paper",
+            "motif": "none"
+        }
+    ],
+    "updated_at": "2026-07-05T00:00:00Z"
+}

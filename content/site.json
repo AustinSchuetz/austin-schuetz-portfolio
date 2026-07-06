@@ -2,9 +2,9 @@
     "site_name": "Austin Schuetz",
     "base_url": "https://austinschuetz.com",
     "seo_title_suffix": " · Austin Schuetz — Denver, CO",
-    "seo_default_description": "Austin Schuetz is a Denver-based full-stack product engineer: trading systems, gym platforms, and the hand-rolled CMS this site runs on.",
+    "seo_default_description": "Freelance front-end web developer in Denver, Colorado and an AI integration partner for startups building on the Claude API. WordPress, full-stack, and shipped products.",
     "og_default_image": "",
-    "footer_md": "Front-end web developer turned full-stack product builder.",
+    "footer_md": "Freelance front-end developer and AI technical partner, based in Denver, Colorado. Available for WordPress builds, full-stack product work, and Claude API integration.",
     "contact_email": "contact@austinschuetz.com",
     "nav": [
         {"label": "Work", "url": "/work"},

@@ -1,0 +1,75 @@
+{
+    "title": "This Site",
+    "seo_title": "This Site — A Flat-File PHP CMS Built with Claude Code | Austin Schuetz",
+    "seo_description": "The portfolio is the product: a hand-built flat-file PHP CMS with a drag-and-drop block editor, zero frameworks, built in partnership with Claude Code.",
+    "og_image": "",
+    "status": "published",
+    "updated_at": "2026-07-05T00:00:00Z",
+    "summary": "The portfolio is the product. This site runs on a flat-file PHP CMS I hand-built — a drag-and-drop block editor, sixteen block types from one schema, no database, no frameworks — in partnership with Claude Code. A working demo of my AI-assisted workflow.",
+    "tags": ["PHP", "Vanilla JS", "Claude Code", "CMS"],
+    "role": "Designer, engineer",
+    "year": "2026",
+    "featured": false,
+    "sort_order": 3,
+    "thumb": "",
+    "hero_image": "",
+    "link_url": "",
+    "blocks": [
+        {
+            "id": "b_ts01",
+            "type": "hero",
+            "variant": "case",
+            "eyebrow": "CASE STUDY — CMS · 2026",
+            "heading": "This Site",
+            "lede_md": "You're looking at the case study. This portfolio runs on a flat-file PHP CMS I built from scratch — a drag-and-drop block editor, sixteen block types from a single schema, no database, no framework. And I built it in partnership with **Claude Code**, which makes it a working demo of exactly how I ship AI-assisted software.",
+            "cta_primary_label": "",
+            "cta_primary_url": "",
+            "cta_secondary_label": "",
+            "cta_secondary_url": "",
+            "bg_motif": "none",
+            "ridge_bottom": "none"
+        },
+        {
+            "id": "b_ts02",
+            "type": "stat_row",
+            "style": "boxed",
+            "items": [
+                {"value": "16", "label": "block types, one schema", "footnote": "single source of truth"},
+                {"value": "~0KB", "label": "framework JS on public pages", "footnote": "server-rendered"},
+                {"value": "0", "label": "databases", "footnote": "flat JSON files"}
+            ]
+        },
+        {
+            "id": "b_ts03",
+            "type": "project_meta",
+            "role": "Designer, engineer",
+            "timeline": "2026",
+            "stack": ["PHP 8", "Vanilla JS", "SortableJS", "Markdown subset", "Claude Code"],
+            "items": []
+        },
+        {
+            "id": "b_ts04",
+            "type": "prose",
+            "body_md": "## The problem\nMy old portfolio was a WordPress site. It went down when the database connection died and the SSL cert expired — a stack too heavy for what a portfolio actually needs. I wanted the opposite: something I fully understand, that can't have a database outage because it has no database, and that would itself be the strongest thing in the portfolio. The portfolio should *be* the product.\n\nAnd I wanted to build it the way I now build most things — with **Claude Code** as a pair — so the site could honestly stand as proof of that workflow.\n\n## The build\nIt's a **flat-file PHP CMS**. Content lives in JSON files, one per page and project; there's no database anywhere. A **drag-and-drop block editor** — vanilla JavaScript plus SortableJS, nothing else — lets me compose pages from **sixteen block types**, all defined in a single schema registry. That one registry is the source of truth for three things at once: the public renderer's whitelist, the admin form generator, and the save-time sanitizer. Add a field in one place, and the editor form, the render, and the validation all update together.\n\nEvery save takes a **version snapshot** first, so nothing is ever lost. Uploads go through a **GD re-encoding pipeline** that strips metadata and destroys anything hiding inside an image. Rich text is a **Markdown subset with no raw HTML** — which means there's no stored-XSS surface, by construction. The public pages ship **essentially zero framework JavaScript**; they're server-rendered PHP, and the whole thing runs happily on plain Namecheap shared cPanel hosting.\n\n## Stack decisions\n**Why flat files over a database.** A portfolio's content changes rarely and is tiny. A database is operational risk with no payoff here — and its absence is exactly why the old site's failure mode can't recur.\n\n**Why one schema registry.** Three consumers, one definition. It's the trick that keeps the editor, the renderer, and the sanitizer from ever drifting apart, and it's why adding a block type is a small, safe change.\n\n**Why Markdown-only, no raw HTML.** You can't store an XSS payload in a format that doesn't allow markup. Security by construction beats security by filtering.\n\n**Why build it with Claude Code.** Because it's how I work now, and a portfolio should be honest about that. The design tokens, the CSS, the OG images, and this style guide all render from the same `tokens.json` — a level of consistency that's far easier to hold when you've got an AI pair keeping every consumer in sync. This site is the demo of that workflow shipping real, production software.\n\n## Outcomes\nThe result is a site I can explain top to bottom, that loads fast, that can't lose its database because it hasn't got one, and that doubles as a live argument for AI-assisted development. The portfolio is the product — and the product is this.",
+            "width": "prose"
+        },
+        {
+            "id": "b_ts05",
+            "type": "code",
+            "language": "php",
+            "snippet": "// One registry, three consumers: renderer whitelist,\n// admin form generator, and save-time sanitizer.\n'hero' => ['label' => 'Hero', 'fields' => [\n    'eyebrow' => ['type' => 'text',     'label' => 'Eyebrow (mono)'],\n    'heading' => ['type' => 'text',     'label' => 'Heading'],\n    'lede_md' => ['type' => 'markdown', 'label' => 'Lede'],\n    'bg_motif' => ['type' => 'select',  'label' => 'Background motif',\n                   'options' => ['none', 'topo']],\n]],\n// Add a field here and the editor form, the public\n// render, and validation all update together.",
+            "caption": "The block schema is the single source of truth — illustrative of the registry pattern, not the full file."
+        },
+        {
+            "id": "b_ts06",
+            "type": "cta_band",
+            "heading": "Curious about the AI-assisted workflow?",
+            "body_md": "This site is the proof of concept. If you want that approach applied to your product, let's talk.",
+            "button_label": "Start a project",
+            "button_url": "/contact",
+            "email_display": "contact@austinschuetz.com",
+            "style": "paper",
+            "motif": "none"
+        }
+    ]
+}

@@ -1,0 +1,70 @@
+{
+    "title": "Koda IronView",
+    "seo_title": "Koda IronView — Cross-Platform Gym App (React Native) | Austin Schuetz",
+    "seo_description": "A cross-platform gym platform for Koda CrossFit: iOS, Android, and PWA on one React Native codebase, with Square payments across three surfaces.",
+    "og_image": "",
+    "status": "published",
+    "updated_at": "2026-07-05T00:00:00Z",
+    "summary": "From gym client to gym platform. Koda was a freelance web client of mine back in 2015; a decade later their whole operation — payments, competitions, memberships, guest passes — runs on software I built end to end.",
+    "tags": ["React Native", "Expo", "Supabase", "Square", "Turborepo"],
+    "role": "Solo product engineer",
+    "year": "2025–2026",
+    "featured": true,
+    "sort_order": 2,
+    "thumb": "",
+    "hero_image": "",
+    "link_url": "https://koda-ironview.pages.dev",
+    "blocks": [
+        {
+            "id": "b_ki01",
+            "type": "hero",
+            "variant": "case",
+            "eyebrow": "CASE STUDY — GYM PLATFORM · 2025–2026",
+            "heading": "Koda IronView",
+            "lede_md": "A cross-platform gym platform for Koda CrossFit — iOS, Android, and a web PWA from one codebase. Retail, memberships, competitions, and guest passes, all running on a backend I designed. The twist: Koda was a freelance client of mine ten years ago.",
+            "cta_primary_label": "",
+            "cta_primary_url": "",
+            "cta_secondary_label": "",
+            "cta_secondary_url": "",
+            "bg_motif": "none",
+            "ridge_bottom": "none"
+        },
+        {
+            "id": "b_ki02",
+            "type": "stat_row",
+            "style": "boxed",
+            "items": [
+                {"value": "3", "label": "Square payment surfaces", "footnote": "Web, In-App, Mobile POS"},
+                {"value": "iOS · Android · PWA", "label": "one codebase", "footnote": "React Native + Expo"},
+                {"value": "8 pkgs · 36 routes", "label": "Turborepo monorepo", "footnote": ""}
+            ]
+        },
+        {
+            "id": "b_ki03",
+            "type": "project_meta",
+            "role": "Solo product engineer",
+            "timeline": "2025 — ongoing",
+            "stack": ["React Native 0.85", "Expo 56", "NativeWind", "Turborepo", "Supabase", "Deno Edge Functions", "Square SDKs"],
+            "items": [
+                {"label": "Live PWA", "url": "https://koda-ironview.pages.dev", "kind": "live"}
+            ]
+        },
+        {
+            "id": "b_ki04",
+            "type": "prose",
+            "body_md": "## The problem\nKoda CrossFit was one of my first freelance clients — a WordPress site, back around 2015. It's [in the archive](/archive). A decade later, the gym had outgrown a stack of disconnected tools: one thing for payments, another for competitions, a spreadsheet for guest passes, a separate service for workouts. Members felt the seams. So did the staff.\n\nThey needed one app that did all of it, on every device a member might own. And the ambition went further: build it so it could be **cloned and deployed for other gyms**, not just Koda.\n\n## The build\nKoda IronView is a single React Native 0.85 / Expo 56 codebase that ships to iOS, Android, and the web as an installable PWA. It's organized as a **Turborepo monorepo** — eight packages, thirty-six routes — so shared logic stays shared and each surface still gets what it needs. NativeWind keeps the styling consistent across all three.\n\nThe backend is **Supabase Postgres with row-level security** doing the real access control, plus **Deno Edge Functions** for the server-side work. Payments run through **Square across three distinct SDK surfaces**: the Web Payments SDK on the PWA, the In-App Payments SDK (with Apple Pay and Google Pay) on mobile, and Mobile POS tap-to-pay for in-person sales at the gym. Same money, three checkout experiences, one ledger.\n\nOn top of that sits the **Iron Games** competition platform — registration, divisions, heats, scoring, and live leaderboards — plus QR guest day-passes, a SugarWOD workout proxy, and membership freeze and cancel queues. EAS handles builds and over-the-air updates; Sentry and PostHog handle knowing what's actually happening in production.\n\n## Stack decisions\n**Why React Native + Expo.** Three platforms, one solo engineer. Maintaining separate native apps plus a web app wasn't realistic. Expo's build and OTA pipeline means I can ship a fix to all three surfaces without waiting on an app-store cycle for every change.\n\n**Why Supabase with RLS.** Gym data is member data. Putting row-level security in the database means access rules are enforced at the source, not hopefully-remembered in application code. Deno Edge Functions handle the logic that shouldn't live on the client.\n\n**Why three Square surfaces instead of one.** Because a gym sells three ways: online, in the app, and at the front desk. Each needs its own native checkout to feel right. Unifying them behind one payment model was the hard part — and the reason the platform actually replaces the tool sprawl instead of adding to it.\n\n## Outcomes\nKoda's operations now run on Koda IronView. The PWA is live at koda-ironview.pages.dev, and the codebase is built as a clone-and-deploy template so the next gym is a configuration, not a rebuild. Ten years after I built their first website, the whole business runs on software I wrote. That arc is the one I'm proudest of.",
+            "width": "prose"
+        },
+        {
+            "id": "b_ki05",
+            "type": "cta_band",
+            "heading": "Have a platform-sized idea?",
+            "body_md": "Cross-platform product, real payments, real users — this is squarely the work I do. Tell me about it.",
+            "button_label": "Start a project",
+            "button_url": "/contact",
+            "email_display": "contact@austinschuetz.com",
+            "style": "paper",
+            "motif": "none"
+        }
+    ]
+}

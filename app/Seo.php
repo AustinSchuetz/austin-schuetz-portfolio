@@ -52,9 +52,18 @@ final class Seo
             '@context' => 'https://schema.org',
             '@type' => 'Person',
             'name' => $site['site_name'] ?? 'Austin Schuetz',
-            'jobTitle' => 'Full-Stack Product Engineer',
+            'jobTitle' => 'Freelance Front-End Web Developer & AI Technical Partner',
             'url' => $site['base_url'] ?? '',
             'address' => ['@type' => 'PostalAddress', 'addressLocality' => 'Denver', 'addressRegion' => 'CO'],
+            'areaServed' => 'Colorado',
+            'knowsAbout' => [
+                'Front-end web development',
+                'WordPress theme development',
+                'React and React Native',
+                'AI integration',
+                'Claude API',
+                'Full-stack product engineering',
+            ],
             'sameAs' => $links,
         ];
         return '<script type="application/ld+json">'

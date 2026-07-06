@@ -1,0 +1,84 @@
+{
+    "title": "About",
+    "seo_title": "About Austin — Denver Front-End Developer & AI Technical Partner",
+    "seo_description": "Austin Schuetz is a Denver front-end developer turned full-stack product engineer and AI technical partner. Ten years of shipping, still going.",
+    "og_image": "",
+    "status": "published",
+    "blocks": [
+        {
+            "id": "b_abt01",
+            "type": "hero",
+            "variant": "page",
+            "eyebrow": "AUSTIN SCHUETZ — DENVER, CO",
+            "heading": "I started with WordPress. I didn't stop there.",
+            "lede_md": "Ten years ago I was a freelance front-end developer building sites for Denver businesses. Since then I've done agency work, studio work, and in-house engineering — and spent my nights building products from scratch. The through-line: I ship.",
+            "cta_primary_label": "",
+            "cta_primary_url": "",
+            "cta_secondary_label": "",
+            "cta_secondary_url": "",
+            "bg_motif": "topo",
+            "ridge_bottom": "a"
+        },
+        {
+            "id": "b_abt02",
+            "type": "prose",
+            "body_md": "I'm a developer based in **Denver, Colorado**. I started freelance in 2015, hand-building WordPress sites for local businesses — gyms, glassblowers, illustrators, whoever needed a site that worked.\n\nThat led to a run of roles that each stretched the craft a little further: front-end and platform work at Sphera, custom theme development through Studio Science for Integrate, then a marketing agency, and now engineering at Sequoia. Somewhere in there the work stopped being *just* websites and became products — full-stack, cross-platform, and increasingly built with AI in the loop.\n\nThe products on this site are mostly nights-and-weekends work: a live trading system, a gym platform, a couple of consumer apps, and the CMS you're reading this on. That's where I test what's possible before I bring it to client work. On the weekends that aren't that, I'm on a trail somewhere in the Front Range.",
+            "width": "prose"
+        },
+        {
+            "id": "b_abt03",
+            "type": "timeline",
+            "heading": "The path here",
+            "items": [
+                {
+                    "year": "2015",
+                    "title": "Freelance front-end developer",
+                    "org": "Denver, CO",
+                    "body_md": "Hand-built WordPress and front-end sites for local businesses. Gyms, small brands, personal sites. This is where the archive starts."
+                },
+                {
+                    "year": "~2017",
+                    "title": "Front-end & platform",
+                    "org": "Sphera",
+                    "body_md": "Moved from lone freelancer to team work on larger web platforms and marketing sites."
+                },
+                {
+                    "year": "~2019",
+                    "title": "Theme development",
+                    "org": "Integrate — via Studio Science",
+                    "body_md": "Authored a custom WordPress theme and a stack of page templates with gulp/Sass and ACF. Real production front-end at scale."
+                },
+                {
+                    "year": "2020–2022",
+                    "title": "Web developer",
+                    "org": "Digital Dudes Marketing",
+                    "body_md": "Agency work — web design and development, SEO, and lead-gen builds for a roster of clients."
+                },
+                {
+                    "year": "Now",
+                    "title": "Software engineer",
+                    "org": "Sequoia",
+                    "body_md": "In-house engineering by day. By night, building products end-to-end and going deep on AI — multi-agent systems and Claude API integrations."
+                }
+            ]
+        },
+        {
+            "id": "b_abt04",
+            "type": "prose",
+            "body_md": "## Now\nI'm at Sequoia during the week, and I keep a light freelance and partnership load outside of it.\n\nI'm available for **freelance front-end and WordPress builds**, **full-stack product engineering**, and — the part I'm most interested in right now — **AI integration partnerships** for startups. If you're a founder who needs someone to actually build the AI, not just talk about it, that's the work I want. I've shipped production systems on the Claude API and I know where the sharp edges are.",
+            "width": "prose"
+        },
+        {
+            "id": "b_abt05",
+            "type": "cta_band",
+            "heading": "Let's work together.",
+            "body_md": "Freelance build, product engineering, or an AI partnership — I'd like to hear about it.",
+            "button_label": "Get in touch",
+            "button_url": "/contact",
+            "email_display": "contact@austinschuetz.com",
+            "style": "panel-dark",
+            "motif": "topo-corner"
+        }
+    ],
+    "updated_at": "2026-07-05T00:00:00Z"
+}

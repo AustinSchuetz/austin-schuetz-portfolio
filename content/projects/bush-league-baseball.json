@@ -1,0 +1,70 @@
+{
+    "title": "Bush League Baseball",
+    "seo_title": "Bush League Baseball — Unity 6 Roguelite in Development | Austin Schuetz",
+    "seo_description": "A Unity 6 baseball roguelite: 13 modular C# projects, TDD-driven domain logic, a token-driven design system, and AI-generated character art.",
+    "og_image": "",
+    "status": "published",
+    "updated_at": "2026-07-05T00:00:00Z",
+    "summary": "Design-system thinking, ported to game dev. A Unity 6 baseball roguelite in development — built with a token-driven brand bible governing the UI, thirteen modular C# projects, TDD-mandated logic, and a fine-tuned model for character art.",
+    "tags": ["Unity 6", "C#", "TDD", "Design systems", "Game dev"],
+    "role": "Solo developer",
+    "year": "2026",
+    "featured": false,
+    "sort_order": 5,
+    "thumb": "",
+    "hero_image": "",
+    "link_url": "https://github.com/AustinSchuetz/bush-league-baseball",
+    "blocks": [
+        {
+            "id": "b_bl01",
+            "type": "hero",
+            "variant": "case",
+            "eyebrow": "CASE STUDY — GAME DEV · IN DEVELOPMENT",
+            "heading": "Bush League Baseball",
+            "lede_md": "A Unity 6 baseball roguelite, in development. I'm building it the way I build web products — a real design system governing every pixel of UI, domain logic under test, and an AI art pipeline for the characters. Design-system thinking, ported to game dev.",
+            "cta_primary_label": "",
+            "cta_primary_url": "",
+            "cta_secondary_label": "",
+            "cta_secondary_url": "",
+            "bg_motif": "none",
+            "ridge_bottom": "none"
+        },
+        {
+            "id": "b_bl02",
+            "type": "stat_row",
+            "style": "boxed",
+            "items": [
+                {"value": "13", "label": "modular C# projects", "footnote": "clean boundaries"},
+                {"value": "TDD", "label": "on domain logic", "footnote": "mandated, not optional"},
+                {"value": "Brand bible", "label": "token-driven UI", "footnote": "one design system"}
+            ]
+        },
+        {
+            "id": "b_bl03",
+            "type": "project_meta",
+            "role": "Solo developer",
+            "timeline": "2026 — in development",
+            "stack": ["Unity 6", "URP", "C#", "Scenario.gg", "Shader tint-masking"],
+            "items": [
+                {"label": "GitHub", "url": "https://github.com/AustinSchuetz/bush-league-baseball", "kind": "repo"}
+            ]
+        },
+        {
+            "id": "b_bl04",
+            "type": "prose",
+            "body_md": "## The problem\nGame codebases rot in a specific way: untested logic tangled with rendering, UI styled ad hoc scene by scene, and art assets that drift out of any coherent look. I wanted to see whether the discipline that keeps web products maintainable — a design system, tested domain logic, clean module boundaries — holds up in a game engine. Bush League Baseball is that experiment, in the shape of a baseball roguelite.\n\n## The build\nIt's built on **Unity 6 with URP**, structured as **thirteen modular C# projects** rather than one sprawling Assets folder. The domain logic — the rules of the game, the roguelite progression — is **TDD-mandated**, so the parts that have to be correct are provably correct and stay decoupled from rendering.\n\nThe UI is governed by a **token-driven \"brand bible\"** — the same design-system approach I use on the web, expressed as tokens the game reads at runtime. Character art comes from a **Scenario.gg fine-tuned model** trained for the game's look, and **runtime tint-masking shaders** recolor sprites on the fly so a small set of source art yields a large, consistent roster.\n\n## Stack decisions\n**Why thirteen projects instead of one.** Boundaries. Keeping domain, UI, and rendering in separate C# projects means the compiler enforces the architecture — you physically can't reach across a line you shouldn't.\n\n**Why TDD on the domain.** Roguelite systems are combinatorial; bugs hide in the interactions. Tests on the domain logic are the only way I trust the game to be fair when the systems stack up.\n\n**Why a fine-tuned art model plus tint shaders.** A consistent visual identity at the scale a roster needs. The fine-tuned model keeps every character on-brand; the tint-masking shaders multiply that art into variety without multiplying the asset count.\n\n## Outcomes\nStill in development — this one's honest about that. But the thesis is already holding: design-system rigor and tested logic make a game codebase as maintainable as a good web app. Turns out the discipline travels.",
+            "width": "prose"
+        },
+        {
+            "id": "b_bl05",
+            "type": "cta_band",
+            "heading": "Like how I think about systems?",
+            "body_md": "Design systems, tested code, clean architecture — I bring the same rigor to client work. Let's talk.",
+            "button_label": "Start a project",
+            "button_url": "/contact",
+            "email_display": "contact@austinschuetz.com",
+            "style": "paper",
+            "motif": "none"
+        }
+    ]
+}
