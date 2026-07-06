@@ -93,11 +93,11 @@
                     "frame": "browser"
                 },
                 {
-                    "src": "/media/uploads/projects/ausi-trader/equity-curve.webp",
-                    "alt": "Equity curve chart for the EMA-Hurst strategy",
-                    "caption": "One strategy's equity curve, tracked from the live ledger",
+                    "src": "/media/uploads/projects/ausi-trader/discovery.webp",
+                    "alt": "Ausi-Trader discovery dashboard: autonomous research loop with 988 strategy candidates staged through backtest, walk-forward, and promotion lanes",
+                    "caption": "The discovery loop — 988 candidates proposed, tested, and promoted autonomously; 46 research runs today",
                     "treatment": "color",
-                    "frame": "none"
+                    "frame": "browser"
                 }
             ]
         },
