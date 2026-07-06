@@ -12,8 +12,13 @@ deployment:
     - test -f /home/austzncx/old-wp-htaccess.bak || /bin/cp -f $DOC/.htaccess /home/austzncx/old-wp-htaccess.bak || true
     - test -f $DOC/assets/css/tokens.css || /bin/mv $DOC/assets /home/austzncx/old-portfolio-assets || true
     - /bin/cp -f index.php .htaccess robots.txt favicon.ico $DOC/
+    # Preserve the gitignored live config override (Turnstile keys, any local
+    # secrets) across the app/ replacement — it lives in the docroot, never the
+    # repo, so it would otherwise be destroyed by the rm -rf below.
+    - test -f $DOC/app/config.local.php && /bin/cp -f $DOC/app/config.local.php /home/austzncx/config.local.php.keep || true
     - /bin/rm -rf $DOC/app $DOC/templates $DOC/admin $DOC/assets.new
     - /bin/cp -R app templates admin $DOC/
+    - test -f /home/austzncx/config.local.php.keep && /bin/cp -f /home/austzncx/config.local.php.keep $DOC/app/config.local.php || true
     - /bin/cp -R assets $DOC/assets.new && /bin/rm -rf $DOC/assets && /bin/mv $DOC/assets.new $DOC/assets
     - /bin/mkdir -p $DOC/media/uploads $DOC/content $DOC/storage
     - /bin/cp -f media/.htaccess $DOC/media/.htaccess

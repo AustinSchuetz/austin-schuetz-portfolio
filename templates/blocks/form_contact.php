@@ -4,6 +4,7 @@ $sent = isset($_GET['sent']);
 $errors = $GLOBALS['contact_errors'] ?? [];
 $old = $GLOBALS['contact_old'] ?? [];
 $token = class_exists('ContactHandler') ? ContactHandler::formToken() : '';
+$turnstileSiteKey = class_exists('ContactHandler') ? ContactHandler::turnstileSiteKey() : '';
 ?>
 <section class="contact-form-block">
     <div class="container container--prose">
@@ -35,8 +36,14 @@ $token = class_exists('ContactHandler') ? ContactHandler::formToken() : '';
                     <label for="cf-message">Message</label>
                     <textarea id="cf-message" name="message" required minlength="10" maxlength="5000" rows="7"><?= e($old['message'] ?? '') ?></textarea>
                 </p>
+                <?php if ($turnstileSiteKey !== ''): ?>
+                    <div class="cf-turnstile contact-form__turnstile" data-sitekey="<?= e($turnstileSiteKey) ?>" data-theme="light" data-action="contact"></div>
+                <?php endif; ?>
                 <p><button class="button button--primary" type="submit">Send message</button></p>
             </form>
+            <?php if ($turnstileSiteKey !== ''): ?>
+                <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+            <?php endif; ?>
         <?php endif; ?>
     </div>
 </section>

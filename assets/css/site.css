@@ -844,6 +844,7 @@ dialog.lightbox img { display: block; width: 100%; border-radius: var(--radius-m
 
 /* ---------- contact form ---------- */
 .contact-form p { margin-bottom: var(--space-4); }
+.contact-form__turnstile { margin-bottom: var(--space-4); }
 .contact-form label { display: block; font-size: var(--text-sm); font-weight: 600; color: var(--stone-600); margin-bottom: 0.3em; }
 .contact-form input, .contact-form textarea {
     width: 100%;

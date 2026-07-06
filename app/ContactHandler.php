@@ -17,6 +17,12 @@ final class ContactHandler
         return $t . '.' . hash_hmac('sha256', (string) $t, self::secret());
     }
 
+    /** Cloudflare Turnstile public site key, or '' when not configured. */
+    public static function turnstileSiteKey(): string
+    {
+        return (string) config('turnstile_site_key', '');
+    }
+
     public function handle(): void
     {
         // Honeypot: bots fill it, humans never see it. Pretend success.
@@ -28,6 +34,15 @@ final class ContactHandler
 
         if (!$this->tokenValid((string) ($_POST['ft'] ?? ''))) {
             $this->fail(['The form expired — please try again.']);
+            return;
+        }
+
+        if (!$this->turnstileVerified()) {
+            $this->fail(["Couldn't verify you're human — please try again."], [
+                'name' => (string) ($_POST['name'] ?? ''),
+                'email' => (string) ($_POST['email'] ?? ''),
+                'message' => (string) ($_POST['message'] ?? ''),
+            ]);
             return;
         }
 
@@ -60,7 +75,9 @@ final class ContactHandler
         $to = $site['contact_email'] ?? 'contact@austinschuetz.com';
         $host = parse_url($site['base_url'] ?? 'https://austinschuetz.com', PHP_URL_HOST) ?: 'austinschuetz.com';
         $subject = 'Portfolio contact from ' . $name;
-        $body = "Name: {$name}\nEmail: {$email}\nSent: " . gmdate('c') . "\n\n" . $message . "\n";
+        $sentAt = (new DateTimeImmutable('now', new DateTimeZone('America/Denver')))
+            ->format('l, F j, Y \a\t g:i A T'); // e.g. "Monday, July 6, 2026 at 1:33 PM MDT"
+        $body = "Name: {$name}\nEmail: {$email}\nSent: {$sentAt}\n\n" . $message . "\n";
         $headers = 'From: noreply@' . $host . "\r\n"
             . 'Reply-To: ' . $email . "\r\n"
             . 'X-Mailer: PHP/' . PHP_VERSION;
@@ -95,6 +112,65 @@ final class ContactHandler
         return hash_equals(hash_hmac('sha256', $parts[0], self::secret()), $parts[1])
             && $age >= self::MIN_SECONDS
             && $age <= self::MAX_SECONDS;
+    }
+
+    /**
+     * Cloudflare Turnstile check. Returns true when it passes, when it isn't
+     * configured (both keys required), or when Cloudflare is unreachable — in
+     * which case the honeypot, timing token, and rate limit still guard us.
+     * A configured widget that returns no/invalid token is rejected.
+     */
+    private function turnstileVerified(): bool
+    {
+        $siteKey = (string) config('turnstile_site_key', '');
+        $secret = (string) config('turnstile_secret', '');
+        if ($siteKey === '' || $secret === '') {
+            return true; // not set up — leave the form working as-is
+        }
+        $token = trim((string) ($_POST['cf-turnstile-response'] ?? ''));
+        if ($token === '') {
+            return false;
+        }
+        $resp = $this->postForm('https://challenges.cloudflare.com/turnstile/v0/siteverify', [
+            'secret' => $secret,
+            'response' => $token,
+            'remoteip' => $_SERVER['REMOTE_ADDR'] ?? '',
+        ]);
+        if ($resp === null) {
+            error_log('contact: turnstile siteverify unreachable — allowing');
+            return true;
+        }
+        $data = json_decode($resp, true);
+        return is_array($data) && ($data['success'] ?? false) === true;
+    }
+
+    /** Minimal dependency-free form POST; returns body, or null on failure. */
+    private function postForm(string $url, array $fields): ?string
+    {
+        $body = http_build_query($fields);
+        if (function_exists('curl_init')) {
+            $ch = curl_init($url);
+            curl_setopt_array($ch, [
+                CURLOPT_RETURNTRANSFER => true,
+                CURLOPT_POST => true,
+                CURLOPT_POSTFIELDS => $body,
+                CURLOPT_CONNECTTIMEOUT => 5,
+                CURLOPT_TIMEOUT => 8,
+            ]);
+            $out = curl_exec($ch);
+            $code = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+            curl_close($ch);
+            return ($out !== false && $code === 200) ? (string) $out : null;
+        }
+        $ctx = stream_context_create(['http' => [
+            'method' => 'POST',
+            'header' => "Content-Type: application/x-www-form-urlencoded\r\n",
+            'content' => $body,
+            'timeout' => 8,
+            'ignore_errors' => true,
+        ]]);
+        $out = @file_get_contents($url, false, $ctx);
+        return $out === false ? null : (string) $out;
     }
 
     /** Strip anything that could smuggle a mail header, then trim + cap. */
