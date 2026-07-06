@@ -4,3 +4,10 @@
 RemoveHandler .php .phtml .phar
 RemoveType .php .phtml .phar
 Options -Indexes -ExecCGI
+
+<IfModule mod_expires.c>
+    ExpiresActive On
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/jpeg "access plus 1 year"
+</IfModule>

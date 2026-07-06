@@ -74,6 +74,10 @@ was hitting the dead WP's 500s. With the new docroot live over HTTP:
 - [ ] Upload an image via the admin media screen; confirm it serves.
 - [ ] Request `/media/uploads/<that-image-name>.php` → must be 403/404
       (LiteSpeed no-PHP rule verification).
+- [ ] **Inheritance proof** (client sites unaffected by root rules):
+      `austinschuetz.com/wp-login.php` → 403, while
+      `crossfit-sdg.com/wp-login.php` → 200 (their real WP login) and
+      `crossfit-sdg.com` homepage unchanged.
 
 ## 6. Ongoing
 - [ ] cPanel cron, weekly:

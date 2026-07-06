@@ -14,9 +14,11 @@ RewriteRule ^(app|content|storage|templates|scripts|tests|design)(/|$) - [F]
 RewriteRule ^(wp-admin|wp-content|wp-includes)(/|$) - [F]
 RewriteRule ^(wp-[a-z-]+\.php|xmlrpc\.php|license\.txt|readme\.html)$ - [F]
 
-# Dotfiles and sensitive file types
-RewriteRule (^|/)\.(git|env|htaccess) - [F]
-RewriteRule \.(json|md|yml|lock)$ - [F]
+# Dotfiles and sensitive file types — ROOT-ANCHORED so nothing here can ever
+# apply to the client-site subfolders sharing this docroot. Deeper protection
+# for our own dirs comes from their per-directory deny .htaccess files.
+RewriteRule ^\.(git|env)(/|$) - [F]
+RewriteRule ^[^/]+\.(json|md|yml|lock)$ - [F]
 
 # Force-HTTPS + www -> apex: enabled at launch AFTER AutoSSL issues the cert
 # RewriteCond %{HTTPS} !=on [OR]
@@ -28,13 +30,6 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^ index.php [L]
 
-<IfModule mod_expires.c>
-    ExpiresActive On
-    ExpiresByType text/css "access plus 1 year"
-    ExpiresByType application/javascript "access plus 1 year"
-    ExpiresByType font/woff2 "access plus 1 year"
-    ExpiresByType image/webp "access plus 1 year"
-    ExpiresByType image/png "access plus 1 year"
-    ExpiresByType image/jpeg "access plus 1 year"
-    ExpiresByType image/svg+xml "access plus 1 year"
-</IfModule>
+# NOTE: no ExpiresByType here on purpose — Expires directives INHERIT into the
+# client-site subfolders sharing this docroot. Cache headers live in
+# assets/.htaccess and media/.htaccess instead, scoped to our own files only.
