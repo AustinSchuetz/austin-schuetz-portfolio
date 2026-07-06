@@ -20,6 +20,28 @@
         });
     }
 
+    /* Sticky header: hide scrolling down, reveal scrolling up, flat at top. */
+    const header = document.querySelector('.site-header');
+    if (header) {
+        let lastY = window.scrollY;
+        let ticking = false;
+        window.addEventListener('scroll', () => {
+            if (ticking) return;
+            ticking = true;
+            requestAnimationFrame(() => {
+                const y = window.scrollY;
+                header.classList.toggle('is-scrolled', y > 8);
+                if (y > 160 && y > lastY + 4) {
+                    header.classList.add('is-hidden');
+                } else if (y < lastY - 4 || y <= 160) {
+                    header.classList.remove('is-hidden');
+                }
+                lastY = y;
+                ticking = false;
+            });
+        }, { passive: true });
+    }
+
     /* Lightbox for media blocks flagged data-lightbox. */
     const dialog = document.createElement('dialog');
     dialog.className = 'lightbox';

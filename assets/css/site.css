@@ -245,8 +245,15 @@ button, .button { cursor: pointer; }
 .site-header {
     border-bottom: 1px solid var(--hairline);
     background: var(--bg-page);
-    position: relative;
-    z-index: 5;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    transition: transform var(--dur-2) var(--ease-soft), box-shadow var(--dur-2) var(--ease-soft);
+}
+.site-header.is-hidden { transform: translateY(-100%); }
+.site-header.is-scrolled { box-shadow: var(--shadow-sm); }
+@media (prefers-reduced-motion: reduce) {
+    .site-header { transition: none; }
 }
 .site-header__inner {
     display: flex;
