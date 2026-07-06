@@ -20,10 +20,10 @@ RewriteRule ^(wp-[a-z-]+\.php|xmlrpc\.php|license\.txt|readme\.html)$ - [F]
 RewriteRule ^\.(git|env)(/|$) - [F]
 RewriteRule ^[^/]+\.(json|md|yml|lock)$ - [F]
 
-# Force-HTTPS + www -> apex: enabled at launch AFTER AutoSSL issues the cert
-# RewriteCond %{HTTPS} !=on [OR]
-# RewriteCond %{HTTP_HOST} ^www\. [NC]
-# RewriteRule ^ https://austinschuetz.com%{REQUEST_URI} [R=301,L]
+# Force-HTTPS + www -> apex (cert live via acme.sh since 2026-07-06)
+RewriteCond %{HTTPS} !=on [OR]
+RewriteCond %{HTTP_HOST} ^www\. [NC]
+RewriteRule ^ https://austinschuetz.com%{REQUEST_URI} [R=301,L]
 
 # Front controller
 RewriteCond %{REQUEST_FILENAME} !-f
