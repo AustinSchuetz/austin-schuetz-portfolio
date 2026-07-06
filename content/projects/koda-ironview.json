@@ -18,7 +18,7 @@
     "featured": true,
     "sort_order": 2,
     "thumb": "/media/uploads/projects/koda-ironview/thumb.webp",
-    "hero_image": "/media/uploads/projects/koda-ironview/dashboard.webp",
+    "hero_image": "/media/uploads/projects/koda-ironview/leaderboard.webp",
     "link_url": "https://koda-ironview.pages.dev",
     "blocks": [
         {
@@ -86,18 +86,18 @@
             "lightbox": true,
             "items": [
                 {
-                    "src": "/media/uploads/projects/koda-ironview/dashboard.webp",
-                    "alt": "Koda IronView sign-in screen on desktop web",
-                    "caption": "The PWA on desktop web",
+                    "src": "/media/uploads/projects/koda-ironview/admin-dashboard.webp",
+                    "alt": "Iron Games admin dashboard: registrations, Square revenue collected, live scores, and division fill rates",
+                    "caption": "The comp admin — registrations, Square revenue, heats, scoring, volunteers",
                     "treatment": "color",
                     "frame": "browser"
                 },
                 {
-                    "src": "/media/uploads/projects/koda-ironview/mobile-home.webp",
-                    "alt": "Koda IronView sign-in screen on a mobile viewport",
-                    "caption": "The same codebase, installed on a phone",
+                    "src": "/media/uploads/projects/koda-ironview/comp-page.webp",
+                    "alt": "Koda Iron Games 2026 competition page with registration state and leaderboard links",
+                    "caption": "The athlete side — registration, schedule, and a live leaderboard",
                     "treatment": "color",
-                    "frame": "phone"
+                    "frame": "browser"
                 }
             ]
         },

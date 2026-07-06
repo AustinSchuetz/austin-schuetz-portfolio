@@ -97,8 +97,8 @@
             "id": "b_home04",
             "type": "project_feature",
             "project_slug": "koda-ironview",
-            "media_src": "/media/uploads/projects/koda-ironview/mobile-home.webp",
-            "media_frame": "phone",
+            "media_src": "/media/uploads/projects/koda-ironview/leaderboard.webp",
+            "media_frame": "browser",
             "media_treatment": "color",
             "items": [
                 {
