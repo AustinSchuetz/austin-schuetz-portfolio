@@ -18,7 +18,7 @@
     "featured": false,
     "sort_order": 5,
     "thumb": "/media/uploads/projects/bush-league-baseball/thumb.webp",
-    "hero_image": "/media/uploads/projects/bush-league-baseball/character-green.webp",
+    "hero_image": "/media/uploads/projects/bush-league-baseball/player-cards.webp",
     "link_url": "",
     "blocks": [
         {
@@ -78,16 +78,16 @@
             "lightbox": true,
             "items": [
                 {
-                    "src": "/media/uploads/projects/bush-league-baseball/character-green.webp",
-                    "alt": "AI-generated baseball character model in a green team uniform, T-pose reference",
-                    "caption": "One character, one team palette — from the Scenario.gg art pipeline",
+                    "src": "/media/uploads/projects/bush-league-baseball/player-cards.webp",
+                    "alt": "Bush League Baseball player cards: three characters with rarity sashes, stat racks, and perk chips from the design system",
+                    "caption": "Player cards from the brand bible — tear-strips, stat racks, and a rarity hierarchy",
                     "treatment": "color",
                     "frame": "none"
                 },
                 {
-                    "src": "/media/uploads/projects/bush-league-baseball/character-red.webp",
-                    "alt": "AI-generated baseball character model in a red pinstripe uniform, T-pose reference",
-                    "caption": "Same pipeline, different team — tint-masking multiplies the roster",
+                    "src": "/media/uploads/projects/bush-league-baseball/brand-banner.webp",
+                    "alt": "Bush League Baseball brand banner with vintage lettering and character mascots",
+                    "caption": "The brand system — dirt, chalk, and Saturday-morning lettering",
                     "treatment": "color",
                     "frame": "none"
                 }
