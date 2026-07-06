@@ -17,7 +17,7 @@
     "featured": false,
     "sort_order": 3,
     "thumb": "/media/uploads/projects/we-have-food-at-home/thumb.webp",
-    "hero_image": "/media/uploads/projects/we-have-food-at-home/desktop-home.webp",
+    "hero_image": "/media/uploads/projects/we-have-food-at-home/mobile-home.webp",
     "link_url": "",
     "blocks": [
         {
@@ -79,16 +79,16 @@
             "lightbox": true,
             "items": [
                 {
-                    "src": "/media/uploads/projects/we-have-food-at-home/desktop-home.webp",
-                    "alt": "We Have Food at Home landing screen with passcode entry, on desktop",
-                    "caption": "The install-first landing screen",
+                    "src": "/media/uploads/projects/we-have-food-at-home/mobile-home.webp",
+                    "alt": "We Have Food at Home on a phone: high-protein recipe library with 310 recipes and filters",
+                    "caption": "Installed on the home screen like any app — 310 recipes, filtered by protein and time",
                     "treatment": "color",
-                    "frame": "browser"
+                    "frame": "phone"
                 },
                 {
-                    "src": "/media/uploads/projects/we-have-food-at-home/mobile-home.webp",
-                    "alt": "We Have Food at Home landing screen on a mobile viewport",
-                    "caption": "Built mobile-first — this is the PWA on a phone",
+                    "src": "/media/uploads/projects/we-have-food-at-home/mobile-recipes.webp",
+                    "alt": "Recipe cards with per-serving protein, calories, and cost on the phone layout",
+                    "caption": "Every recipe carries its numbers — protein, calories, and cost per serving",
                     "treatment": "color",
                     "frame": "phone"
                 }
