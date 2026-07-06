@@ -295,7 +295,7 @@ button, .button { cursor: pointer; }
 /* ---------- hero + topo ---------- */
 /* Motif 2 — topo contours: hero only (evergreen strokes baked into the SVG) */
 .hero { background: var(--stone-50); overflow: hidden; }
-.hero__inner { padding-block: clamp(40px, 6vh, 64px) 40px; position: relative; max-width: 61.25rem; }
+.hero__inner { padding-block: clamp(40px, 6vh, 64px) 40px; position: relative; }
 .hero--case .hero__inner,
 .hero--page .hero__inner { padding-block: 88px 24px; background: none; }
 .hero--case, .hero--page { background: var(--bg-page); }
