@@ -1,0 +1,14 @@
+{
+    "name": "Sequoia One",
+    "thumb": "/media/uploads/archive/sequoia-one.webp",
+    "url": "https://one.sequoia.com",
+    "wayback_url": "",
+    "years": "Current",
+    "services": [
+        "Development"
+    ],
+    "era": "studio",
+    "blurb_md": "Front-end development on the Sequoia One site — Sequoia's PEO arm (comp, benefits, and outsourced HR & payroll), built for VC-backed tech startups.",
+    "sort_order": 2,
+    "status": "published"
+}

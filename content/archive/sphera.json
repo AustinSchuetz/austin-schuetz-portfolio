@@ -7,6 +7,6 @@
     "services": ["Custom WordPress theme"],
     "era": "studio",
     "blurb_md": "Site at the end of my tenure as sole front-end web developer for marketing at a 500+ employee global company; shown here via my demo subdomain since sphera.com has since been redesigned.",
-    "sort_order": 1,
+    "sort_order": 4,
     "status": "published"
 }

@@ -1,0 +1,14 @@
+{
+    "name": "Conexiom",
+    "thumb": "/media/uploads/archive/conexiom.webp",
+    "url": "",
+    "wayback_url": "https://web.archive.org/web/20230605201833/https://conexiom.com/",
+    "years": "~2023",
+    "services": [
+        "Development"
+    ],
+    "era": "freelance",
+    "blurb_md": "Front-end development on the marketing site for Conexiom, a B2B order-automation platform. Since rebuilt on a new stack; preserved here via the Wayback Machine.",
+    "sort_order": 13,
+    "status": "published"
+}

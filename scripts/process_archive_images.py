@@ -49,6 +49,10 @@ SLUG_SOURCES = {
     "todays-jam": "todays-jam",
     "attune-collective": "attune-collective",
     "ground-creations": "ground-creations",
+    "integrate": "integrate",
+    "conexiom": "conexiom",
+    "sequoia": "sequoia",
+    "sequoia-one": "sequoia-one",
 }
 
 

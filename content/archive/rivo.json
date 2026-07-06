@@ -7,6 +7,6 @@
     "services": ["Custom WordPress theme"],
     "era": "studio",
     "blurb_md": "Rivo was acquired by Sphera during my tenure; I transitioned its old site content onto a fully designed, updated theme.",
-    "sort_order": 2,
+    "sort_order": 5,
     "status": "published"
 }
