@@ -8,6 +8,12 @@ RewriteRule ^\.well-known/ - [L]
 # Protected application directories (each also ships its own deny .htaccess)
 RewriteRule ^(app|content|storage|templates|scripts|tests|design)(/|$) - [F]
 
+# The retired WordPress install stays on disk (owner's choice) — deny all web
+# access to it. Anchored to the root, so client sites in subfolders (which run
+# their own RewriteEngine) are unaffected.
+RewriteRule ^(wp-admin|wp-content|wp-includes)(/|$) - [F]
+RewriteRule ^(wp-[a-z-]+\.php|xmlrpc\.php|license\.txt|readme\.html)$ - [F]
+
 # Dotfiles and sensitive file types
 RewriteRule (^|/)\.(git|env|htaccess) - [F]
 RewriteRule \.(json|md|yml|lock)$ - [F]

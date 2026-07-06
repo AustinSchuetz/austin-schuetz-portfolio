@@ -7,6 +7,10 @@
 deployment:
   tasks:
     - export DOC=/home/austzncx/public_html
+    # One-time safeguards on first deploy: keep the old WP .htaccess and the
+    # old portfolio assets folder (pre-2026 thumbnails) in the home directory.
+    - test -f /home/austzncx/old-wp-htaccess.bak || /bin/cp -f $DOC/.htaccess /home/austzncx/old-wp-htaccess.bak || true
+    - test -f $DOC/assets/css/tokens.css || /bin/mv $DOC/assets /home/austzncx/old-portfolio-assets || true
     - /bin/cp -f index.php .htaccess robots.txt favicon.ico $DOC/
     - /bin/rm -rf $DOC/app $DOC/templates $DOC/admin $DOC/assets.new
     - /bin/cp -R app templates admin $DOC/

@@ -23,11 +23,17 @@ changes are made at any point.
       serving bare directory listings — likely the same broken WP install.
       Optional cleanup at step 2.
 
-## 1. Archive the old WordPress site
-- [ ] File Manager (or SSH): create `~/old-site/` **outside** the docroot,
-      move ALL current docroot contents into it.
-- [ ] phpMyAdmin: export the old WP database (gzip), download it AND the
-      `old-site` folder to local storage. Keep the DB dormant — don't drop.
+## 1. Old WordPress — left in place, access denied (owner's decision 2026-07-05)
+The docroot is shared with ~40 addon/subdomain site folders, so the old WP
+files stay where they are. The new `.htaccess` denies all web access to
+`wp-admin/`, `wp-content/`, `wp-includes/`, `wp-*.php`, and `xmlrpc.php`
+(rules are root-anchored; client sites in subfolders are unaffected).
+The deploy's first run automatically backs up the old `.htaccess` to
+`~/old-wp-htaccess.bak` and moves the old thumbnails folder to
+`~/old-portfolio-assets`.
+- [ ] Optional but recommended: phpMyAdmin → export the old WP database
+      (gzip) as a keepsake. Keep the DB dormant — don't drop it.
+- [ ] Post-launch smoke check: `austinschuetz.com/wp-login.php` must return 403.
 
 ## 2. Deploy the code
 **Primary (cPanel Git):** Git Version Control → Create → clone this repo
