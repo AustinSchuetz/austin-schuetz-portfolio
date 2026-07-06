@@ -20,12 +20,6 @@
             "ridge_bottom": "b"
         },
         {
-            "id": "b_arch02",
-            "type": "prose",
-            "body_md": "Client work has a shelf life. Businesses rebrand, agencies redesign, domains lapse. Many of the sites below have since been retired or replaced — so where the original is gone, I've linked the **Wayback Machine** snapshot instead of pretending it's still live.\n\nThumbnails from redesigned sites are the archived versions of *my* work, not whatever stands there now. No dead links, no borrowed credit. Just what I built, and when.",
-            "width": "prose"
-        },
-        {
             "id": "b_arch03",
             "type": "archive_grid",
             "group_by_era": true,
