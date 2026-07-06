@@ -4,7 +4,6 @@
     "seo_description": "Trading systems, gym platforms, consumer AI apps — and the hand-rolled drag-and-drop CMS this portfolio runs on.",
     "og_image": "",
     "status": "published",
-    "updated_at": "2026-07-05T00:00:00Z",
     "blocks": [
         {
             "id": "b_a1b2c1",
@@ -28,11 +27,24 @@
             "media_frame": "browser",
             "media_treatment": "color",
             "items": [
-                {"value": "148K", "label": "LOC"},
-                {"value": "LIVE", "label": "IB execution"},
-                {"value": "WFO+MCPT", "label": "validated"}
+                {
+                    "value": "148K",
+                    "label": "LOC"
+                },
+                {
+                    "value": "LIVE",
+                    "label": "IB execution"
+                },
+                {
+                    "value": "WFO+MCPT",
+                    "label": "validated"
+                }
             ],
-            "tags": ["Python", "asyncio", "Interactive Brokers"],
+            "tags": [
+                "Python",
+                "asyncio",
+                "Interactive Brokers"
+            ],
             "reverse": false
         },
         {
@@ -46,5 +58,6 @@
             "style": "panel-dark",
             "motif": "topo-corner"
         }
-    ]
+    ],
+    "updated_at": "2026-07-05T23:59:29Z"
 }
