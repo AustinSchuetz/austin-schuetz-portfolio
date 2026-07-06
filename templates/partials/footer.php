@@ -6,7 +6,6 @@
             <?php foreach ($site['socials'] ?? [] as $s): ?>
                 <a href="<?= e($s['url'] ?? '#') ?>" rel="me noopener"><?= e(strtoupper($s['label'] ?? '')) ?></a>
             <?php endforeach; ?>
-            <a href="/style-guide">STYLE GUIDE</a>
             <a href="/work/this-site">THIS SITE</a>
         </span>
     </div>

@@ -87,8 +87,8 @@
             "items": [
                 {
                     "src": "/media/uploads/projects/ausi-trader/dashboard.webp",
-                    "alt": "Ausi-Trader live risk dashboard showing today's P&L, open positions, resting entry orders, and per-strategy decision state",
-                    "caption": "The live scoreboard — real-time risk, positions, and strategy gates",
+                    "alt": "Ausi-Trader live scoreboard: real-account equity, regime gates, per-strategy decision state",
+                    "caption": "The live scoreboard — real account, regime gates, and per-strategy decisions",
                     "treatment": "color",
                     "frame": "browser"
                 },
