@@ -264,16 +264,14 @@ button, .button { cursor: pointer; }
     color: var(--green-800);
     text-decoration: none;
     display: inline-flex;
-    align-items: baseline;
-    gap: 0.7em;
+    align-items: center;
+    gap: 0.5em;
 }
 .wordmark:hover { color: var(--green-700); }
-.wordmark__loc {
-    color: var(--muted);
-    text-transform: uppercase;
-    font-size: 0.65625rem; /* 10.5px */
-    letter-spacing: 0.12em;
-}
+.wordmark__mark { width: 30px; height: 20px; flex: none; }
+.site-footer .wordmark__mark polygon { fill: var(--green-200); }
+.site-footer .wordmark__mark polygon:nth-child(2) { fill: var(--green-300); }
+.site-footer .wordmark__mark polygon:nth-child(3) { fill: var(--stone-50); }
 .site-nav { display: flex; align-items: baseline; gap: 32px; flex-wrap: wrap; }
 .site-nav a {
     font-weight: 500;

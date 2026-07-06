@@ -1,7 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Austin Schuetz">
-  <rect x="0" y="0" width="64" height="64" rx="12.8" ry="12.8" fill="#1B3D2F"/>
-  <path d="M -7.7 45.4 A 39.7 39.7 0 0 1 71.7 45.4"
-        fill="none" stroke="#FAF9F7" stroke-opacity="0.16" stroke-width="1.2"/>
-  <text x="50%" y="54%" text-anchor="middle" dominant-baseline="middle"
-        font-family="Fraunces, Georgia, serif" font-size="28.2" fill="#FAF9F7">AS</text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Austin Schuetz"><rect width="64" height="64" rx="13" fill="#1B3D2F"/><polygon points="8,46 22,22 34,46" fill="#5F9E82"/><polygon points="20,46 34,15 49,46" fill="#C1DDCE"/><polygon points="34,46 45,27 57,46" fill="#FAF9F7"/></svg>
