@@ -13,7 +13,7 @@
     "sort_order": 7,
     "thumb": "",
     "hero_image": "",
-    "link_url": "",
+    "link_url": "https://github.com/AustinSchuetz/draft-war-room",
     "blocks": [
         {
             "id": "b_dw01",
@@ -45,7 +45,9 @@
             "role": "Builder",
             "timeline": "June 2026 — one draft season",
             "stack": ["React 18", "esbuild", "Sleeper API", "Netlify Functions", "Netlify Blobs"],
-            "items": []
+            "items": [
+                {"label": "GitHub", "url": "https://github.com/AustinSchuetz/draft-war-room", "kind": "repo"}
+            ]
         },
         {
             "id": "b_dw04",
