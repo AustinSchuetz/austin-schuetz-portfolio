@@ -4,8 +4,11 @@
     "url": "",
     "wayback_url": "https://web.archive.org/web/20191014174219/https://taylor-dilk.com/",
     "years": "2020–2022",
-    "services": ["Web design", "Development"],
-    "era": "agency",
+    "services": [
+        "Web design",
+        "Development"
+    ],
+    "era": "freelance",
     "blurb_md": "A personal-brand and podcast site for fitness and lifestyle creator Taylor Dilk.",
     "sort_order": 6,
     "status": "published"

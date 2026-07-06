@@ -8,9 +8,8 @@ if (!empty($b['limit'])) {
     $entries = array_slice($entries, 0, (int) $b['limit']);
 }
 $eraLabels = [
-    'freelance' => 'Freelance — Denver',
+    'freelance' => 'Freelance client work',
     'studio' => 'Studio & in-house WordPress',
-    'agency' => 'Digital Dudes Marketing',
 ];
 ?>
 <?php if (!empty($b['teaser'])): ?>
