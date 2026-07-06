@@ -6,11 +6,11 @@
 <?= Seo::head($doc, $site, $path) ?>
 <link rel="preload" href="/assets/fonts/fraunces-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/public-sans-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/assets/css/tokens.css">
+<link rel="stylesheet" href="<?= e(asset('/assets/css/tokens.css')) ?>">
 <link rel="icon" href="/favicon.ico" sizes="32x32">
 <link rel="icon" href="/assets/img/icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
-<link rel="stylesheet" href="/assets/css/site.css">
+<link rel="stylesheet" href="<?= e(asset('/assets/css/site.css')) ?>">
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -19,6 +19,6 @@
 <?= $content ?>
 </main>
 <?= View::partial('footer', ['site' => $site]) ?>
-<script src="/assets/js/site.js" defer></script>
+<script src="<?= e(asset('/assets/js/site.js')) ?>" defer></script>
 </body>
 </html>

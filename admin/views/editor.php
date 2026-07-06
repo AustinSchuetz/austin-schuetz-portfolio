@@ -57,6 +57,6 @@ window.CMS = <?= json_encode([
     'uploadUrl' => '/admin/?r=upload',
 ], JSON_UNESCAPED_SLASHES | JSON_HEX_TAG | JSON_HEX_AMP | JSON_HEX_APOS | JSON_HEX_QUOT) ?>;
 </script>
-<script src="/admin/assets/sortable.min.js"></script>
-<script src="/admin/assets/editor.js"></script>
+<script src="<?= e(asset('/admin/assets/sortable.min.js')) ?>"></script>
+<script src="<?= e(asset('/admin/assets/editor.js')) ?>"></script>
 <?php include __DIR__ . '/_bottom.php'; ?>

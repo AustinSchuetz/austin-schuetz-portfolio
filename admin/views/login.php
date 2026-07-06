@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <title>Log in · CMS</title>
-<link rel="stylesheet" href="/admin/assets/admin.css">
+<link rel="stylesheet" href="<?= e(asset('/admin/assets/admin.css')) ?>">
 </head>
 <body class="login-body">
 <form class="login-card" method="post" action="/admin/?r=login">

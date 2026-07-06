@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
 <title><?= e($adminTitle ?? 'Admin') ?> · CMS</title>
-<link rel="stylesheet" href="/admin/assets/admin.css">
+<link rel="stylesheet" href="<?= e(asset('/admin/assets/admin.css')) ?>">
 </head>
 <body>
 <header class="admin-header">
