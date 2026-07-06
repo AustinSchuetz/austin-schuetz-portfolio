@@ -4,11 +4,9 @@
 # deliberately absent from these tasks. First-launch seeding is manual
 # (see LAUNCH.md step 4).
 #
-# TODO before first deploy: replace CPANEL_USER and confirm the docroot path
-# in cPanel > Domains (austinschuetz.com may be public_html or a subfolder).
 deployment:
   tasks:
-    - export DOC=/home/CPANEL_USER/public_html
+    - export DOC=/home/austzncx/public_html
     - /bin/cp -f index.php .htaccess robots.txt favicon.ico $DOC/
     - /bin/rm -rf $DOC/app $DOC/templates $DOC/admin $DOC/assets.new
     - /bin/cp -R app templates admin $DOC/
