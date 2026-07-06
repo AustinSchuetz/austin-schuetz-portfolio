@@ -836,10 +836,10 @@ dialog.lightbox img { display: block; width: 100%; border-radius: var(--radius-m
     background-color: var(--green-800);
 }
 .cta-band--paper { background: var(--surface); border-block: 1px solid var(--hairline); }
-.cta-band__inner { max-width: 53.75rem; /* 860px */ }
+.cta-band__inner { max-width: 53.75rem; /* 860px */ margin-inline: auto; text-align: center; }
 .cta-band__heading { font-size: clamp(1.9rem, 1.5rem + 1.6vw, 3rem); }
-.cta-band__body { color: var(--body); font-size: 1.03125rem; max-width: 46ch; }
-.cta-band__actions { display: flex; align-items: center; gap: 28px; flex-wrap: wrap; margin-top: var(--space-6); }
+.cta-band__body { color: var(--body); font-size: 1.03125rem; max-width: 46ch; margin-inline: auto; }
+.cta-band__actions { display: flex; align-items: center; justify-content: center; gap: 28px; flex-wrap: wrap; margin-top: var(--space-6); }
 .cta-band__actions .mono { font-size: 0.90625rem; letter-spacing: 0.04em; }
 
 /* ---------- contact form ---------- */
@@ -886,8 +886,8 @@ dialog.lightbox img { display: block; width: 100%; border-radius: var(--radius-m
 .site-footer__meta {
     display: flex;
     align-items: baseline;
-    justify-content: space-between;
-    gap: var(--space-5);
+    justify-content: center;
+    gap: var(--space-6);
     flex-wrap: wrap;
     border-top: 1px solid rgb(250 249 247 / 0.16);
     padding-block: 24px;
