@@ -19,7 +19,7 @@
     "sort_order": 1,
     "thumb": "/media/uploads/projects/ausi-trader/thumb.webp",
     "hero_image": "/media/uploads/projects/ausi-trader/dashboard.webp",
-    "link_url": "https://github.com/AustinSchuetz/ausi-trader",
+    "link_url": "",
     "blocks": [
         {
             "id": "b_at01",
@@ -71,13 +71,7 @@
                 "SQLite",
                 "aiohttp"
             ],
-            "items": [
-                {
-                    "label": "GitHub",
-                    "url": "https://github.com/AustinSchuetz/ausi-trader",
-                    "kind": "repo"
-                }
-            ]
+            "items": []
         },
         {
             "id": "b_at_gal",

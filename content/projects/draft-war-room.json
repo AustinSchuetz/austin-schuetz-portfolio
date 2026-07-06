@@ -18,7 +18,7 @@
     "sort_order": 7,
     "thumb": "/media/uploads/projects/draft-war-room/thumb.webp",
     "hero_image": "/media/uploads/projects/draft-war-room/draft-board.webp",
-    "link_url": "https://github.com/AustinSchuetz/draft-war-room",
+    "link_url": "",
     "blocks": [
         {
             "id": "b_dw01",
@@ -68,13 +68,7 @@
                 "Netlify Functions",
                 "Netlify Blobs"
             ],
-            "items": [
-                {
-                    "label": "GitHub",
-                    "url": "https://github.com/AustinSchuetz/draft-war-room",
-                    "kind": "repo"
-                }
-            ]
+            "items": []
         },
         {
             "id": "b_dw_gal",

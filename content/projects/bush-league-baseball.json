@@ -19,7 +19,7 @@
     "sort_order": 5,
     "thumb": "/media/uploads/projects/bush-league-baseball/thumb.webp",
     "hero_image": "/media/uploads/projects/bush-league-baseball/character-green.webp",
-    "link_url": "https://github.com/AustinSchuetz/bush-league-baseball",
+    "link_url": "",
     "blocks": [
         {
             "id": "b_bl01",
@@ -69,13 +69,7 @@
                 "Scenario.gg",
                 "Shader tint-masking"
             ],
-            "items": [
-                {
-                    "label": "GitHub",
-                    "url": "https://github.com/AustinSchuetz/bush-league-baseball",
-                    "kind": "repo"
-                }
-            ]
+            "items": []
         },
         {
             "id": "b_bl_gal",
