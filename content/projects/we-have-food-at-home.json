@@ -17,7 +17,7 @@
     "featured": false,
     "sort_order": 3,
     "thumb": "/media/uploads/projects/we-have-food-at-home/thumb.webp",
-    "hero_image": "/media/uploads/projects/we-have-food-at-home/mobile-home.webp",
+    "hero_image": "/media/uploads/projects/we-have-food-at-home/today.webp",
     "link_url": "",
     "blocks": [
         {
@@ -75,20 +75,27 @@
         {
             "id": "b_wf_gal",
             "type": "media",
-            "layout": "two-up",
+            "layout": "grid",
             "lightbox": true,
             "items": [
                 {
-                    "src": "/media/uploads/projects/we-have-food-at-home/mobile-home.webp",
-                    "alt": "We Have Food at Home on a phone: high-protein recipe library with 310 recipes and filters",
-                    "caption": "Installed on the home screen like any app — 310 recipes, filtered by protein and time",
+                    "src": "/media/uploads/projects/we-have-food-at-home/today.webp",
+                    "alt": "Today's table: the day's planned meals with calories and protein per meal and a leftovers chain badge",
+                    "caption": "Today's table — the plan, with leftovers chained into tomorrow",
                     "treatment": "color",
                     "frame": "phone"
                 },
                 {
-                    "src": "/media/uploads/projects/we-have-food-at-home/mobile-recipes.webp",
-                    "alt": "Recipe cards with per-serving protein, calories, and cost on the phone layout",
-                    "caption": "Every recipe carries its numbers — protein, calories, and cost per serving",
+                    "src": "/media/uploads/projects/we-have-food-at-home/scan.webp",
+                    "alt": "Scan view: photograph your fridge, freezer and pantry and AI vision builds the inventory",
+                    "caption": "Point a camera at the fridge — AI vision builds the inventory",
+                    "treatment": "color",
+                    "frame": "phone"
+                },
+                {
+                    "src": "/media/uploads/projects/we-have-food-at-home/order.webp",
+                    "alt": "Order view: the week's haul routed to King Soopers with Amazon Fresh fallback",
+                    "caption": "The haul — routed to King Soopers, Amazon Fresh as fallback",
                     "treatment": "color",
                     "frame": "phone"
                 }
